@@ -1,0 +1,2193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1919818469, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: package_0x100000000000110
+  m_EditorClassIdentifier: 
+  mPackageId: 72057594037928208
+  mPackageName: All objects
+  mPackagePath: Assets/ArticyImporter/Content/Generated/Resources/package_0x100000000000110.asset
+  mResourceKey: package_0x100000000000110
+  mObjects:
+  - rid: 9192623519620399104
+  - rid: 9192623519620399105
+  - rid: 9192623519620399106
+  - rid: 9192623519620399107
+  - rid: 9192623519620399108
+  - rid: 9192623519620399109
+  - rid: 9192623519620399110
+  - rid: 9192623519620399111
+  - rid: 9192623519620399112
+  - rid: 9192623519620399113
+  - rid: 9192623519620399114
+  - rid: 9192623519620399115
+  - rid: 9192623519620399116
+  - rid: 9192623519620399117
+  - rid: 9192623519620399118
+  - rid: 9192623519620399119
+  - rid: 9192623519620399120
+  - rid: 9192623519620399121
+  - rid: 9192623519620399122
+  - rid: 9192623519620399123
+  - rid: 9192623519620399124
+  - rid: 9192623519620399125
+  - rid: 9192623519620399126
+  - rid: 9192623519620399127
+  - rid: 9192623519620399128
+  - rid: 9192623519620399129
+  references:
+    version: 2
+    RefIds:
+    - rid: 9192623519620399104
+      type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928243
+        technicalName: Dlg_1CE13EAA
+        parentId: 216172783251375095
+        childrenIds: 420100000000000148010000000000014f0100000000000156010000000000015d0100000000000164010000000000017002000000000001
+        mAttachments:
+          listIds: 21010000000000011d01000000000001
+        mDisplayName:
+          value:
+            mValue: Dlg_1CE13EAA.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 307
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: Dlg_1CE13EAA.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 307
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 392, y: 275}
+        mZIndex: 1
+        mSize: {x: 291, y: 200}
+        mShortId: 484523690
+        mInputPins:
+          value:
+          - id: 72057594037928246
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928243
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 307
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928261
+                mTarget:
+                  id: 72057594037928258
+                  instanceId: 0
+        mOutputPins:
+          value:
+          - id: 72057594037928247
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928243
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 9192623519620399105
+      type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928533
+        technicalName: Dlg_E5C50D1B
+        parentId: 216172783251375095
+        childrenIds: 830200000000000190020000000000019602000000000001a002000000000001a802000000000001af02000000000001b502000000000001bb02000000000001c402000000000001
+        mAttachments:
+          listIds: 51020000000000011d01000000000001
+        mDisplayName:
+          value:
+            mValue: Dlg_E5C50D1B.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 597
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: Dlg_E5C50D1B.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 597
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 742, y: 275}
+        mZIndex: 1
+        mSize: {x: 291, y: 200}
+        mShortId: 3854896411
+        mInputPins:
+          value:
+          - id: 72057594037928536
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928533
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 597
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928582
+                mTarget:
+                  id: 72057594037928579
+                  instanceId: 0
+        mOutputPins:
+          value:
+          - id: 72057594037928537
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928533
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 9192623519620399106
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928258
+        technicalName: DFr_18140904
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 322
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 322
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_18140904.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 322
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 300, y: 300}
+        mZIndex: 0
+        mSize: {x: 225, y: 200}
+        mShortId: 403966212
+        mInputPins:
+          value:
+          - id: 72057594037928261
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928258
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928262
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928258
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 322
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928267
+                mTarget:
+                  id: 72057594037928264
+                  instanceId: 0
+    - rid: 9192623519620399107
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928264
+        technicalName: DFr_9B0350C3
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 328
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 328
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_9B0350C3.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 328
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 575, y: 300}
+        mZIndex: 1
+        mSize: {x: 225, y: 200}
+        mShortId: 2600685763
+        mInputPins:
+          value:
+          - id: 72057594037928267
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928264
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928268
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928264
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 328
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928274
+                mTarget:
+                  id: 72057594037928271
+                  instanceId: 0
+    - rid: 9192623519620399108
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928271
+        technicalName: DFr_5D63D0FA
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 335
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 335
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_5D63D0FA.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 335
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 850, y: 300}
+        mZIndex: 3
+        mSize: {x: 225, y: 200}
+        mShortId: 1566822650
+        mInputPins:
+          value:
+          - id: 72057594037928274
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928271
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928275
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928271
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 335
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928281
+                mTarget:
+                  id: 72057594037928278
+                  instanceId: 0
+    - rid: 9192623519620399109
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928278
+        technicalName: DFr_4604823A
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 342
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 342
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_4604823A.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 342
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1125, y: 300}
+        mZIndex: 5
+        mSize: {x: 225, y: 200}
+        mShortId: 1174700602
+        mInputPins:
+          value:
+          - id: 72057594037928281
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928278
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928282
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928278
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 342
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928288
+                mTarget:
+                  id: 72057594037928285
+                  instanceId: 0
+    - rid: 9192623519620399110
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928285
+        technicalName: DFr_7766E488
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 349
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 349
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_7766E488.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 349
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1400, y: 300}
+        mZIndex: 7
+        mSize: {x: 225, y: 200}
+        mShortId: 2003231880
+        mInputPins:
+          value:
+          - id: 72057594037928288
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928285
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928289
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928285
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 349
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928295
+                mTarget:
+                  id: 72057594037928292
+                  instanceId: 0
+    - rid: 9192623519620399111
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928292
+        technicalName: DFr_A5F6AA26
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 356
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 356
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_A5F6AA26.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 356
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1675, y: 300}
+        mZIndex: 9
+        mSize: {x: 225, y: 200}
+        mShortId: 2784406054
+        mInputPins:
+          value:
+          - id: 72057594037928295
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928292
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928296
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928292
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 356
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928563
+                mTarget:
+                  id: 72057594037928560
+                  instanceId: 0
+    - rid: 9192623519620399112
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928560
+        technicalName: DFr_63A0EE89
+        parentId: 72057594037928243
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 624
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 624
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_63A0EE89.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 624
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1950, y: 300}
+        mZIndex: 12
+        mSize: {x: 225, y: 200}
+        mShortId: 1671491209
+        mInputPins:
+          value:
+          - id: 72057594037928563
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928560
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928564
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928560
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 9192623519620399113
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928579
+        technicalName: DFr_5D2E0A4E
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 643
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 643
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928529
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_5D2E0A4E.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 643
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 925, y: 275}
+        mZIndex: 1
+        mSize: {x: 225, y: 200}
+        mShortId: 1563298382
+        mInputPins:
+          value:
+          - id: 72057594037928582
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928579
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928583
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928579
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 643
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928595
+                mTarget:
+                  id: 72057594037928592
+                  instanceId: 0
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 643
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928601
+                mTarget:
+                  id: 72057594037928598
+                  instanceId: 0
+    - rid: 9192623519620399114
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928592
+        technicalName: DFr_C7C57E68
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: Be mean
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 656
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 656
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_C7C57E68.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 656
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1250, y: 375}
+        mZIndex: 3
+        mSize: {x: 225, y: 200}
+        mShortId: 3351608936
+        mInputPins:
+          value:
+          - id: 72057594037928595
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928592
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928596
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928592
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 656
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928611
+                mTarget:
+                  id: 72057594037928608
+                  instanceId: 0
+    - rid: 9192623519620399115
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928598
+        technicalName: DFr_5B44F758
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: Be nice
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 662
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 662
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_5B44F758.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 662
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1250, y: 150}
+        mZIndex: 5
+        mSize: {x: 225, y: 200}
+        mShortId: 1531246424
+        mInputPins:
+          value:
+          - id: 72057594037928601
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928598
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928602
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928598
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 662
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928611
+                mTarget:
+                  id: 72057594037928608
+                  instanceId: 0
+    - rid: 9192623519620399116
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928608
+        technicalName: DFr_182BAAE0
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 672
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 672
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928529
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_182BAAE0.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 672
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1575, y: 275}
+        mZIndex: 7
+        mSize: {x: 225, y: 200}
+        mShortId: 405514976
+        mInputPins:
+          value:
+          - id: 72057594037928611
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928608
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928612
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928608
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 672
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928619
+                mTarget:
+                  id: 72057594037928616
+                  instanceId: 0
+    - rid: 9192623519620399117
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928616
+        technicalName: DFr_3DF2C262
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 680
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 680
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928529
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_3DF2C262.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 680
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1850, y: 275}
+        mZIndex: 10
+        mSize: {x: 225, y: 200}
+        mShortId: 1039319650
+        mInputPins:
+          value:
+          - id: 72057594037928619
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928616
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928620
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928616
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 680
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928626
+                mTarget:
+                  id: 72057594037928623
+                  instanceId: 0
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 680
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928632
+                mTarget:
+                  id: 72057594037928629
+                  instanceId: 0
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 680
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928638
+                mTarget:
+                  id: 72057594037928635
+                  instanceId: 0
+    - rid: 9192623519620399118
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928623
+        technicalName: DFr_FD1C5CBF
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: I don't know
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 687
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 687
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_FD1C5CBF.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 687
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 2125, y: 50}
+        mZIndex: 12
+        mSize: {x: 225, y: 200}
+        mShortId: 4246494399
+        mInputPins:
+          value:
+          - id: 72057594037928626
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928623
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928627
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928623
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 687
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928647
+                mTarget:
+                  id: 72057594037928644
+                  instanceId: 0
+    - rid: 9192623519620399119
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928629
+        technicalName: DFr_15BE929C
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: It's somewhere good
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 693
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 693
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_15BE929C.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 693
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 2125, y: 275}
+        mZIndex: 14
+        mSize: {x: 225, y: 200}
+        mShortId: 364810908
+        mInputPins:
+          value:
+          - id: 72057594037928632
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928629
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928633
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928629
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 693
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928647
+                mTarget:
+                  id: 72057594037928644
+                  instanceId: 0
+    - rid: 9192623519620399120
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928635
+        technicalName: DFr_0465324B
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: It's somewhere bad
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 699
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 699
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_0465324B.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 699
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 2125, y: 500}
+        mZIndex: 16
+        mSize: {x: 225, y: 200}
+        mShortId: 73740875
+        mInputPins:
+          value:
+          - id: 72057594037928638
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928635
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928639
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928635
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 699
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037928647
+                mTarget:
+                  id: 72057594037928644
+                  instanceId: 0
+    - rid: 9192623519620399121
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928644
+        technicalName: DFr_B487B0E4
+        parentId: 72057594037928533
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 708
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 708
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928529
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_B487B0E4.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 708
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 2400, y: 275}
+        mZIndex: 18
+        mSize: {x: 225, y: 200}
+        mShortId: 3028791524
+        mInputPins:
+          value:
+          - id: 72057594037928647
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928644
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037928648
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037928644
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 9192623519620399122
+      type: {class: DefaultMainCharacterTemplate, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928221
+        technicalName: Ntt_D0611D58
+        parentId: 216172785005863603
+        childrenIds: 
+        mAttachments:
+          listIds: 
+        mDisplayName:
+          value:
+            mValue: Ntt_D0611D58.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 285
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mColor: {r: 0.5019608, g: 0.39215687, b: 0.63529414, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 285
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 281.6, y: 60.8}
+        mZIndex: 0
+        mSize: {x: 256, y: 196}
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mShortId: 3496025432
+        mTemplate:
+          value:
+            mDefaultExtendedCharacterFeature:
+              value:
+                mMotivation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Motivation
+                mInnerConflict:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.InnerConflict
+                mSkills:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Skills
+                mFears:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Fears
+                mHabits:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Habits
+                mFurtherDetails:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.FurtherDetails
+                mOwnerId: 72057594037928221
+                mOwnerInstanceId: 0
+            mDefaultBasicCharacterFeature:
+              value:
+                mAge: 0
+                mSpecies:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Species
+                mBornIn:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.BornIn
+                mSex: 0
+                mOccupation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Occupation
+                mAccent:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Accent
+                mPersonality:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Personality
+                mAppearance:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 285
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Appearance
+                mOwnerId: 72057594037928221
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037928221
+            mOwnerInstanceId: 0
+    - rid: 9192623519620399123
+      type: {class: DefaultMainCharacterTemplate, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928225
+        technicalName: Ntt_45084A9E
+        parentId: 216172785005863603
+        childrenIds: 
+        mAttachments:
+          listIds: 
+        mDisplayName:
+          value:
+            mValue: Ntt_45084A9E.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 289
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mColor: {r: 0.30980393, g: 0.5058824, b: 0.7411765, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 289
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 70.4, y: 66.4}
+        mZIndex: 1
+        mSize: {x: 256, y: 196}
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mShortId: 1158171294
+        mTemplate:
+          value:
+            mDefaultExtendedCharacterFeature:
+              value:
+                mMotivation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Motivation
+                mInnerConflict:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.InnerConflict
+                mSkills:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Skills
+                mFears:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Fears
+                mHabits:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Habits
+                mFurtherDetails:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.FurtherDetails
+                mOwnerId: 72057594037928225
+                mOwnerInstanceId: 0
+            mDefaultBasicCharacterFeature:
+              value:
+                mAge: 0
+                mSpecies:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Species
+                mBornIn:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.BornIn
+                mSex: 0
+                mOccupation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Occupation
+                mAccent:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Accent
+                mPersonality:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Personality
+                mAppearance:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 289
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Appearance
+                mOwnerId: 72057594037928225
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037928225
+            mOwnerInstanceId: 0
+    - rid: 9192623519620399124
+      type: {class: DefaultMainCharacterTemplate, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928529
+        technicalName: Ntt_6C607307
+        parentId: 216172785005863603
+        childrenIds: 
+        mAttachments:
+          listIds: 
+        mDisplayName:
+          value:
+            mValue: Ntt_6C607307.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 593
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mColor: {r: 1, g: 0, b: 0, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 593
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 163.2, y: 207.2}
+        mZIndex: 1
+        mSize: {x: 256, y: 196}
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mShortId: 1818260231
+        mTemplate:
+          value:
+            mDefaultExtendedCharacterFeature:
+              value:
+                mMotivation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Motivation
+                mInnerConflict:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.InnerConflict
+                mSkills:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Skills
+                mFears:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Fears
+                mHabits:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.Habits
+                mFurtherDetails:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultExtendedCharacterFeature.FurtherDetails
+                mOwnerId: 72057594037928529
+                mOwnerInstanceId: 0
+            mDefaultBasicCharacterFeature:
+              value:
+                mAge: 0
+                mSpecies:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Species
+                mBornIn:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.BornIn
+                mSex: 0
+                mOccupation:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Occupation
+                mAccent:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Accent
+                mPersonality:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Personality
+                mAppearance:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 593
+                      highId: 16777216
+                    mPropertyPath: DefaultBasicCharacterFeature.Appearance
+                mOwnerId: 72057594037928529
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037928529
+            mOwnerInstanceId: 0
+    - rid: 9192623519620399125
+      type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928211
+        technicalName: Ufo_029286C8
+        parentId: 216172783392894804
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: Images
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 275
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mExternalId: 
+        mShortId: 43157192
+        mZIndex: 0
+    - rid: 9192623519620399126
+      type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928213
+        technicalName: Ufo_9D1177CA
+        parentId: 216172783392894804
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: Videos
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 277
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mExternalId: 
+        mShortId: 2635167690
+        mZIndex: 0
+    - rid: 9192623519620399127
+      type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928215
+        technicalName: Ufo_89B90662
+        parentId: 216172783392894804
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: Audio
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 279
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mExternalId: 
+        mShortId: 2310604386
+        mZIndex: 0
+    - rid: 9192623519620399128
+      type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928217
+        technicalName: Ufo_88F3A9D7
+        parentId: 216172783392894804
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: Documents
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 281
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mExternalId: 
+        mShortId: 2297670103
+        mZIndex: 0
+    - rid: 9192623519620399129
+      type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037928219
+        technicalName: Ufo_1AA81A3D
+        parentId: 216172783392894804
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: Miscellaneous
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 283
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mExternalId: 
+        mShortId: 447224381
+        mZIndex: 0

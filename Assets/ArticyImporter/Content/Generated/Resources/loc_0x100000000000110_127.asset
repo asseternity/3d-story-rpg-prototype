@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1080164415, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: loc_0x100000000000110_127
+  m_EditorClassIdentifier: 
+  mLocalizedStringsKeys:
+  - Dlg_1CE13EAA.DisplayName
+  - Dlg_1CE13EAA.Text
+  - Dlg_E5C50D1B.DisplayName
+  - Dlg_E5C50D1B.Text
+  - DFr_18140904.Text
+  - DFr_9B0350C3.Text
+  - DFr_5D63D0FA.Text
+  - DFr_4604823A.Text
+  - DFr_7766E488.Text
+  - DFr_A5F6AA26.Text
+  - DFr_63A0EE89.Text
+  - DFr_5D2E0A4E.Text
+  - DFr_C7C57E68.Text
+  - DFr_5B44F758.Text
+  - DFr_182BAAE0.Text
+  - DFr_3DF2C262.Text
+  - DFr_FD1C5CBF.Text
+  - DFr_15BE929C.Text
+  - DFr_0465324B.Text
+  - DFr_B487B0E4.Text
+  - Ntt_D0611D58.DisplayName
+  - Ntt_45084A9E.DisplayName
+  - Ntt_6C607307.DisplayName
+  mLocalizedStringsValues:
+  - Blue - Linear Conversation 1
+  - Conversation with Blue with no choices
+  - Red - Branching Conversation 1
+  - Conversation with Red with no choices
+  - Hi. Where are we?
+  - Hi... I'm not too sure.
+  - This is odd, isn't it?
+  - I mean, it looks fairly normal. Blue sky, as one'd expect.
+  - Green-colored ground to imitate grass, I get what you mean.
+  - Let's explore some more. Maybe something will happen.
+  - Okay!
+  - Who do you think you are, coming up to me, Red, and asking your questions?
+  - Ooh, look at the big Red meanie, thinking that he's too cool for school.
+  - I am Circle, nice to meet you!
+  - Hmph. Fine. I don't know where we are.
+  - ' Do you have any guesses?'
+  - I dunno. I guess we've got no choice but explore some more.
+  - It must be a good place, right? Look at the bright colors!
+  - It doesn't feel too good... something's off.
+  - Hmm. Maybe you're right.
+  - Circle
+  - Blue
+  - Red
+  mLocalizedAudioAssetsKeys: []
+  mLocalizedAudioAssetsValues: 
