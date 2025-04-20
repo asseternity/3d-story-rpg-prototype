@@ -2,11 +2,6 @@ namespace Articy.Articy_Tutorial
 {
 	public static class EnumExtensionMethods
 	{
-		public static string GetDisplayName(this Sex aSex)
-		{
-			return Articy.Unity.ArticyTypeSystem.GetArticyType("Sex").GetEnumValue(((int)(aSex))).DisplayName;
-		}
-
 		public static string GetDisplayName(this ShapeType aShapeType)
 		{
 			return Articy.Unity.ArticyTypeSystem.GetArticyType("ShapeType").GetEnumValue(((int)(aShapeType))).DisplayName;

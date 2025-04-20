@@ -49,6 +49,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (dialogueManager.DialogueActive)
+        {
+            // Disable movement when dialogue is active.
+            return;
+        }
         // Get input for movement.
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -80,8 +85,6 @@ public class PlayerController : MonoBehaviour
                 targetPos.y = hit.point.y + colliderHeightOffset + groundOffset;
             }
         }
-        // -----------------------
-
         // Move the player while preserving collisions.
         rb.MovePosition(targetPos);
     }

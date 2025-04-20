@@ -18,7 +18,7 @@ MonoBehaviour:
   mAddressablesGroupsValues: []
   mAddressablesLabelsKeys: []
   mAddressablesLabelsValues: []
-  mSCMIgnoreState: 0
+  mSCMIgnoreState: 1
   mArticyAssetsAddressablesIgnoreState: 0
   mShowObjectsInDatabaseView: 1
   mLastPluginVersion: 1.3.0.42450

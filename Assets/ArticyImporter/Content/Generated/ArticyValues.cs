@@ -66,15 +66,6 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueSex : ArticyValue<Sex>
-    {
-    }
-}
-namespace Articy.Articy_Tutorial
-{
-    
-    
-    [Serializable()]
     public class ArticyValueShapeType : ArticyValue<ShapeType>
     {
     }
@@ -192,7 +183,7 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultSupportingCharacterTemplateTemplate : ArticyValue<Articy.Articy_Tutorial.Templates.DefaultSupportingCharacterTemplateTemplate>
+    public class ArticyValueNPC_TemplateTemplate : ArticyValue<Articy.Articy_Tutorial.Templates.NPC_TemplateTemplate>
     {
     }
 }
@@ -201,7 +192,7 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultBasicCharacterFeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.DefaultBasicCharacterFeatureFeature>
+    public class ArticyValueBattle_FeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.Battle_FeatureFeature>
     {
     }
 }
@@ -210,7 +201,7 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultSupportingCharacterTemplate : ArticyValue<DefaultSupportingCharacterTemplate>
+    public class ArticyValueNPC_FeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.NPC_FeatureFeature>
     {
     }
 }
@@ -219,7 +210,7 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultMainCharacterTemplateTemplate : ArticyValue<Articy.Articy_Tutorial.Templates.DefaultMainCharacterTemplateTemplate>
+    public class ArticyValueNPC_Template : ArticyValue<NPC_Template>
     {
     }
 }
@@ -228,7 +219,7 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultExtendedCharacterFeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.DefaultExtendedCharacterFeatureFeature>
+    public class ArticyValuePlayer_TemplateTemplate : ArticyValue<Articy.Articy_Tutorial.Templates.Player_TemplateTemplate>
     {
     }
 }
@@ -237,7 +228,16 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueDefaultMainCharacterTemplate : ArticyValue<DefaultMainCharacterTemplate>
+    public class ArticyValuePlayer_FeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.Player_FeatureFeature>
+    {
+    }
+}
+namespace Articy.Articy_Tutorial
+{
+    
+    
+    [Serializable()]
+    public class ArticyValuePlayer_Template : ArticyValue<Player_Template>
     {
     }
 }

@@ -24,11 +24,26 @@ namespace Articy.Articy_Tutorial.GlobalVariables
     public class ArticyGlobalVariables : BaseGlobalVariables
     {
         
+        [SerializeField()]
+        [HideInInspector()]
+        private GameState mGameState = new GameState();
+        
         #region Initialize static VariableName set
         static ArticyGlobalVariables()
         {
+            variableNames.Add("GameState.talkedToRed");
+            variableNames.Add("GameState.talkedToBlue");
+            variableNames.Add("GameState.talkedToBoth");
         }
         #endregion
+        
+        public GameState GameState
+        {
+            get
+            {
+                return mGameState;
+            }
+        }
         
         public static ArticyGlobalVariables Default
         {
@@ -40,6 +55,7 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         
         public override void Init()
         {
+            GameState.RegisterVariables(this);
         }
         
         public static ArticyGlobalVariables CreateGlobalVariablesClone()

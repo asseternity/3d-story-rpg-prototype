@@ -15,3 +15,62 @@ using System.Collections;
 using UnityEngine;
 
 
+namespace Articy.Articy_Tutorial.GlobalVariables
+{
+    
+    
+    [Serializable()]
+    public class GameState : IArticyNamespace
+    {
+        
+        [SerializeField()]
+        private BaseGlobalVariables _VariableStorage;
+        
+        // 
+        public bool talkedToRed
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(0);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(0, value);
+            }
+        }
+        
+        // 
+        public bool talkedToBlue
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(1);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(1, value);
+            }
+        }
+        
+        // 
+        public bool talkedToBoth
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(2);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(2, value);
+            }
+        }
+        
+        public void RegisterVariables(BaseGlobalVariables aStorage)
+        {
+            _VariableStorage = aStorage;
+            aStorage.RegisterVariable("GameState.talkedToRed", false);
+            aStorage.RegisterVariable("GameState.talkedToBlue", false);
+            aStorage.RegisterVariable("GameState.talkedToBoth", false);
+        }
+    }
+}

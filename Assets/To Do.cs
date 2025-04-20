@@ -4,13 +4,17 @@
 // [v] move things from the articy demo
 // [v] combine them gracefully in one thing
 // [v] make dialogues appear by npc approaching
-// [_] save to github
-// [_] calendar system
-// [_] some kind of story manager that determines which things are available and which indicators to show
+// [v] save to github
+// [v] block movement when dialogue is active
 
 // dialogues:
-// [_] some visual indicator if there's a dialogue available
+// [_] learn articy fully
+// [_] final tutorial on articy importer
 // [_] dialogue UI prettying - layers, shadows, make models appear
+// [_] some visual indicator if there's a dialogue available
+// [_] calendar system
+// [_] some kind of story manager that determines which things are available and which indicators to show
+// [_] some kind of quests system that envelops everything, including the articy things
 
 // persona fighting mechanics:
 // [_] get transported to "fighting realm scene", then mechanics activate
