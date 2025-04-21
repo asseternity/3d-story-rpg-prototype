@@ -133,11 +133,6 @@ MonoBehaviour:
     technicalName: DFr_F20F4679
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928560
-    parent: 72057594037928243
-    technicalName: DFr_63A0EE89
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037929310
     parent: 72057594037928243
     technicalName: DFr_F2CEAEBA
@@ -153,6 +148,11 @@ MonoBehaviour:
     technicalName: Ins_222303E6
     articyType: Instruction
     childCount: 0
+  - id: 72057594037929221
+    parent: 72057594037928243
+    technicalName: Cnd_D7E36951
+    articyType: Condition
+    childCount: 0
   - id: 72057594037929317
     parent: 72057594037928243
     technicalName: DFr_6D52471D
@@ -163,15 +163,15 @@ MonoBehaviour:
     technicalName: DFr_FA0BDAC4
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037929221
-    parent: 72057594037928243
-    technicalName: Cnd_D7E36951
-    articyType: Condition
-    childCount: 0
   - id: 72057594037929227
     parent: 72057594037928243
     technicalName: Ins_1C06F17A
     articyType: Instruction
+    childCount: 0
+  - id: 72057594037928560
+    parent: 72057594037928243
+    technicalName: DFr_63A0EE89
+    articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928533
     parent: 216172783251375095
@@ -253,29 +253,14 @@ MonoBehaviour:
     technicalName: DFr_85F09AEB
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037929153
-    parent: 72057594037928533
-    technicalName: DFr_F763810D
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037929189
-    parent: 72057594037928533
-    technicalName: DFr_A04E8393
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037929160
-    parent: 72057594037928533
-    technicalName: DFr_19FE5879
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037929200
     parent: 72057594037928533
     technicalName: Ins_14FF06C7
     articyType: Instruction
     childCount: 0
-  - id: 72057594037929167
+  - id: 72057594037929153
     parent: 72057594037928533
-    technicalName: DFr_C46A1CA8
+    technicalName: DFr_F763810D
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037929205
@@ -283,15 +268,30 @@ MonoBehaviour:
     technicalName: Cnd_D3E4F96D
     articyType: Condition
     childCount: 0
-  - id: 72057594037929176
+  - id: 72057594037929160
     parent: 72057594037928533
-    technicalName: Jmp_49587DC8
-    articyType: Jump
+    technicalName: DFr_19FE5879
+    articyType: DialogueFragment
     childCount: 0
   - id: 72057594037929211
     parent: 72057594037928533
     technicalName: Ins_7BE94397
     articyType: Instruction
+    childCount: 0
+  - id: 72057594037929167
+    parent: 72057594037928533
+    technicalName: DFr_C46A1CA8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929189
+    parent: 72057594037928533
+    technicalName: DFr_A04E8393
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929176
+    parent: 72057594037928533
+    technicalName: Jmp_49587DC8
+    articyType: Jump
     childCount: 0
   - id: 216172785005863603
     parent: 72057594037927937
@@ -538,56 +538,7 @@ MonoBehaviour:
     technicalName: Ufo_9D1177CA
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: -8575185406111752601}
-  mLocalization: {fileID: 2281914317301178881}
-  mRuleSetId: 269
-  mArticyAssetsUseResourcesFolder: 1
-  mInternalProject:
-    mName: Articy Tutorial
-    mDetailName: 
-    mId: 63491cdc-d783-4632-970b-51953370fc9d
-    mTechnicalName: Articy_Tutorial
-  mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: 5976346099882916160}
-  mPackages:
-  - PackageId: 72057594037928208
-    PackageName: All objects
-    PackagePath: package_0x100000000000110
-    mIsDefaultPackage: 1
---- !u!114 &2281914317301178881
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: LocalizationManager
-  m_EditorClassIdentifier: 
-  mLocalizeObjectDefinitions: 0
-  mLanguageId: 127
-  mLanguages:
-  - mArticyLanguageId: 127
-    mCultureName: 
-    mLanguageName: Invariant Language (Invariant Country)
-    mIsVoiceOver: 0
-  mThrowOnMissingText: 0
-  mClearOnLanguageSwitch: 1
---- !u!114 &5976346099882916160
+--- !u!114 &-961838271706890559
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -616,4 +567,53 @@ MonoBehaviour:
   mLiveStringVariableCache: []
   mIsInitialized: 1
   mGameState:
-    _VariableStorage: {fileID: 5976346099882916160}
+    _VariableStorage: {fileID: -961838271706890559}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: -8575185406111752601}
+  mLocalization: {fileID: 2281914317301178881}
+  mRuleSetId: 269
+  mArticyAssetsUseResourcesFolder: 1
+  mInternalProject:
+    mName: Articy Tutorial
+    mDetailName: 
+    mId: 63491cdc-d783-4632-970b-51953370fc9d
+    mTechnicalName: Articy_Tutorial
+  mImportedAssets: []
+  mDefaultGlobalVariables: {fileID: -961838271706890559}
+  mPackages:
+  - PackageId: 72057594037928208
+    PackageName: All objects
+    PackagePath: package_0x100000000000110
+    mIsDefaultPackage: 1
+--- !u!114 &2281914317301178881
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: 
+  mLocalizeObjectDefinitions: 0
+  mLanguageId: 127
+  mLanguages:
+  - mArticyLanguageId: 127
+    mCultureName: 
+    mLanguageName: Invariant Language (Invariant Country)
+    mIsVoiceOver: 0
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1

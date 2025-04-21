@@ -8,8 +8,11 @@
 // [v] block movement when dialogue is active
 
 // dialogues:
-// [_] learn articy fully
-// [_] final tutorial on articy importer
+// [v] learn articy fully
+// [v] final tutorial on articy importer: https://www.articy.com/en/importer-for-unity-tutorial-l7/
+// [_] learn articy: seen / unseen - Red Hub 1 - only once
+// [_] learn articy: add sprites to dialogues
+// [_] learn articy: presentation view
 // [_] dialogue UI prettying - layers, shadows, make models appear
 // [_] some visual indicator if there's a dialogue available
 // [_] calendar system
