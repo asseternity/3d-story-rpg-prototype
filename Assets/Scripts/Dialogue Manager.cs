@@ -21,6 +21,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     [SerializeField]
     Text dialogueSpeaker;
 
+    // Refernce to sprite
+    [SerializeField]
+    Image dialogueSprite;
+
     [SerializeField]
     RectTransform branchLayoutPanel;
 
@@ -79,6 +83,16 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             if (speakerEntity != null)
             {
                 dialogueSpeaker.text = speakerEntity.DisplayName;
+                // Fetch the sprite from the entity's asset or preview image
+                if (speakerEntity.PreviewImage != null)
+                {
+                    dialogueSprite.sprite = speakerEntity.PreviewImage.Asset.LoadAssetAsSprite();
+                    dialogueSprite.gameObject.SetActive(true); // Ensure the image is visible
+                }
+                else
+                {
+                    dialogueSprite.gameObject.SetActive(false); // Hide the image if no sprite is available
+                }
             }
         }
     }

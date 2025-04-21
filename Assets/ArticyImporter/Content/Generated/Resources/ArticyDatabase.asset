@@ -527,6 +527,21 @@ MonoBehaviour:
     parent: 216172783392894804
     technicalName: Ufo_029286C8
     articyType: AssetsUserFolder
+    childCount: 3
+  - id: 72057594037929436
+    parent: 72057594037928211
+    technicalName: Ast_16525292
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037929442
+    parent: 72057594037928211
+    technicalName: Ast_0C820852
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037929439
+    parent: 72057594037928211
+    technicalName: Ast_DAF2EE45
+    articyType: Asset
     childCount: 0
   - id: 72057594037928219
     parent: 216172783392894804
@@ -538,7 +553,7 @@ MonoBehaviour:
     technicalName: Ufo_9D1177CA
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &-961838271706890559
+--- !u!114 &-8484216832448323590
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,7 +582,7 @@ MonoBehaviour:
   mLiveStringVariableCache: []
   mIsInitialized: 1
   mGameState:
-    _VariableStorage: {fileID: -961838271706890559}
+    _VariableStorage: {fileID: -8484216832448323590}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,8 +604,11 @@ MonoBehaviour:
     mDetailName: 
     mId: 63491cdc-d783-4632-970b-51953370fc9d
     mTechnicalName: Articy_Tutorial
-  mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: -961838271706890559}
+  mImportedAssets:
+  - Assets/Images/Blue.png
+  - Assets/Images/Red.png
+  - Assets/Images/Green.png
+  mDefaultGlobalVariables: {fileID: -8484216832448323590}
   mPackages:
   - PackageId: 72057594037928208
     PackageName: All objects

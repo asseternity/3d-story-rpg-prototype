@@ -25,12 +25,30 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         
         #region Script fragments
         /// <summary>
-        /// ObjectID: 0x1000000000004F5
-        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929205?pane=selected&amp;tab=current
+        /// ObjectID: 0x1000000000004AC
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929132?pane=selected&amp;tab=current
         /// </summary>
-        public bool Script_720575940379282080x1000000000004F5Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        public bool Script_720575940379282080x1000000000004ACText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.GameState.talkedToBlue == true;
+            return aGlobalVariablesState.Unseen;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000004B2
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929138?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_720575940379282080x1000000000004B2Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.Unseen;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000004B8
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929144?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_720575940379282080x1000000000004B8Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.Unseen;
         }
         
         /// <summary>
@@ -52,21 +70,12 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         }
         
         /// <summary>
-        /// ObjectID: 0x1000000000004F0
-        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929200?pane=selected&amp;tab=current
+        /// ObjectID: 0x1000000000004F5
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929205?pane=selected&amp;tab=current
         /// </summary>
-        public void Script_720575940379282080x1000000000004F0Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        public bool Script_720575940379282080x1000000000004F5Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.GameState.talkedToRed = true;
-        }
-        
-        /// <summary>
-        /// ObjectID: 0x1000000000004FB
-        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929211?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_720575940379282080x1000000000004FBExpression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            aGlobalVariablesState.GameState.talkedToBoth = true;
+            return aGlobalVariablesState.GameState.talkedToBlue == true;
         }
         
         /// <summary>
@@ -86,18 +95,39 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         {
             aGlobalVariablesState.GameState.talkedToBoth = true;
         }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000004F0
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929200?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x1000000000004F0Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.talkedToRed = true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000004FB
+        /// Articy Object ref: articy://localhost/view/63491cdc-d783-4632-970b-51953370fc9d/72057594037929211?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x1000000000004FBExpression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.talkedToBoth = true;
+        }
         #endregion
         
         #region Unity serialization
         public virtual void OnAfterDeserialize_0x100000000000110()
         {
-            Conditions.Add(2387462386u, this.Script_720575940379282080x1000000000004F5Expression);
+            Conditions.Add(2209513860u, this.Script_720575940379282080x1000000000004ACText);
+            Conditions.Add(1203327917u, this.Script_720575940379282080x1000000000004B2Text);
+            Conditions.Add(1807435066u, this.Script_720575940379282080x1000000000004B8Text);
             Conditions.Add(1316051784u, this.Script_720575940379282080x100000000000505Expression);
             Conditions.Add(2725851752u, this.Script_720575940379282080x100000000000510Expression);
-            Instructions.Add(3406685462u, this.Script_720575940379282080x1000000000004F0Expression);
-            Instructions.Add(2905394900u, this.Script_720575940379282080x1000000000004FBExpression);
+            Conditions.Add(2387462386u, this.Script_720575940379282080x1000000000004F5Expression);
             Instructions.Add(2129905253u, this.Script_720575940379282080x100000000000500Expression);
             Instructions.Add(3950266629u, this.Script_720575940379282080x10000000000050BExpression);
+            Instructions.Add(3406685462u, this.Script_720575940379282080x1000000000004F0Expression);
+            Instructions.Add(2905394900u, this.Script_720575940379282080x1000000000004FBExpression);
         }
         #endregion
     }
