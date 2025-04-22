@@ -192,15 +192,6 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
-    public class ArticyValueBattle_FeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.Battle_FeatureFeature>
-    {
-    }
-}
-namespace Articy.Articy_Tutorial
-{
-    
-    
-    [Serializable()]
     public class ArticyValuePlayer_FeatureFeature : ArticyValue<Articy.Articy_Tutorial.Features.Player_FeatureFeature>
     {
     }

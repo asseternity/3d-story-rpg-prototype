@@ -28,12 +28,19 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         [HideInInspector()]
         private GameState mGameState = new GameState();
         
+        [SerializeField()]
+        [HideInInspector()]
+        private PlayerInfo mPlayerInfo = new PlayerInfo();
+        
         #region Initialize static VariableName set
         static ArticyGlobalVariables()
         {
             variableNames.Add("GameState.talkedToRed");
             variableNames.Add("GameState.talkedToBlue");
             variableNames.Add("GameState.talkedToBoth");
+            variableNames.Add("PlayerInfo.PlayerName");
+            variableNames.Add("PlayerInfo.Him");
+            variableNames.Add("PlayerInfo.His");
         }
         #endregion
         
@@ -42,6 +49,14 @@ namespace Articy.Articy_Tutorial.GlobalVariables
             get
             {
                 return mGameState;
+            }
+        }
+        
+        public PlayerInfo PlayerInfo
+        {
+            get
+            {
+                return mPlayerInfo;
             }
         }
         
@@ -56,6 +71,7 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         public override void Init()
         {
             GameState.RegisterVariables(this);
+            PlayerInfo.RegisterVariables(this);
         }
         
         public static ArticyGlobalVariables CreateGlobalVariablesClone()

@@ -65,11 +65,11 @@ MonoBehaviour:
   - Hi... I'm not too sure.
   - This is odd, isn't it?
   - I mean, it looks fairly normal. Blue sky, as one'd expect.
-  - Green-colored ground to imitate grass, I get what you mean.
+  - Green-coloured ground to imitate grass, I get what you mean.
   - Let's explore some more. Maybe something will happen.
   - Okay!
   - Hi again. How are you, Blue?
-  - Don't come at me with your fake niceness.
+  - Don't come at me with your fake niceness, [PlayerInfo.PlayerName].
   - Huh?
   - I saw you talk to Red over there just now.
   - Bet you two were gossiping about me. Saying all kinds of nasty things.

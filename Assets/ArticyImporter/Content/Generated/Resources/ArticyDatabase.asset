@@ -47,8 +47,13 @@ MonoBehaviour:
     parent: 72057594037927937
     technicalName: GlobalVariables
     articyType: GlobalVariables
-    childCount: 1
+    childCount: 2
   - id: 72057594037929196
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037929445
     parent: 216172782840400980
     technicalName: 
     articyType: VariableSet
@@ -337,12 +342,7 @@ MonoBehaviour:
     parent: 216172782815217020
     technicalName: Features
     articyType: Features
-    childCount: 3
-  - id: 72057594037928941
-    parent: 216172785641213376
-    technicalName: Battle_Feature
-    articyType: Feature
-    childCount: 0
+    childCount: 2
   - id: 72057594037928793
     parent: 216172785641213376
     technicalName: NPC_Feature
@@ -553,36 +553,6 @@ MonoBehaviour:
     technicalName: Ufo_9D1177CA
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &-8484216832448323590
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe842abafda3c840889bc9586b69561, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  mBoolVariableCache:
-  - mFullQualifiedName: GameState.talkedToRed
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talkedToBlue
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talkedToBoth
-    mVar:
-      values: 00
-  mIntVariableCache: []
-  mStringVariableCache: []
-  mLiveBoolVariableCache: []
-  mLiveIntVariableCache: []
-  mLiveStringVariableCache: []
-  mIsInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: -8484216832448323590}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +578,7 @@ MonoBehaviour:
   - Assets/Images/Blue.png
   - Assets/Images/Red.png
   - Assets/Images/Green.png
-  mDefaultGlobalVariables: {fileID: -8484216832448323590}
+  mDefaultGlobalVariables: {fileID: 5118296012714835924}
   mPackages:
   - PackageId: 72057594037928208
     PackageName: All objects
@@ -635,3 +605,47 @@ MonoBehaviour:
     mIsVoiceOver: 0
   mThrowOnMissingText: 0
   mClearOnLanguageSwitch: 1
+--- !u!114 &5118296012714835924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe842abafda3c840889bc9586b69561, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  mBoolVariableCache:
+  - mFullQualifiedName: GameState.talkedToRed
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talkedToBlue
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talkedToBoth
+    mVar:
+      values: 00
+  mIntVariableCache: []
+  mStringVariableCache:
+  - mFullQualifiedName: PlayerInfo.PlayerName
+    mVar:
+      values:
+      - Circle
+  - mFullQualifiedName: PlayerInfo.Him
+    mVar:
+      values:
+      - him
+  - mFullQualifiedName: PlayerInfo.His
+    mVar:
+      values:
+      - his
+  mLiveBoolVariableCache: []
+  mLiveIntVariableCache: []
+  mLiveStringVariableCache: []
+  mIsInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: 5118296012714835924}
+  mPlayerInfo:
+    _VariableStorage: {fileID: 5118296012714835924}

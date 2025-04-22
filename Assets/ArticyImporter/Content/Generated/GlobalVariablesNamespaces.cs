@@ -74,3 +74,86 @@ namespace Articy.Articy_Tutorial.GlobalVariables
         }
     }
 }
+namespace Articy.Articy_Tutorial.GlobalVariables
+{
+    
+    
+    [Serializable()]
+    public class PlayerInfo : IArticyNamespace
+    {
+        
+        [SerializeField()]
+        private BaseGlobalVariables _VariableStorage;
+        
+        public string PlayerName
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(0, true);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueString(0, value);
+            }
+        }
+        
+        // 
+        public string Unresolved_PlayerName
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(0, false);
+            }
+        }
+        
+        public string Him
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(1, true);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueString(1, value);
+            }
+        }
+        
+        // 
+        public string Unresolved_Him
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(1, false);
+            }
+        }
+        
+        public string His
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(2, true);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueString(2, value);
+            }
+        }
+        
+        // 
+        public string Unresolved_His
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueString(2, false);
+            }
+        }
+        
+        public void RegisterVariables(BaseGlobalVariables aStorage)
+        {
+            _VariableStorage = aStorage;
+            aStorage.RegisterVariable("PlayerInfo.PlayerName", "Circle");
+            aStorage.RegisterVariable("PlayerInfo.Him", "him");
+            aStorage.RegisterVariable("PlayerInfo.His", "his");
+        }
+    }
+}
