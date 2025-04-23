@@ -10,6 +10,7 @@ public class BattleManager : MonoBehaviour
     public BattleParticipant player;
     public List<BattleParticipant> friendlies;
     public GameObject player3D;
+    public GameObject battleUI;
 
     public void FindBattleByID(string battleID, string[] queue)
     {
@@ -101,9 +102,8 @@ public class BattleManager : MonoBehaviour
                 Debug.LogError("Prefab not found for enemy: " + enemies[i].participantName);
             }
         }
-
         // create battle UI
-        // HOW TO DO:
+        battleUI.SetActive(true); // Activate the battle UI
 
         // start battle loop: player turn, enemy turn, allies turn if any
         // HOW TO DO:
@@ -113,5 +113,18 @@ public class BattleManager : MonoBehaviour
 
         // check if battle is over and revert to the story manager with the rest of the queue
         // HOW TO DO:
+    }
+
+    public void PlayerTurn()
+    {
+        // player turn logic here
+    }
+
+    public void EnemiesTurn()
+    {
+        foreach (BattleParticipant enemy in enemies)
+        {
+            // enemy AI logic here
+        }
     }
 }
