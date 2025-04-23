@@ -854,37 +854,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494630066}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &508773583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 508773584}
-  m_Layer: 0
-  m_Name: BattleManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &508773584
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508773583}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.202639, y: 0.41252804, z: -7.1887164}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617846319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +1686,7 @@ MonoBehaviour:
   distance: 10
   height: 7
   angle: 45
+  playerController: {fileID: 1564888397}
 --- !u!1 &1023027622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2011,64 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212281257}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1236854934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1236854936}
+  - component: {fileID: 1236854935}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1236854935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236854934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0493768fd29939649b74db04f748ecab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleManager: {fileID: 1728128538}
+  nextThingID: 
+  nextThingType: 
+  nextThingQueue: []
+  dialogueWidget: {fileID: 1959406944}
+  dialogueText: {fileID: 2039668172}
+  dialogueSpeaker: {fileID: 946031454}
+  dialogueSprite: {fileID: 2041169733}
+  branchLayoutPanel: {fileID: 10108598}
+  branchPrefab: {fileID: 2120404750908023031, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
+  closePrefab: {fileID: 4276954640103726348, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+  testBattleData: {fileID: 11400000, guid: 31cdd3959dc10e245a50367418453fe2, type: 2}
+  testQueue:
+  - nothing
+--- !u!4 &1236854936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236854934}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3955219, y: 9.484257, z: 41.30407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1277826180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,6 +2645,7 @@ MonoBehaviour:
   groundCheckDistance: 1.5
   groundOffset: 0.1
   maxSlopeAngle: 45
+  isInBattle: 0
 --- !u!1 &1663051498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,6 +2751,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663051498}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1728128537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1728128539}
+  - component: {fileID: 1728128538}
+  m_Layer: 0
+  m_Name: BattleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1728128538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728128537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a1ba63ed6cabd4782cf292ffa98385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allBattles:
+  - {fileID: 11400000, guid: 31cdd3959dc10e245a50367418453fe2, type: 2}
+  allParticipants: []
+  enemies: []
+  player: {fileID: 0}
+  friendlies: []
+  player3D: {fileID: 1564888391}
+--- !u!4 &1728128539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728128537}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3955219, y: 9.484257, z: 41.30407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729452577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,4 +3665,5 @@ SceneRoots:
   - {fileID: 383095231}
   - {fileID: 1806005473}
   - {fileID: 1023027625}
-  - {fileID: 508773584}
+  - {fileID: 1236854936}
+  - {fileID: 1728128539}

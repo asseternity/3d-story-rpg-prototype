@@ -6,9 +6,14 @@ public class CameraFollow : MonoBehaviour
     public float distance = 15f; // Horizontal distance from the player.
     public float height = 10f; // Height above the player.
     public float angle = 45f; // Rotation around the Y-axis for a diagonal view.
+    public PlayerController playerController; // Reference to the player controller script.
 
     void LateUpdate()
     {
+        if (playerController.isInBattle)
+        {
+            return;
+        }
         // Calculate an offset that gives a fixed isometric angle.
         Vector3 offset = Quaternion.Euler(0, angle, 0) * new Vector3(0, height, -distance);
         transform.position = player.position + offset;

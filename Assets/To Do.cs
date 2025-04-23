@@ -21,8 +21,14 @@
 // [_] some kind of quests system that envelops everything, including the articy things
 
 // persona fighting mechanics:
-// [_] get transported to "fighting realm scene", then mechanics activate
+// [v] build the story manager script with 2 functions: startDialogue (articyObject, nextThing) and startBattle (battleID, nextThing)
+// [v] create a scriptable object for battle participant
+// [v] create a scriptable object for battle data that will include participants and battleID for lookup
+// [v] create a function that will take battleID as an argument to be called from story manager to start the battle
+// [_] meat of the battle --- this function will take away movement controls, change camera, and start the battle mechanics
+// [_] get transported to "fighting realm scene", spawn enemies, then mechanics activate
 // [_] camera angles, particle effects
+// [_] build the quest and activity scriptable objects
 
 // BRAINSTORMING STRUCTURE - how to structure the logic? how to structure the quests and activities? how do initiate fights and store combat stats?
 // ANSWER: keep global variables (plot) in articy, but keep the overall story structure in Unity. Build quests as scriptable objects.
@@ -54,16 +60,6 @@
 // [_] think - how to accomplish this? in articy? or in Unity?
 
 // TECHNICAL DESIGN:
-// Unity listens to Articy's state (e.g., variable or dialogue complete)
-// You can wait for:
-// A certain Articy variable to change
-// The end of an Articy dialogue/playthrough
-
-// Example:
-// csharp
-// void OnDialogueEnded()
-// {
-//     var state = ArticyDatabase.DefaultGlobalVariables;
-//     if (state.quest_intro.finished)
-//         QuestManager.Instance.Progress("main_story");
-// }
+// Story manager functions: start dialogue (ArticyObject), start battle (battleID)
+// GOT IT! both functions there have be a second argument - a queue of the next things to do after the dialogue or the battle is finished (if any)
+// Each activity - when activated - will trigger a dialogue and include that second argument in the function call

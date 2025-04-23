@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     private ArticyObject availableDialogue;
     private DialogueManager dialogueManager;
 
+    // Battle vars
+    public bool isInBattle = false; // Flag to check if in battle
+
     void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -49,9 +52,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (dialogueManager.DialogueActive)
+        if (dialogueManager.DialogueActive || isInBattle)
         {
-            // Disable movement when dialogue is active.
+            // Disable movement when dialogue or battle is active.
             return;
         }
         // Get input for movement.
