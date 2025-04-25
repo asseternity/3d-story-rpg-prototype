@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d93ed598b9f5c1646a9f0d3b2608fa23, type: 3}
-  m_Name: Player
+  m_Name: TestEnemy3
   m_EditorClassIdentifier: 
-  participantName: Player
-  isPlayer: 1
-  isFriendly: 1
-  maxHP: 10
-  HP: 10
-  maxMP: 10
-  MP: 10
+  participantName: TestEnemy3
+  isPlayer: 0
+  isFriendly: 0
+  maxHP: 5
+  HP: 5
+  maxMP: 5
+  MP: 5
   AC: 10
-  ATK: 2
-  DMG: 5
-  prefabModel: {fileID: 1415829046005659183, guid: 8ff3a5f41b129b64ba27b87d667f274d, type: 3}
+  ATK: 1
+  DMG: 1
+  prefabModel: {fileID: 8343872959262338839, guid: 85e49783fd3e828409ce2eff8d4ed280, type: 3}

@@ -16,10 +16,10 @@
 // [v] articy naming - and using vars in dialogues, like for pronouns
 // [v] some kind of story manager that determines which things are available and which indicators to show
 // [v] some kind of quests system that envelops everything, including the articy things
-// [_] (2) dialogue UI prettying - layers, shadows, make models appear
-// [_] (3) calendar system
-// [_] (3) activities as per below
-// [_] (3) quests as per below
+// [_] (4) dialogue UI prettying - layers, shadows, make models appear
+// [_] (5) calendar system
+// [_] (5) activities as per below
+// [_] (5) quests as per below
 // [_] saving / loading
 // [_] main menu
 // [_] pause menu
@@ -36,7 +36,9 @@
 // [v] meat of the battle --- this function will take away movement controls, change camera, and start the battle mechanics
 // [v] show health bars in prefabs for all participants
 // [_] (0) make enemies clickable and outline the currently clicked enemy
-// [_] (1) working battle loop
+// [_] (1) working battle loop, including: animations, health bars, damage numbers, and turn order
+// [_] (2) add spells and abilities
+// [_] (3) add items and consumables
 // [_] using stats and abilities for all participants and where to store them
 // [_] camera angles, particle effects
 // [_] build the quest and activity scriptable objects

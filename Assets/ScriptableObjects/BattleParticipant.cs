@@ -12,7 +12,9 @@ public class BattleParticipant : ScriptableObject
     public string participantName;
     public bool isPlayer;
     public bool isFriendly;
+    public int maxHP;
     public int HP;
+    public int maxMP;
     public int MP;
     public int AC;
     public int ATK;

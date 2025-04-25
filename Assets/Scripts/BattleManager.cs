@@ -20,6 +20,12 @@ public class BattleManager : MonoBehaviour
     public string[] postBattleQueue;
     public BattleData currentBattleData;
     private bool buttonsActive = false;
+    private GameObject playerBattleModel;
+    private GameObject[] enemyBattleModels;
+    private BattleParticipant[] selectedTargets;
+
+    private string selectedMoveType;
+    private int selectedMoveTargetCount;
 
     public void FindBattleByID(string battleID, string[] queue)
     {
@@ -80,7 +86,9 @@ public class BattleManager : MonoBehaviour
                 playerSpawnPosition,
                 Quaternion.identity
             );
+            playerBattleModel = spawnedPlayer; // Save the reference to the spawned player model
             spawnedPlayer.name = player.participantName; // Set the name of the spawned object
+            HealthBarUpdater(player, spawnedPlayer); // Update the health bar for the player
         }
         else
         {
@@ -103,6 +111,7 @@ public class BattleManager : MonoBehaviour
         enemySpawnOrder[2] = -2;
         enemySpawnOrder[3] = 4;
         enemySpawnOrder[4] = -4;
+        enemyBattleModels = new GameObject[enemies.Count];
         for (int i = 0; i < enemies.Count; i++)
         {
             Vector3 spawnPosition = battleLocation + new Vector3(-5, 1.31f, enemySpawnOrder[i]);
@@ -114,7 +123,9 @@ public class BattleManager : MonoBehaviour
                     spawnPosition,
                     Quaternion.identity
                 );
+                enemyBattleModels[i] = spawnedEnemy; // Save the reference to the spawned enemy model
                 spawnedEnemy.name = enemies[i].participantName; // Set the name of the spawned object
+                HealthBarUpdater(enemies[i], spawnedEnemy); // Update the health bar for the enemy
             }
             else
             {
@@ -123,9 +134,25 @@ public class BattleManager : MonoBehaviour
         }
         // create battle UI
         battleUI.SetActive(true); // Activate the battle UI
+        // unblock the buttons
+        ToggleButtons();
     }
 
-    public void battleStatusUpdater()
+    public void HealthBarUpdater(BattleParticipant unit, GameObject unitModel)
+    {
+        // find the health bar
+        Image fillBar = unitModel.transform.Find("Canvas/FillBar").GetComponent<Image>();
+        if (fillBar != null)
+        {
+            fillBar.fillAmount = (float)unit.HP / (float)unit.maxHP; // Update the health bar fill amount
+        }
+        else
+        {
+            Debug.LogError("FillBar not found in the enemy model hierarchy.");
+        }
+    }
+
+    public void BattleStatusUpdater()
     {
         // check if enemies are dead and remove them if so
         foreach (BattleParticipant fighter in enemies)
@@ -235,23 +262,24 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // make functions:
-    // 2. get player's input for this turn's action
-    // 3. if the action is an attack, change the cursor to a crosshair and allow the player to select a target
-    // 4. then attack the target and deal damage
-    // 5. end the turn automatically, disabling the ui buttons
-    // 6. call battleStatusUpdater() to check if the battle is over
-    // 7. call the enemies turn function
-
     public void OnActionButtonClicked(string actionType)
     {
+        // reset the selected move target count to 0
+        selectedMoveTargetCount = 0;
+        // reset the selected targets to null
+        selectedTargets = new BattleParticipant[0];
+        // reset the selected move type to null
+        selectedMoveType = null;
+
         switch (actionType)
         {
             case "Attack":
-                // Change cursor to crosshair and allow player to select a target
-                // Implement target selection logic here
+                selectedMoveType = "Attack"; // Set the selected move type to attack
+                selectedMoveTargetCount = 1; // Set the number of targets for
+                TargetsSelector(); // Call the target selector function
                 break;
             case "Spell":
+                selectedMoveType = "Spell"; // Set the selected move type to spell
                 // Implement spell casting logic here
                 break;
             case "Item":
@@ -272,11 +300,76 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void TargetsSelector()
+    {
+        foreach (GameObject enemy in enemyBattleModels)
+        {
+            TargetableEnemy targetScript = enemy.AddComponent<TargetableEnemy>();
+            BattleParticipant targetParticipant = enemies.Find(p =>
+                p.participantName == enemy.name
+            );
+            targetScript.Initialize(this, targetParticipant);
+        }
+    }
+
+    public void ToggleTarget(BattleParticipant target)
+    {
+        // Check if the target is already selected
+        bool isTargetSelected = Array.Exists(selectedTargets, t => t == target);
+
+        if (isTargetSelected)
+        {
+            // Deselect the target
+            selectedTargets = Array.FindAll(selectedTargets, t => t != target);
+        }
+        else
+        {
+            // Select the target
+            Array.Resize(ref selectedTargets, selectedTargets.Length + 1);
+            selectedTargets[selectedTargets.Length - 1] = target;
+        }
+
+        // Check if all targets are selected
+        AreAllTargetsSelected(selectedTargets);
+    }
+
+    public void AreAllTargetsSelected(BattleParticipant[] targets)
+    {
+        if (targets.Length == selectedMoveTargetCount)
+        {
+            switch (selectedMoveType)
+            {
+                case "Attack":
+                    // Call the attack function with the selected targets
+                    foreach (BattleParticipant target in targets)
+                    {
+                        // Perform the attack on the target
+                        target.HP -= player.DMG; // Apply damage to the target's HP
+                        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
+                        ToggleButtons();
+                        BattleStatusUpdater();
+                        EnemiesTurn();
+                    }
+                    break;
+                case "Spell":
+                    // Call the spell function with the selected targets
+                    break;
+                default:
+                    Debug.LogError("Unknown move type: " + selectedMoveType);
+                    break;
+            }
+        }
+    }
+
     public void EnemiesTurn()
     {
         foreach (BattleParticipant enemy in enemies)
         {
             // enemy AI logic here
+            player.HP -= enemy.DMG;
+            HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
+            BattleStatusUpdater(); // Check the battle status after the enemy's turn
+            ToggleButtons(); // unblock the buttons
         }
     }
 }
