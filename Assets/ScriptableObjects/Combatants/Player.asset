@@ -16,10 +16,10 @@ MonoBehaviour:
   isPlayer: 1
   isFriendly: 1
   maxHP: 10
-  HP: 10
+  HP: 2
   maxMP: 10
   MP: 10
   AC: 10
   ATK: 2
-  DMG: 5
+  DMG: 2
   prefabModel: {fileID: 1415829046005659183, guid: 8ff3a5f41b129b64ba27b87d667f274d, type: 3}

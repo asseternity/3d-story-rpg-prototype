@@ -35,8 +35,8 @@
 // [v] get transported to "fighting realm scene", spawn enemies, then mechanics activate
 // [v] meat of the battle --- this function will take away movement controls, change camera, and start the battle mechanics
 // [v] show health bars in prefabs for all participants
-// [_] (0) make enemies clickable and outline the currently clicked enemy
-// [_] (1) working battle loop, including: animations, health bars, damage numbers, and turn order
+// [v] (0) make enemies clickable and outline the currently clicked enemy
+// [_] (1) pretty the fighting system: animations, health bars, damage numbers, and turn order
 // [_] (2) add spells and abilities
 // [_] (3) add items and consumables
 // [_] using stats and abilities for all participants and where to store them

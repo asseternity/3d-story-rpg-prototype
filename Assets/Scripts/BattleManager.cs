@@ -275,7 +275,7 @@ public class BattleManager : MonoBehaviour
         {
             case "Attack":
                 selectedMoveType = "Attack"; // Set the selected move type to attack
-                selectedMoveTargetCount = 1; // Set the number of targets for
+                selectedMoveTargetCount = 2; // Set the number of targets for
                 TargetsSelector(); // Call the target selector function
                 break;
             case "Spell":
@@ -321,12 +321,42 @@ public class BattleManager : MonoBehaviour
         {
             // Deselect the target
             selectedTargets = Array.FindAll(selectedTargets, t => t != target);
+
+            // Remove the outline from the target
+            GameObject targetModel = GameObject.Find(target.participantName);
+            if (targetModel != null)
+            {
+                Outline outline = targetModel.GetComponent<Outline>();
+                if (outline != null)
+                {
+                    outline.OutlineWidth = 0; // Remove the outline effect
+                }
+            }
+            else
+            {
+                Debug.LogError("Target model not found: " + target.participantName);
+            }
         }
         else
         {
             // Select the target
             Array.Resize(ref selectedTargets, selectedTargets.Length + 1);
             selectedTargets[selectedTargets.Length - 1] = target;
+
+            // add the outline to the target
+            GameObject targetModel = GameObject.Find(target.participantName);
+            if (targetModel != null)
+            {
+                Outline outline = targetModel.GetComponent<Outline>();
+                if (outline != null)
+                {
+                    outline.OutlineWidth = 5f; // Add the outline effect
+                }
+            }
+            else
+            {
+                Debug.LogError("Target model not found: " + target.participantName);
+            }
         }
 
         // Check if all targets are selected
@@ -343,6 +373,20 @@ public class BattleManager : MonoBehaviour
                     // Call the attack function with the selected targets
                     foreach (BattleParticipant target in targets)
                     {
+                        // remote the outline from the target
+                        GameObject targetModel = GameObject.Find(target.participantName);
+                        if (targetModel != null)
+                        {
+                            Outline outline = targetModel.GetComponent<Outline>();
+                            if (outline != null)
+                            {
+                                outline.OutlineWidth = 0; // Remove the outline effect
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogError("Target model not found: " + target.participantName);
+                        }
                         // Perform the attack on the target
                         target.HP -= player.DMG; // Apply damage to the target's HP
                         HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
