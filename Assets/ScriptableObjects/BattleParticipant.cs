@@ -16,8 +16,7 @@ public class BattleParticipant : ScriptableObject
     public int HP;
     public int maxMP;
     public int MP;
-    public int AC;
-    public int ATK;
     public int DMG;
     public GameObject prefabModel;
+    public List<BattleMove> moves;
 }

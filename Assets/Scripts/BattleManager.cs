@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
+    private GameObject battleEnvInstance;
     public List<BattleData> allBattles;
     public List<BattleParticipant> allParticipants;
     public List<BattleParticipant> enemies;
@@ -22,19 +23,21 @@ public class BattleManager : MonoBehaviour
     public StoryManager storyManager;
     public string[] postBattleQueue;
     public BattleData currentBattleData;
-    private bool buttonsActive = false;
     private GameObject playerBattleModel;
     private GameObject[] enemyBattleModels;
-    private BattleParticipant[] selectedTargets;
+    private BattleParticipant[] selectedTargets = new BattleParticipant[0];
 
     private string selectedMoveType;
     private int selectedMoveTargetCount;
+    private BattleMove selectedMove;
 
     public void FindBattleByID(string battleID, string[] queue)
     {
         // clear data
-        allParticipants.Clear();
-        enemies.Clear();
+        allParticipants = new List<BattleParticipant>();
+        enemies = new List<BattleParticipant>();
+        friendlies = new List<BattleParticipant>();
+        player = null;
         currentBattleData = null;
 
         // replace the queue
@@ -76,7 +79,11 @@ public class BattleManager : MonoBehaviour
         // teleport to battle location
         // HOW TO DO: spawn the environment from prefab to a predetermined location
         Vector3 battleLocation = new Vector3(500, 0, 0);
-        Instantiate(battleData.battleEnvironmentPrefab, battleLocation, Quaternion.identity);
+        battleEnvInstance = Instantiate(
+            battleData.battleEnvironmentPrefab,
+            battleLocation,
+            Quaternion.identity
+        );
 
         // spawn enemies and player from prefabs
         // HOW TO DO: spawn the player at a predetermined location in the environment, then go through enemies
@@ -138,7 +145,7 @@ public class BattleManager : MonoBehaviour
         // create battle UI
         battleUI.SetActive(true); // Activate the battle UI
         // unblock the buttons
-        ToggleButtons();
+        ToggleButtons(true);
     }
 
     public void HealthBarUpdater(BattleParticipant unit, GameObject unitModel)
@@ -155,23 +162,35 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void BattleStatusUpdater()
+    public bool BattleStatusUpdater()
     {
+        bool battleOver = false;
+        List<BattleParticipant> dead = new List<BattleParticipant>();
         // check if enemies are dead and remove them if so
         foreach (BattleParticipant fighter in enemies)
         {
             if (fighter.HP <= 0)
             {
                 allParticipants.Remove(fighter);
+                dead.Add(fighter); // Add the dead enemy to the list
+                enemyBattleModels = Array.FindAll(
+                    enemyBattleModels,
+                    model => model.name != fighter.participantName
+                );
                 Destroy(GameObject.Find(fighter.participantName)); // Destroy the game object
             }
+        }
+        // remove dead enemies from the list
+        foreach (BattleParticipant fighter in dead)
+        {
+            enemies.Remove(fighter); // Remove the dead enemy from the enemies list
         }
 
         // check if player is dead and end the game if so
         if (player.HP <= 0)
         {
             Debug.Log("Game Over! Player is dead.");
-            return;
+            return true;
         }
 
         // check if battle is over and revert to the story manager with the rest of the queue
@@ -196,8 +215,7 @@ public class BattleManager : MonoBehaviour
             }
 
             // destroy the battle environment
-            string battleEnvironmentName = currentBattleData.battleEnvironmentPrefab.name;
-            Destroy(GameObject.Find(battleEnvironmentName)); // Destroy the battle environment
+            Destroy(GameObject.Find(battleEnvInstance.name));
 
             // destroy the player
             Destroy(GameObject.Find(player.participantName)); // Destroy the player object
@@ -229,10 +247,13 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.LogError("No more things in the queue after battle.");
             }
+
+            battleOver = true; // Set battle over flag to true
         }
+        return battleOver; // Return the battle over status
     }
 
-    public void ToggleButtons()
+    public void ToggleButtons(bool on)
     {
         // unblock the ui buttons
         GameObject[] buttons = new GameObject[6];
@@ -243,7 +264,7 @@ public class BattleManager : MonoBehaviour
         buttons[4] = GameObject.Find("CharacterButton");
         buttons[5] = GameObject.Find("MenuButton");
 
-        if (buttonsActive)
+        if (!on)
         {
             foreach (GameObject button in buttons)
             {
@@ -253,10 +274,9 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("Button not found: " + button.name);
+                    Debug.LogError("Button not found.");
                 }
             }
-            buttonsActive = false; // Set the buttons to active
         }
         else
         {
@@ -268,24 +288,21 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("Button not found: " + button.name);
+                    Debug.LogError("Button not found.");
                 }
             }
-            buttonsActive = true; // Set the buttons to inactive
         }
     }
 
     public void ToActionPanel()
     {
         // 1) Remove any outline
-        foreach (var target in selectedTargets)
+        foreach (var enemyGo in enemyBattleModels)
         {
-            var go = GameObject.Find(target.participantName);
-            if (go != null)
+            var outline = enemyGo.GetComponent<Outline>();
+            if (outline != null)
             {
-                var outline = go.GetComponent<Outline>();
-                if (outline != null)
-                    outline.OutlineWidth = 0;
+                outline.OutlineWidth = 0;
             }
         }
 
@@ -301,6 +318,7 @@ public class BattleManager : MonoBehaviour
         selectedMoveType = null;
         selectedTargets = new BattleParticipant[0];
         selectedMoveTargetCount = 0;
+        selectedMove = null;
 
         // 4) Swap your UI panels
         actionsPanel.SetActive(true);
@@ -322,6 +340,32 @@ public class BattleManager : MonoBehaviour
         actionsPanel.SetActive(false); // Hide the action panel
         backPanel.SetActive(false); // Hide the back panel
         spellsPanel.SetActive(true); // Show the spells panel
+        // change the buttons of the spells panel to moves available to the player
+        Button[] spellButtons = new Button[5];
+        spellButtons[0] = GameObject.Find("SpellButton1").GetComponent<Button>();
+        spellButtons[1] = GameObject.Find("SpellButton2").GetComponent<Button>();
+        spellButtons[2] = GameObject.Find("SpellButton3").GetComponent<Button>();
+        spellButtons[3] = GameObject.Find("SpellButton4").GetComponent<Button>();
+        spellButtons[4] = GameObject.Find("SpellButton5").GetComponent<Button>();
+        for (int i = 0; i < player.moves.Count; i++)
+        {
+            var move = player.moves[i]; // <-- copy into local
+            var button = spellButtons[i];
+            button.interactable = true;
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(() => SpellSelected(move)); // uses local `move`
+            button.GetComponentInChildren<Text>().text = move.moveName;
+        }
+        if (player.moves.Count < spellButtons.Length)
+        {
+            for (int j = player.moves.Count; j < spellButtons.Length; j++)
+            {
+                var button = spellButtons[j];
+                button.interactable = false;
+                button.onClick.RemoveAllListeners();
+                button.GetComponentInChildren<Text>().text = ""; // Set the text to "Empty" for empty buttons
+            }
+        }
     }
 
     public void OnActionButtonClicked(string actionType)
@@ -337,7 +381,7 @@ public class BattleManager : MonoBehaviour
         {
             case "Attack":
                 selectedMoveType = "Attack"; // Set the selected move type to attack
-                selectedMoveTargetCount = 2; // Set the number of targets for
+                selectedMoveTargetCount = 1; // Set the number of targets for
                 TargetsSelector(); // Call the target selector function
                 ToBackPanel();
                 break;
@@ -437,7 +481,6 @@ public class BattleManager : MonoBehaviour
             switch (selectedMoveType)
             {
                 case "Attack":
-                    // Call the attack function with the selected targets
                     foreach (BattleParticipant target in targets)
                     {
                         // remote the outline from the target
@@ -457,19 +500,71 @@ public class BattleManager : MonoBehaviour
                         // Perform the attack on the target
                         target.HP -= player.DMG; // Apply damage to the target's HP
                         HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
-                        ToActionPanel();
-                        ToggleButtons();
-                        BattleStatusUpdater();
+                    }
+                    ToActionPanel();
+                    ToggleButtons(false);
+                    bool battleOverAtk = BattleStatusUpdater();
+                    if (!battleOverAtk)
+                    {
+                        // If the battle is not over, proceed to the enemy's turn
                         EnemiesTurn();
                     }
                     break;
                 case "Spell":
-                    // Call the spell function with the selected targets
+                    foreach (BattleParticipant target in targets)
+                    {
+                        // remote the outline from the target
+                        GameObject targetModel = GameObject.Find(target.participantName);
+                        if (targetModel != null)
+                        {
+                            Outline outline = targetModel.GetComponent<Outline>();
+                            if (outline != null)
+                            {
+                                outline.OutlineWidth = 0; // Remove the outline effect
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogError("Target model not found: " + target.participantName);
+                        }
+                        // Perform the spell on the target
+                        target.HP -= selectedMove.DMG; // Apply damage to the target's HP
+                        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
+                    }
+                    ToActionPanel();
+                    ToggleButtons(false);
+                    bool battleOverSpl = BattleStatusUpdater();
+                    if (!battleOverSpl)
+                    {
+                        // If the battle is not over, proceed to the enemy's turn
+                        EnemiesTurn();
+                    }
                     break;
                 default:
                     Debug.LogError("Unknown move type: " + selectedMoveType);
                     break;
             }
+        }
+    }
+
+    public void SpellSelected(BattleMove spell)
+    {
+        // Check if the spell is valid and can be cast
+        if (spell != null && player.MP >= spell.MPcost)
+        {
+            // Deduct the MP cost from the player
+            player.MP -= spell.MPcost;
+
+            // Call the target selector function to select targets for the spell
+            selectedMoveType = "Spell"; // Set the selected move type to spell
+            selectedMoveTargetCount = spell.numberOfTargets; // Set the number of targets for the spell
+            selectedMove = spell; // Set the selected move to the spell
+            TargetsSelector();
+            ToBackPanel(); // Show the back panel
+        }
+        else
+        {
+            Debug.LogError("Invalid spell or insufficient MP: " + spell.moveName);
         }
     }
 
@@ -480,8 +575,8 @@ public class BattleManager : MonoBehaviour
             // enemy AI logic here
             player.HP -= enemy.DMG;
             HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
-            BattleStatusUpdater(); // Check the battle status after the enemy's turn
-            ToggleButtons(); // unblock the buttons
         }
+        BattleStatusUpdater(); // Check the battle status after the enemy's turn
+        ToggleButtons(true); // unblock the buttons
     }
 }

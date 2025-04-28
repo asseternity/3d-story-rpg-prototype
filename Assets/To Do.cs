@@ -16,10 +16,10 @@
 // [v] articy naming - and using vars in dialogues, like for pronouns
 // [v] some kind of story manager that determines which things are available and which indicators to show
 // [v] some kind of quests system that envelops everything, including the articy things
-// [_] (4) dialogue UI prettying - layers, shadows, make models appear
-// [_] (5) calendar system
-// [_] (5) activities as per below
-// [_] (5) quests as per below
+// [_] (2) dialogue UI prettying - layers, shadows, make models appear
+// [_] (3) calendar system
+// [_] (3) activities as per below
+// [_] (3) quests as per below
 // [_] saving / loading
 // [_] main menu
 // [_] pause menu
@@ -37,12 +37,10 @@
 // [v] show health bars in prefabs for all participants
 // [v] make enemies clickable and outline the currently clicked enemy
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
-// [_] (1) add submenus, spells and abilities
-// [_] (2) pretty the fighting system: fluidity, animations, damage numbers, and turn order
-// [_] (3) add items and consumables
-// [_] using stats and abilities for all participants and where to store them
-// [_] camera angles, particle effects
-// [_] build the quest and activity scriptable objects
+// [v] add submenus, spells and abilities
+// [v] using stats and abilities for all participants and where to store them
+// [_] (1) pretty the fighting system: fluidity, animations, damage numbers, camera angles, particle effects, and turn order
+// [_] add items and consumables
 
 // BRAINSTORMING STRUCTURE - how to structure the logic? how to structure the quests and activities? how do initiate fights and store combat stats?
 // ANSWER: keep global variables (plot) in articy, but keep the overall story structure in Unity. Build quests as scriptable objects.

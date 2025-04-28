@@ -8,6 +8,5 @@ public class BattleMove : ScriptableObject
     public string moveName;
     public int numberOfTargets;
     public int MPcost;
-    public int ATKmodifier;
     public int DMG;
 }

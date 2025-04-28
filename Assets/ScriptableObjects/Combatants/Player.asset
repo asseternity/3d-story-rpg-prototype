@@ -17,9 +17,13 @@ MonoBehaviour:
   isFriendly: 1
   maxHP: 100
   HP: 100
-  maxMP: 10
-  MP: 10
-  AC: 10
-  ATK: 2
+  maxMP: 100
+  MP: 100
   DMG: 2
   prefabModel: {fileID: 1415829046005659183, guid: 8ff3a5f41b129b64ba27b87d667f274d, type: 3}
+  moves:
+  - {fileID: 11400000, guid: 383e814d1f83a8446a1d065be7ef5507, type: 2}
+  - {fileID: 11400000, guid: 42374c127fcc5e04498898cd3f756c36, type: 2}
+  - {fileID: 11400000, guid: 4fa022a270bfef84fba91f146b93a0b4, type: 2}
+  - {fileID: 11400000, guid: 2fb933b67141e5f409bef595428bb530, type: 2}
+  - {fileID: 11400000, guid: 9919ba2ab6dd56f4db76af4fdd4c4752, type: 2}
