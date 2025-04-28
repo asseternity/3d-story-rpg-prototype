@@ -16,6 +16,9 @@ public class BattleManager : MonoBehaviour
     public List<BattleParticipant> friendlies;
     public GameObject player3D;
     public GameObject battleUI;
+    public GameObject actionsPanel;
+    public GameObject backPanel;
+    public GameObject spellsPanel;
     public StoryManager storyManager;
     public string[] postBattleQueue;
     public BattleData currentBattleData;
@@ -231,7 +234,7 @@ public class BattleManager : MonoBehaviour
 
     public void ToggleButtons()
     {
-        // 1. unblock the ui buttons
+        // unblock the ui buttons
         GameObject[] buttons = new GameObject[6];
         buttons[0] = GameObject.Find("AttackButton");
         buttons[1] = GameObject.Find("SpellButton");
@@ -240,26 +243,85 @@ public class BattleManager : MonoBehaviour
         buttons[4] = GameObject.Find("CharacterButton");
         buttons[5] = GameObject.Find("MenuButton");
 
-        foreach (GameObject button in buttons)
+        if (buttonsActive)
         {
-            if (button != null)
+            foreach (GameObject button in buttons)
             {
-                if (buttonsActive)
+                if (button != null)
                 {
-                    button.GetComponent<Button>().interactable = false; // Enable the button
-                    buttonsActive = false; // Set the flag to false
+                    button.GetComponent<Button>().interactable = false;
                 }
                 else
                 {
-                    button.GetComponent<Button>().interactable = true; // Disable the button
-                    buttonsActive = true; // Set the flag to true
+                    Debug.LogError("Button not found: " + button.name);
                 }
             }
-            else
+            buttonsActive = false; // Set the buttons to active
+        }
+        else
+        {
+            foreach (GameObject button in buttons)
             {
-                Debug.LogError("Button not found: " + button.name);
+                if (button != null)
+                {
+                    button.GetComponent<Button>().interactable = true;
+                }
+                else
+                {
+                    Debug.LogError("Button not found: " + button.name);
+                }
+            }
+            buttonsActive = true; // Set the buttons to inactive
+        }
+    }
+
+    public void ToActionPanel()
+    {
+        // 1) Remove any outline
+        foreach (var target in selectedTargets)
+        {
+            var go = GameObject.Find(target.participantName);
+            if (go != null)
+            {
+                var outline = go.GetComponent<Outline>();
+                if (outline != null)
+                    outline.OutlineWidth = 0;
             }
         }
+
+        // 2) Remove TargetableEnemy so we fully exit targeting mode
+        foreach (var enemyGo in enemyBattleModels)
+        {
+            var ts = enemyGo.GetComponent<TargetableEnemy>();
+            if (ts != null)
+                Destroy(ts);
+        }
+
+        // 3) Reset all our selection state
+        selectedMoveType = null;
+        selectedTargets = new BattleParticipant[0];
+        selectedMoveTargetCount = 0;
+
+        // 4) Swap your UI panels
+        actionsPanel.SetActive(true);
+        backPanel.SetActive(false);
+        spellsPanel.SetActive(false);
+    }
+
+    public void ToBackPanel()
+    {
+        // hide other panels and show the back panel
+        actionsPanel.SetActive(false); // Hide the action panel
+        backPanel.SetActive(true); // Show the back panel
+        spellsPanel.SetActive(false); // Hide the spells panel
+    }
+
+    public void ToSpellsPanel()
+    {
+        // hide other panels and show the spells panel
+        actionsPanel.SetActive(false); // Hide the action panel
+        backPanel.SetActive(false); // Hide the back panel
+        spellsPanel.SetActive(true); // Show the spells panel
     }
 
     public void OnActionButtonClicked(string actionType)
@@ -277,10 +339,11 @@ public class BattleManager : MonoBehaviour
                 selectedMoveType = "Attack"; // Set the selected move type to attack
                 selectedMoveTargetCount = 2; // Set the number of targets for
                 TargetsSelector(); // Call the target selector function
+                ToBackPanel();
                 break;
             case "Spell":
                 selectedMoveType = "Spell"; // Set the selected move type to spell
-                // Implement spell casting logic here
+                ToSpellsPanel();
                 break;
             case "Item":
                 // Implement item usage logic here
@@ -304,11 +367,15 @@ public class BattleManager : MonoBehaviour
     {
         foreach (GameObject enemy in enemyBattleModels)
         {
-            TargetableEnemy targetScript = enemy.AddComponent<TargetableEnemy>();
-            BattleParticipant targetParticipant = enemies.Find(p =>
-                p.participantName == enemy.name
-            );
-            targetScript.Initialize(this, targetParticipant);
+            // Check if the TargetableEnemy component already exists
+            if (enemy.GetComponent<TargetableEnemy>() == null)
+            {
+                TargetableEnemy targetScript = enemy.AddComponent<TargetableEnemy>();
+                BattleParticipant targetParticipant = enemies.Find(p =>
+                    p.participantName == enemy.name
+                );
+                targetScript.Initialize(this, targetParticipant);
+            }
         }
     }
 
@@ -390,6 +457,7 @@ public class BattleManager : MonoBehaviour
                         // Perform the attack on the target
                         target.HP -= player.DMG; // Apply damage to the target's HP
                         HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
+                        ToActionPanel();
                         ToggleButtons();
                         BattleStatusUpdater();
                         EnemiesTurn();

@@ -15,8 +15,8 @@ MonoBehaviour:
   participantName: Player
   isPlayer: 1
   isFriendly: 1
-  maxHP: 10
-  HP: 2
+  maxHP: 100
+  HP: 100
   maxMP: 10
   MP: 10
   AC: 10
