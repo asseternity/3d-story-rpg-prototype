@@ -6315,6 +6315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a1ba63ed6cabd4782cf292ffa98385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 7615354179541272244, guid: 8ff3a5f41b129b64ba27b87d667f274d, type: 3}
   allBattles:
   - {fileID: 11400000, guid: 31cdd3959dc10e245a50367418453fe2, type: 2}
   allParticipants: []

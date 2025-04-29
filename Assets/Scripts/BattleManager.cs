@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
+    public Animator playerAnimator;
     private GameObject battleEnvInstance;
     public List<BattleData> allBattles;
     public List<BattleParticipant> allParticipants;
@@ -97,8 +98,9 @@ public class BattleManager : MonoBehaviour
                 Quaternion.identity
             );
             playerBattleModel = spawnedPlayer; // Save the reference to the spawned player model
-            spawnedPlayer.name = player.participantName; // Set the name of the spawned object
-            HealthBarUpdater(player, spawnedPlayer); // Update the health bar for the player
+            playerBattleModel.name = player.participantName; // Set the name of the spawned object
+            playerAnimator = playerBattleModel.GetComponent<Animator>(); // Get the animator component
+            HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
         }
         else
         {
@@ -497,17 +499,7 @@ public class BattleManager : MonoBehaviour
                         {
                             Debug.LogError("Target model not found: " + target.participantName);
                         }
-                        // Perform the attack on the target
-                        target.HP -= player.DMG; // Apply damage to the target's HP
-                        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
-                    }
-                    ToActionPanel();
-                    ToggleButtons(false);
-                    bool battleOverAtk = BattleStatusUpdater();
-                    if (!battleOverAtk)
-                    {
-                        // If the battle is not over, proceed to the enemy's turn
-                        EnemiesTurn();
+                        StartCoroutine(PlayerAttackRoutine(target, selectedMove)); // Start the attack animation
                     }
                     break;
                 case "Spell":
@@ -527,17 +519,7 @@ public class BattleManager : MonoBehaviour
                         {
                             Debug.LogError("Target model not found: " + target.participantName);
                         }
-                        // Perform the spell on the target
-                        target.HP -= selectedMove.DMG; // Apply damage to the target's HP
-                        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
-                    }
-                    ToActionPanel();
-                    ToggleButtons(false);
-                    bool battleOverSpl = BattleStatusUpdater();
-                    if (!battleOverSpl)
-                    {
-                        // If the battle is not over, proceed to the enemy's turn
-                        EnemiesTurn();
+                        StartCoroutine(PlayerAttackRoutine(target, selectedMove)); // Start the attack animation
                     }
                     break;
                 default:
@@ -572,11 +554,119 @@ public class BattleManager : MonoBehaviour
     {
         foreach (BattleParticipant enemy in enemies)
         {
-            // enemy AI logic here
-            player.HP -= enemy.DMG;
-            HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
+            StartCoroutine(EnemyAttackRoutine(enemy)); // Start the enemy attack animation
         }
-        BattleStatusUpdater(); // Check the battle status after the enemy's turn
-        ToggleButtons(true); // unblock the buttons
+    }
+
+    // *** animations ***
+    private int attacksApplied = 0; // counter for the number of attacks applied
+
+    private IEnumerator PlayerAttackRoutine(BattleParticipant target, BattleMove move)
+    {
+        // move the player towards the target
+        Vector3 startPosition = playerBattleModel.transform.position;
+        // pick a point a little in front of the target
+        Transform targetTransform = GameObject.Find(target.participantName).transform;
+        Vector3 hitOffset = (targetTransform.position - startPosition).normalized * 1.5f;
+        Vector3 attackPosition = targetTransform.position - hitOffset;
+        float moveDuration = 0.5f; // Duration of the move
+        float elapsedTime = 0f;
+        while (elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / moveDuration;
+            playerBattleModel.transform.position = Vector3.Lerp(startPosition, attackPosition, t);
+            yield return null;
+        }
+
+        // animation
+        playerAnimator.SetBool("isAttacking", true);
+        float clipLength = 0.8f;
+        yield return new WaitForSeconds(clipLength);
+        playerAnimator.SetBool("isAttacking", false);
+
+        // move back
+        elapsedTime = 0f;
+        while (elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / moveDuration;
+            playerBattleModel.transform.position = Vector3.Lerp(attackPosition, startPosition, t);
+            yield return null;
+        }
+        playerBattleModel.transform.position = startPosition; // ensure exact
+
+        // logic
+        if (move == null)
+        {
+            target.HP -= player.DMG; // Apply damage to the target's HP
+        }
+        else
+        {
+            target.HP -= move.DMG; // Apply damage to the target's HP
+        }
+        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
+        attacksApplied++; // Increment the attack counter
+        if (attacksApplied == selectedMoveTargetCount)
+        {
+            // Reset the attack counter after all attacks are applied
+            attacksApplied = 0;
+            ToActionPanel();
+            ToggleButtons(false);
+            bool battleOver = BattleStatusUpdater();
+            if (!battleOver)
+            {
+                // If the battle is not over, proceed to the enemy's turn
+                EnemiesTurn();
+            }
+        }
+    }
+
+    int enemiesAttacked = 0; // counter for the number of enemies attacked
+
+    private IEnumerator EnemyAttackRoutine(BattleParticipant enemy)
+    {
+        // get the enemy's battle model
+        GameObject enemyModel = GameObject.Find(enemy.participantName);
+        if (enemyModel == null)
+        {
+            Debug.LogError("Enemy model not found: " + enemy.participantName);
+            yield break; // Exit the coroutine if the model is not found
+        }
+        // move the enemy towards the player
+        Vector3 startPosition = enemyModel.transform.position;
+        Transform targetTransform = playerBattleModel.transform;
+        Vector3 hitOffset = (targetTransform.position - startPosition).normalized * 1.5f;
+        Vector3 attackPosition = targetTransform.position - hitOffset;
+        float moveDuration = 0.5f; // Duration of the move
+        float elapsedTime = 0f;
+        while (elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / moveDuration;
+            enemyModel.transform.position = Vector3.Lerp(startPosition, attackPosition, t);
+            yield return null;
+        }
+        // move back
+        elapsedTime = 0f;
+        while (elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / moveDuration;
+            enemyModel.transform.position = Vector3.Lerp(attackPosition, startPosition, t);
+            yield return null;
+        }
+        enemyModel.transform.position = startPosition; // ensure exact
+        // logic
+        player.HP -= enemy.DMG;
+        HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
+        enemiesAttacked++; // Increment the attack counter
+        bool battleOver = BattleStatusUpdater();
+        if (!battleOver && enemiesAttacked == enemies.Count)
+        {
+            // If the battle is not over and all enemies have gone, proceed to the player's turn
+            enemiesAttacked = 0; // Reset the attack counter
+            ToggleButtons(true);
+        }
     }
 }

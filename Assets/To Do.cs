@@ -39,7 +39,15 @@
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
 // [v] add submenus, spells and abilities
 // [v] using stats and abilities for all participants and where to store them
-// [_] (1) pretty the fighting system: fluidity, animations, damage numbers, camera angles, particle effects, and turn order
+// [_] (1) pretty the fighting system:
+// [v] fluidity
+// [v] animations
+// [_] one animation for moves with multiple targets
+// [_] enemies go one after another not all at once
+// [_] damage numbers and MP costs
+// [_] camera angles
+// [_] particle effects
+// [_] ui and turn order
 // [_] add items and consumables
 
 // BRAINSTORMING STRUCTURE - how to structure the logic? how to structure the quests and activities? how do initiate fights and store combat stats?
