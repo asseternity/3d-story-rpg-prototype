@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d93ed598b9f5c1646a9f0d3b2608fa23, type: 3}
-  m_Name: TestEnemy3
+  m_Name: TestEnemy5
   m_EditorClassIdentifier: 
-  participantName: TestEnemy3
+  participantName: TestEnemy5
   isPlayer: 0
   isFriendly: 0
-  maxHP: 50
-  HP: 50
-  maxMP: 5
-  MP: 5
+  maxHP: 1
+  HP: 1
+  maxMP: 1
+  MP: 1
   DMG: 1
   prefabModel: {fileID: 8343872959262338839, guid: 85e49783fd3e828409ce2eff8d4ed280, type: 3}
   moves: []

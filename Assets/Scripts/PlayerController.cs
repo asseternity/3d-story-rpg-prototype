@@ -21,15 +21,15 @@ public class PlayerController : MonoBehaviour
     private float colliderHeightOffset; // Cached half-height of the collider
 
     // Articy vars
-    private ArticyObject availableDialogue;
-    private DialogueManager dialogueManager;
+    private Queue availableQueue;
+    private StoryManager storyManager;
 
     // Battle vars
     public bool isInBattle = false; // Flag to check if in battle
 
     void Start()
     {
-        dialogueManager = FindObjectOfType<DialogueManager>();
+        storyManager = FindObjectOfType<StoryManager>();
         rb = GetComponent<Rigidbody>();
 
         // Cache the collider's vertical extent (half-height)
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (dialogueManager.DialogueActive || isInBattle)
+        if (storyManager.DialogueActive || isInBattle)
         {
             // Disable movement when dialogue or battle is active.
             return;
@@ -96,32 +96,38 @@ public class PlayerController : MonoBehaviour
     void DialogueInteraction()
     {
         // Key option to start dialogue when near NPC
-        if (Input.GetButtonDown("Interact") && availableDialogue != null)
+        if (Input.GetButtonDown("Interact") && availableQueue != null)
         {
-            dialogueManager.StartDialogue(availableDialogue);
+            storyManager.StartQueue(availableQueue);
+            // Clear the available queue after starting the dialogue.
+            availableQueue = null;
         }
 
         // Key option to abort dialogue
-        if (dialogueManager.DialogueActive && Input.GetButtonDown("Cancel"))
+        if (storyManager.DialogueActive && Input.GetButtonDown("Cancel"))
         {
-            dialogueManager.CloseDialogueBox();
+            storyManager.CloseDialogueBox();
         }
     }
 
     void OnTriggerEnter(Collider aOther)
     {
-        var articyReferenceComp = aOther.GetComponent<ArticyReference>();
-        if (articyReferenceComp)
+        var queueReferenceComp = aOther.GetComponent<QueueReference>();
+        if (queueReferenceComp != null)
         {
-            availableDialogue = articyReferenceComp.reference.GetObject();
+            availableQueue = queueReferenceComp.queue;
+        }
+        else
+        {
+            Debug.LogWarning("PlayerController: No QueueReference found on the collider.");
         }
     }
 
     void OnTriggerExit(Collider aOther)
     {
-        if (aOther.GetComponent<ArticyReference>() != null)
+        if (aOther.GetComponent<QueueReference>() != null)
         {
-            availableDialogue = null;
+            availableQueue = null;
         }
     }
 }

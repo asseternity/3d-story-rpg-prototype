@@ -53,6 +53,8 @@
     },
     "dotnet.defaultSolution": "3D articy simdate fighter prototype v1.sln",
     "cSpell.words": [
+        "articy",
+        "cutscenes",
         "interactable",
         "Targetable"
     ]

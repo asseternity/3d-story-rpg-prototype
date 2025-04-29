@@ -767,7 +767,6 @@ GameObject:
   - component: {fileID: 149803824}
   - component: {fileID: 149803823}
   - component: {fileID: 149803822}
-  - component: {fileID: 149803821}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -790,23 +789,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 383095231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &149803821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149803819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 461291041, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reference:
-    instanceId: 0
-    referencingMode: 0
-    lowId: 597
-    highId: 16777216
 --- !u!135 &149803822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1748,7 +1730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &467255999
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3335,6 +3317,7 @@ GameObject:
   - component: {fileID: 891429825}
   - component: {fileID: 891429824}
   - component: {fileID: 891429823}
+  - component: {fileID: 891429827}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -3445,6 +3428,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891429821}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &891429827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891429821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f82ec8768383cf4c81dd8fc803ac1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  queue: {fileID: 11400000, guid: 83e0fc8060c5ae84fa034e341c5b28da, type: 2}
 --- !u!1 &945126447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1236854936}
+  - component: {fileID: 1236854937}
   - component: {fileID: 1236854935}
   m_Layer: 0
   m_Name: StoryManager
@@ -4754,6 +4751,7 @@ MonoBehaviour:
   battleManager: {fileID: 1728128538}
   nextThingID: 
   nextThingType: 
+  currentQueue: []
   nextThingQueue: []
   dialogueWidget: {fileID: 1959406944}
   dialogueText: {fileID: 2039668172}
@@ -4762,9 +4760,6 @@ MonoBehaviour:
   branchLayoutPanel: {fileID: 10108598}
   branchPrefab: {fileID: 2120404750908023031, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
   closePrefab: {fileID: 4276954640103726348, guid: e67c62119358a954f9f36d0860a19383, type: 3}
-  testBattleData: {fileID: 11400000, guid: 31cdd3959dc10e245a50367418453fe2, type: 2}
-  testQueue:
-  - nothing
 --- !u!4 &1236854936
 Transform:
   m_ObjectHideFlags: 0
@@ -4780,6 +4775,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236854937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236854934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 149237616, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useDefaultGlobalVariables: 1
+  globalVariables: {fileID: 0}
+  overwriteMethodProvider: 0
+  overwrittenMethodProvider: {fileID: 0}
+  startOn:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
+  pauseOn: 4
+  ignoreInvalidBranches: 1
+  continuouslyRecalculateBranches: 0
+  continouslyRecalculateInterval: 1
 --- !u!1 &1277826180
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,7 +5756,7 @@ GameObject:
   - component: {fileID: 1564888396}
   - component: {fileID: 1564888397}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6315,9 +6335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a1ba63ed6cabd4782cf292ffa98385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7615354179541272244, guid: 8ff3a5f41b129b64ba27b87d667f274d, type: 3}
-  allBattles:
-  - {fileID: 11400000, guid: 31cdd3959dc10e245a50367418453fe2, type: 2}
+  playerAnimator: {fileID: 0}
   allParticipants: []
   enemies: []
   player: {fileID: 0}
@@ -6327,7 +6345,7 @@ MonoBehaviour:
   actionsPanel: {fileID: 1278305388}
   backPanel: {fileID: 93233953}
   spellsPanel: {fileID: 1728043551}
-  storyManager: {fileID: 0}
+  storyManager: {fileID: 1236854935}
   postBattleQueue: []
   currentBattleData: {fileID: 0}
 --- !u!4 &1728128539

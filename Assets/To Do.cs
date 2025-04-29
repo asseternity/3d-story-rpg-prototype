@@ -17,16 +17,18 @@
 // [v] some kind of story manager that determines which things are available and which indicators to show
 // [v] some kind of quests system that envelops everything, including the articy things
 // [_] (1) big game loop - cutscenes following fights following cutscenes:
-// [_] calendar system
-// [_] activities as per below
-// [_] quests as per below
-// [_] (3) dialogue UI prettying - layers, shadows, make models appear
-// [_] saving / loading
-// [_] main menu
-// [_] pause menu
-// [_] settings menu
-// [_] game over
-// [_] some visual indicator if there's a dialogue available
+// [v] - queues SO
+// [v] - tie a queue to NPC conversations instead of direct Articy Dialogue
+// [_] - calendar system
+// [_] - activities SO
+// [_] - quests SO
+// [_] (4) dialogue UI prettying - layers, shadows, make models appear
+// [_] - saving / loading
+// [_] - main menu
+// [_] - pause menu
+// [_] - settings menu
+// [_] - game over
+// [_] - some visual indicator if there's a dialogue available
 
 // persona fighting mechanics:
 // [v] build the story manager script with 2 functions: startDialogue (articyObject, nextThing) and startBattle (battleID, nextThing)
@@ -40,47 +42,35 @@
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
 // [v] add submenus, spells and abilities
 // [v] using stats and abilities for all participants and where to store them
-// [_] (2) pretty the fighting system:
-// [v] fluidity
-// [v] animations
-// [v] enemies go one after another not all at once
-// [v] one animation for moves with multiple targets
-// [_] damage numbers and MP costs
-// [_] camera angles
-// [_] particle effects
-// [_] ui and turn order
-// [_] add items and consumables
+// [_] (2) fix that battle SOs change after testing
+// [_] (3) pretty the fighting system:
+// [v] - fluidity
+// [v] - animations
+// [v] - enemies go one after another not all at once
+// [v] - one animation for moves with multiple targets
+// [_] - damage numbers and MP costs
+// [_] - camera angles
+// [_] - particle effects
+// [_] - ui and turn order
+// [_] - add items and consumables
 
-// BRAINSTORMING STRUCTURE - how to structure the logic? how to structure the quests and activities? how do initiate fights and store combat stats?
-// ANSWER: keep global variables (plot) in articy, but keep the overall story structure in Unity. Build quests as scriptable objects.
-// Okay, then next question - how do I call things from unity after an Articy conversation, then return to Articy?
-// I will probably have to do different Articy dialogues for before and after the thing
-// So then, I need some kind of story flow manager which will:
-// keep track of the current date in the schedule
-// trigger articy dialogues and block movement and fighting when the dialogue is active
-// trigger the next part of the story after the dialogue is done, like writing in your name, or triggering a battle
-// then trigger the next Articy dialogue after the battle is done, or the name is written
-// Okay... then what are quests?
-// The quest system will work like this:
-// - first few days, it's just straight cutscenes with no end
-// - then, the player will be free to choose a morning and an evening activity, with a lunch / class cutscene in between
-// - but the player has to choose to do the quest AS an activity
-// - so then the quest system will be an array of objects that will have:
-// "description", "type", "bool re reach stage completed or not", "bool re quest active or not" and maybe refs to articy dialogues
-// so what does that mean then?
-// the entire game will be structured as a series of quests overlaid on top of a calendar
-// quests will have: booleans for each stage (completed or not), a title, a description, a type (main, relationship)
-// hang on. what's the difference between a quest and an activity then?
-// - an activity is a series of ten articy dialogues (like persona 5's confidantes)
-// - a quest is a set of data that can include listening to an activity
-// - the story manager will:
+// --- GAME STRUCTURE DOCUMENTATION ---
+
+// The story elements are Queue, Activity and Quest.
+// - Queue is a sequence of events (dialogue, battle, name entry) that launch automatically one after another until the queue is empty.
+// - Activity is a branching series of ten Queues, like a Persona 5 confidante.
+// Completing a level may complete a Quest, affect relationship levels/stats/resources, etc.
+// - Quest is a Scriptable Object that includes: triggers, description, type, bool re reach stage completed or not, bool re quest active or not.
+
+// The skeleton of the game is the StartSectionFrom functions. They operate Queues in a non-stop way.
+// The game will be structured as so: for the first few days, the initial Queue starts and does not let go.
+// Then, the player is placed in the 3D environment, will be provided with Quests and will be able to run around and choose Activities.
+// During this free time, the player will be able to do a morning and an evening Acvitity, with a lunch cutscene in between.
+// In essence, the entire game is structured as a series of quests overlaid on top of a calendar.
+
+// The story manager needs to:
 // (1) populate the 3D environment with available activities based on the date
 // (2) keep track of the available quests and their stages, progressing them as the player completes the tasks
 // [_] this means that I need a function that will take a quest and progress it to the next stage
 // (3) trigger the next whatever when the player completes an articy dialogue, a battle or anything else
-// [_] think - how to accomplish this? in articy? or in Unity?
-
-// TECHNICAL DESIGN:
-// Story manager functions: start dialogue (ArticyObject), start battle (battleID)
-// GOT IT! both functions there have be a second argument - a queue of the next things to do after the dialogue or the battle is finished (if any)
-// Each activity - when activated - will trigger a dialogue and include that second argument in the function call
+// [v] this will use the StartSectionFrom functions

@@ -15,4 +15,4 @@ MonoBehaviour:
   moveName: Strong Wave
   numberOfTargets: 3
   MPcost: 10
-  DMG: 3
+  DMG: 100

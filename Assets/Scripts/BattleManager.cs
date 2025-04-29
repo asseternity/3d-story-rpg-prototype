@@ -11,7 +11,6 @@ public class BattleManager : MonoBehaviour
 {
     public Animator playerAnimator;
     private GameObject battleEnvInstance;
-    public List<BattleData> allBattles;
     public List<BattleParticipant> allParticipants;
     public List<BattleParticipant> enemies;
     public BattleParticipant player;
@@ -22,7 +21,7 @@ public class BattleManager : MonoBehaviour
     public GameObject backPanel;
     public GameObject spellsPanel;
     public StoryManager storyManager;
-    public string[] postBattleQueue;
+    public List<Queue.QueueEntry> postBattleQueue;
     public BattleData currentBattleData;
     private GameObject playerBattleModel;
     private GameObject[] enemyBattleModels;
@@ -33,7 +32,7 @@ public class BattleManager : MonoBehaviour
     private BattleMove selectedMove;
     private int enemiesAttacked = 0; // counter for the number of enemies attacked
 
-    public void FindBattleByID(string battleID, string[] queue)
+    public void FindBattleByID(BattleData battleData, List<Queue.QueueEntry> queue)
     {
         // clear data
         allParticipants = new List<BattleParticipant>();
@@ -43,20 +42,14 @@ public class BattleManager : MonoBehaviour
         currentBattleData = null;
 
         // replace the queue
-        postBattleQueue = queue;
+        postBattleQueue = new List<Queue.QueueEntry>(queue);
 
-        foreach (BattleData battle in allBattles)
-        {
-            if (battle.battleID == battleID)
-            {
-                // save battle data for later use
-                currentBattleData = battle;
-                // Start the battle with the found battle data
-                StartBattle(battle);
-                return;
-            }
-        }
-        Debug.LogError("Battle with ID " + battleID + " not found.");
+        // update the battle data
+        currentBattleData = ScriptableObject.CreateInstance<BattleData>();
+        currentBattleData.battleID = battleData.battleID;
+        currentBattleData.battleEnvironmentPrefab = battleData.battleEnvironmentPrefab;
+        currentBattleData.participants = new List<BattleParticipant>(battleData.participants);
+        StartBattle(battleData); // Start the battle with the provided data
     }
 
     public void StartBattle(BattleData battleData)
@@ -199,10 +192,6 @@ public class BattleManager : MonoBehaviour
         // check if battle is over and revert to the story manager with the rest of the queue
         if (enemies.Count == 0)
         {
-            string nextThing = postBattleQueue[0];
-            string nextThingType = nextThing.Split('_')[0];
-            string nextThingID = nextThing.Split('_')[1];
-
             // clear the battle UI
             battleUI.SetActive(false); // Deactivate the battle UI
 
@@ -223,34 +212,7 @@ public class BattleManager : MonoBehaviour
             // destroy the player
             Destroy(GameObject.Find(player.participantName)); // Destroy the player object
 
-            // play the next thing in the queue
-            if (nextThingType == "dialogue")
-            {
-                var nextDialogue = ArticyDatabase.GetObject(nextThingID) as DialogueFragment;
-                if (nextDialogue != null)
-                {
-                    // cut the queue to remove the first element
-                    string[] nextThingQueue = new string[postBattleQueue.Length - 1];
-                    Array.Copy(postBattleQueue, 1, nextThingQueue, 0, postBattleQueue.Length - 1);
-                    // start the next dialogue
-                    storyManager.StartSectionFromDialogue(nextDialogue, nextThingQueue);
-                }
-                else
-                {
-                    Debug.LogError("Next dialogue not found: " + nextThingID);
-                }
-            }
-            else if (nextThingType == "battle")
-            {
-                string[] nextThingQueue = new string[postBattleQueue.Length - 1];
-                Array.Copy(postBattleQueue, 1, nextThingQueue, 0, postBattleQueue.Length - 1);
-                storyManager.StartSectionFromBattle(nextThingID, nextThingQueue);
-            }
-            else if (nextThingType == "nothing")
-            {
-                Debug.LogError("No more things in the queue after battle.");
-            }
-
+            storyManager.StartQueueFromList(postBattleQueue); // Start the next queue in the story manager
             battleOver = true; // Set battle over flag to true
         }
         return battleOver; // Return the battle over status

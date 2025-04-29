@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93ed598b9f5c1646a9f0d3b2608fa23, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  participantName: Player
+  participantName: PlayerBattle
   isPlayer: 1
   isFriendly: 1
   maxHP: 100
