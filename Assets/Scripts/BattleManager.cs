@@ -552,10 +552,7 @@ public class BattleManager : MonoBehaviour
 
     public void EnemiesTurn()
     {
-        foreach (BattleParticipant enemy in enemies)
-        {
-            StartCoroutine(EnemyAttackRoutine(enemy)); // Start the enemy attack animation
-        }
+        StartCoroutine(EnemyAttackRoutine(enemies[0])); // Start the enemy attack animation
     }
 
     // *** animations ***
@@ -662,7 +659,11 @@ public class BattleManager : MonoBehaviour
         HealthBarUpdater(player, playerBattleModel); // Update the health bar for the player
         enemiesAttacked++; // Increment the attack counter
         bool battleOver = BattleStatusUpdater();
-        if (!battleOver && enemiesAttacked == enemies.Count)
+        if (enemiesAttacked != enemies.Count)
+        {
+            StartCoroutine(EnemyAttackRoutine(enemies[enemiesAttacked])); // Start the next enemy attack
+        }
+        else if (!battleOver)
         {
             // If the battle is not over and all enemies have gone, proceed to the player's turn
             enemiesAttacked = 0; // Reset the attack counter

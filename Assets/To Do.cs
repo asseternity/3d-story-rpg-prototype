@@ -42,8 +42,8 @@
 // [_] (1) pretty the fighting system:
 // [v] fluidity
 // [v] animations
+// [v] enemies go one after another not all at once
 // [_] one animation for moves with multiple targets
-// [_] enemies go one after another not all at once
 // [_] damage numbers and MP costs
 // [_] camera angles
 // [_] particle effects
