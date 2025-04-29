@@ -31,6 +31,7 @@ public class BattleManager : MonoBehaviour
     private string selectedMoveType;
     private int selectedMoveTargetCount;
     private BattleMove selectedMove;
+    private int enemiesAttacked = 0; // counter for the number of enemies attacked
 
     public void FindBattleByID(string battleID, string[] queue)
     {
@@ -499,7 +500,9 @@ public class BattleManager : MonoBehaviour
                         {
                             Debug.LogError("Target model not found: " + target.participantName);
                         }
-                        StartCoroutine(PlayerAttackRoutine(target, selectedMove)); // Start the attack animation
+                        BattleParticipant[] singleTargetArray = new BattleParticipant[1];
+                        singleTargetArray[0] = target; // Create an array with the single target
+                        StartCoroutine(PlayerAttackRoutine(singleTargetArray, selectedMove)); // Start the attack animation
                     }
                     break;
                 case "Spell":
@@ -519,8 +522,8 @@ public class BattleManager : MonoBehaviour
                         {
                             Debug.LogError("Target model not found: " + target.participantName);
                         }
-                        StartCoroutine(PlayerAttackRoutine(target, selectedMove)); // Start the attack animation
                     }
+                    StartCoroutine(PlayerAttackRoutine(targets, selectedMove)); // Start the attack animation
                     break;
                 default:
                     Debug.LogError("Unknown move type: " + selectedMoveType);
@@ -550,22 +553,27 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void EnemiesTurn()
-    {
-        StartCoroutine(EnemyAttackRoutine(enemies[0])); // Start the enemy attack animation
-    }
-
-    // *** animations ***
-    private int attacksApplied = 0; // counter for the number of attacks applied
-
-    private IEnumerator PlayerAttackRoutine(BattleParticipant target, BattleMove move)
+    private IEnumerator PlayerAttackRoutine(BattleParticipant[] targets, BattleMove move)
     {
         // move the player towards the target
         Vector3 startPosition = playerBattleModel.transform.position;
         // pick a point a little in front of the target
-        Transform targetTransform = GameObject.Find(target.participantName).transform;
-        Vector3 hitOffset = (targetTransform.position - startPosition).normalized * 1.5f;
-        Vector3 attackPosition = targetTransform.position - hitOffset;
+        Vector3 destinationPosition = GameObject
+            .Find(targets[0].participantName)
+            .transform.position;
+        if (targets.Length > 1)
+        {
+            // pick a point in the middle of the targets
+            destinationPosition = Vector3.zero;
+            foreach (BattleParticipant target in targets)
+            {
+                destinationPosition += GameObject.Find(target.participantName).transform.position;
+            }
+            destinationPosition /= targets.Length; // Average the positions of the targets
+        }
+        // move the player towards the target
+        Vector3 hitOffset = (destinationPosition - startPosition).normalized * 1.5f;
+        Vector3 attackPosition = destinationPosition - hitOffset;
         float moveDuration = 0.5f; // Duration of the move
         float elapsedTime = 0f;
         while (elapsedTime < moveDuration)
@@ -594,32 +602,32 @@ public class BattleManager : MonoBehaviour
         playerBattleModel.transform.position = startPosition; // ensure exact
 
         // logic
-        if (move == null)
+        foreach (BattleParticipant target in targets)
         {
-            target.HP -= player.DMG; // Apply damage to the target's HP
-        }
-        else
-        {
-            target.HP -= move.DMG; // Apply damage to the target's HP
-        }
-        HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
-        attacksApplied++; // Increment the attack counter
-        if (attacksApplied == selectedMoveTargetCount)
-        {
-            // Reset the attack counter after all attacks are applied
-            attacksApplied = 0;
-            ToActionPanel();
-            ToggleButtons(false);
-            bool battleOver = BattleStatusUpdater();
-            if (!battleOver)
+            if (move == null)
             {
-                // If the battle is not over, proceed to the enemy's turn
-                EnemiesTurn();
+                target.HP -= player.DMG; // Apply damage to the target's HP
             }
+            else
+            {
+                target.HP -= move.DMG; // Apply damage to the target's HP
+            }
+            HealthBarUpdater(target, GameObject.Find(target.participantName)); // Update the health bar for the target
+        }
+        ToActionPanel();
+        ToggleButtons(false);
+        bool battleOver = BattleStatusUpdater();
+        if (!battleOver)
+        {
+            // If the battle is not over, proceed to the enemy's turn
+            EnemiesTurn();
         }
     }
 
-    int enemiesAttacked = 0; // counter for the number of enemies attacked
+    public void EnemiesTurn()
+    {
+        StartCoroutine(EnemyAttackRoutine(enemies[0])); // Start the enemy attack animation
+    }
 
     private IEnumerator EnemyAttackRoutine(BattleParticipant enemy)
     {

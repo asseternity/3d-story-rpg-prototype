@@ -19,7 +19,6 @@ MonoBehaviour:
   HP: 50
   maxMP: 5
   MP: 5
-  AC: 10
-  ATK: 1
   DMG: 1
   prefabModel: {fileID: 8343872959262338839, guid: 85e49783fd3e828409ce2eff8d4ed280, type: 3}
+  moves: []

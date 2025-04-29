@@ -16,10 +16,11 @@
 // [v] articy naming - and using vars in dialogues, like for pronouns
 // [v] some kind of story manager that determines which things are available and which indicators to show
 // [v] some kind of quests system that envelops everything, including the articy things
-// [_] (2) dialogue UI prettying - layers, shadows, make models appear
-// [_] (3) calendar system
-// [_] (3) activities as per below
-// [_] (3) quests as per below
+// [_] (1) big game loop - cutscenes following fights following cutscenes:
+// [_] calendar system
+// [_] activities as per below
+// [_] quests as per below
+// [_] (3) dialogue UI prettying - layers, shadows, make models appear
 // [_] saving / loading
 // [_] main menu
 // [_] pause menu
@@ -39,11 +40,11 @@
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
 // [v] add submenus, spells and abilities
 // [v] using stats and abilities for all participants and where to store them
-// [_] (1) pretty the fighting system:
+// [_] (2) pretty the fighting system:
 // [v] fluidity
 // [v] animations
 // [v] enemies go one after another not all at once
-// [_] one animation for moves with multiple targets
+// [v] one animation for moves with multiple targets
 // [_] damage numbers and MP costs
 // [_] camera angles
 // [_] particle effects
