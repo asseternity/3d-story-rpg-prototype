@@ -15,5 +15,5 @@ MonoBehaviour:
   battleID: TestBattle2
   participants:
   - {fileID: 11400000, guid: 98b3653d093bba244a9829385ab5333c, type: 2}
-  - {fileID: 11400000, guid: 3e8130dae070b2945b2da457d20cacd7, type: 2}
+  - {fileID: 11400000, guid: a0e54c24d1a26944a932d1f26f9dfada, type: 2}
   battleEnvironmentPrefab: {fileID: 7988844262067716313, guid: 71ee19a003310c742a59cbc67e538c0d, type: 3}

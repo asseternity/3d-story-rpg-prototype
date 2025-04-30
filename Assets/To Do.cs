@@ -19,8 +19,10 @@
 // [_] (1) big game loop - cutscenes following fights following cutscenes:
 // [v] - queues SO
 // [v] - tie a queue to NPC conversations instead of direct Articy Dialogue
-// [_] - calendar system
-// [_] - activities SO
+// [v] - activities SO
+// [v] - main story state controller
+// [_] - populator of the world with activities
+// [_] - calendar system UI and a bed to progress the day
 // [_] - quests SO
 // [_] (4) dialogue UI prettying - layers, shadows, make models appear
 // [_] - saving / loading
