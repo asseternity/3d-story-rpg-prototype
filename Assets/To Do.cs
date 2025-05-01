@@ -21,8 +21,10 @@
 // [v] - tie a queue to NPC conversations instead of direct Articy Dialogue
 // [v] - activities SO
 // [v] - main story state controller
-// [_] - populator of the world with activities
 // [_] - calendar system UI and a bed to progress the day
+// [_] - adjust PlayerController to also alternatively accept an Activity instead of a Queue
+// [_] - populate the world with with NPC holding Activities
+// [_] - adjust the main story state controller to disable some NPCs on certain days!
 // [_] - quests SO
 // [_] (4) dialogue UI prettying - layers, shadows, make models appear
 // [_] - saving / loading
