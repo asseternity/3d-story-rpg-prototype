@@ -21,8 +21,10 @@ public class PlayerController : MonoBehaviour
     private float colliderHeightOffset; // Cached half-height of the collider
 
     // Articy vars
-    private Queue availableQueue;
+    private Activity availableActivity;
+    private bool readyToSleep;
     private StoryManager storyManager;
+    private StateController stateController;
 
     // Battle vars
     public bool isInBattle = false; // Flag to check if in battle
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         storyManager = FindObjectOfType<StoryManager>();
+        stateController = FindObjectOfType<StateController>();
         rb = GetComponent<Rigidbody>();
 
         // Cache the collider's vertical extent (half-height)
@@ -96,11 +99,19 @@ public class PlayerController : MonoBehaviour
     void DialogueInteraction()
     {
         // Key option to start dialogue when near NPC
-        if (Input.GetButtonDown("Interact") && availableQueue != null)
+        if (Input.GetButtonDown("Interact"))
         {
-            storyManager.StartQueue(availableQueue);
-            // Clear the available queue after starting the dialogue.
-            availableQueue = null;
+            if (availableActivity != null)
+            {
+                stateController.StartActivity(availableActivity);
+                // Clear the available activity after starting the dialogue.
+                availableActivity = null;
+            }
+            if (readyToSleep == true)
+            {
+                stateController.AdvanceDay();
+                readyToSleep = false;
+            }
         }
 
         // Key option to abort dialogue
@@ -112,22 +123,32 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider aOther)
     {
-        var queueReferenceComp = aOther.GetComponent<QueueReference>();
-        if (queueReferenceComp != null)
+        var activityStarterComp = aOther.GetComponent<ActivityStarter>();
+        if (activityStarterComp != null)
         {
-            availableQueue = queueReferenceComp.queue;
+            readyToSleep = false;
+            if (activityStarterComp.seenActivityToday == false)
+            {
+                activityStarterComp.seenActivityToday = true;
+                availableActivity = activityStarterComp.activity;
+            }
+        }
+        else if (aOther.gameObject.name == "SleepTriggerSphere")
+        {
+            readyToSleep = true;
         }
         else
         {
-            Debug.LogWarning("PlayerController: No QueueReference found on the collider.");
+            Debug.LogWarning("PlayerController: No ActivityStarter found on the collider.");
         }
     }
 
     void OnTriggerExit(Collider aOther)
     {
-        if (aOther.GetComponent<QueueReference>() != null)
+        if (aOther.GetComponent<ActivityStarter>() != null)
         {
-            availableQueue = null;
+            availableActivity = null;
+            readyToSleep = false;
         }
     }
 }

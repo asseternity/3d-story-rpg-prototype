@@ -17,6 +17,10 @@ MonoBehaviour:
   - Dlg_1CE13EAA.Text
   - Dlg_E5C50D1B.DisplayName
   - Dlg_E5C50D1B.Text
+  - Dlg_EC2CB06F.DisplayName
+  - Dlg_D588A4F2.DisplayName
+  - Dlg_45230FB4.DisplayName
+  - Dlg_2D3783B1.DisplayName
   - DFr_18140904.Text
   - DFr_9B0350C3.Text
   - DFr_5D63D0FA.Text
@@ -53,6 +57,44 @@ MonoBehaviour:
   - DFr_C46A1CA8.Text
   - DFr_5EF949E2.Text
   - DFr_A04E8393.Text
+  - DFr_07B792FA.Text
+  - DFr_1175F71E.Text
+  - DFr_F499105C.Text
+  - DFr_3FEC0307.Text
+  - DFr_37AF375D.Text
+  - DFr_C31BCC57.Text
+  - DFr_BE253BA5.Text
+  - DFr_4B5E8D18.Text
+  - DFr_8C15568C.Text
+  - DFr_A1D653DB.Text
+  - DFr_29F718E7.Text
+  - DFr_96E822D7.Text
+  - DFr_540E951B.Text
+  - DFr_65A1A4C0.Text
+  - DFr_6FFEFBE9.Text
+  - DFr_F4B87021.Text
+  - DFr_DB69B9DD.Text
+  - DFr_33A8B04A.Text
+  - DFr_E57350AF.Text
+  - DFr_6B25A2F4.Text
+  - DFr_429CDEAE.Text
+  - DFr_24E94B3F.Text
+  - DFr_6C8B188F.Text
+  - DFr_15121903.Text
+  - DFr_0474029E.Text
+  - DFr_DEC84280.Text
+  - DFr_25E551E8.Text
+  - DFr_6DC43D98.Text
+  - DFr_61EA8711.Text
+  - DFr_E8B09D89.Text
+  - DFr_F8171D09.Text
+  - DFr_12F58913.Text
+  - DFr_25992F8D.Text
+  - DFr_DB40A062.Text
+  - DFr_BE699418.Text
+  - DFr_0FDD7D3C.Text
+  - DFr_1ACCD1D7.Text
+  - DFr_72E9D450.Text
   - Ntt_D0611D58.DisplayName
   - Ntt_45084A9E.DisplayName
   - Ntt_6C607307.DisplayName
@@ -61,6 +103,10 @@ MonoBehaviour:
   - Conversation with Blue with no choices
   - Red - Branching Conversation 1
   - Conversation with Red with no choices
+  - Red - Activity 1
+  - Red - Activity 2
+  - Blue - Activity 1
+  - Blue - Activity 2
   - Hi. Where are we?
   - Hi... I'm not too sure.
   - This is odd, isn't it?
@@ -97,6 +143,44 @@ MonoBehaviour:
   - Oh, god, fuck off, Circle.
   - Nah, I'm fine. See you around, Red!
   - Hmph. Fine.
+  - Hey, Red.
+  - Oh. It's you.
+  - Why are you so grumpy all the time?
+  - Is it just towards me, or towards everybody?
+  - Give me a break. I hate it here.
+  - What's so bad about this place?
+  - Ugh. Tell me about it.
+  - Whoever designed it clearly needed more time to cook.
+  - Um, everything?
+  - The stupid walls, the creepy church, the tiny size?
+  - UGH!
+  - ... sorry.
+  - You know what?
+  - You're not so bad.
+  - Finally.
+  - Don't push it. See ya.
+  - You're back.
+  - Didn't think you'd show.
+  - It's not like I wanted to.
+  - I scouted around the area.
+  - It seems that we're trapped here.
+  - Trapped?
+  - Yes, trapped, dipshit.
+  - Sorry, not in the mood today.
+  - Hang in there, Red.
+  - When are you ever 'in the mood'?
+  - '*sigh*'
+  - "You\u2019re late."
+  - "Clock\u2019s broken."
+  - "So\u2019s the roof."
+  - You sure about this?
+  - Not really.
+  - Any trouble?
+  - Never left my side.
+  - You still have it?
+  - "I almost didn\u2019t."
+  - "Didn\u2019t think you\u2019d come."
+  - You're here.
   - Circle
   - Blue
   - Red

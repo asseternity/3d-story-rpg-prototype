@@ -14,7 +14,7 @@ public class StateController : MonoBehaviour
     // - A list of Queues
     // - And a levels int
 
-    // Calendar system
+    // Calendar and world populating system
     public int day = 1;
     public int week = 1;
     public int month = 1;
@@ -33,6 +33,7 @@ public class StateController : MonoBehaviour
         "Saturday",
         "Sunday"
     };
+    public List<GameObject> activityStarters;
 
     public void AdvanceDay()
     {
@@ -56,6 +57,21 @@ public class StateController : MonoBehaviour
         {
             week++;
         }
+
+        foreach (GameObject AS in activityStarters)
+        {
+            ActivityStarter AS_script = AS.GetComponent<ActivityStarter>();
+            if (AS_script.daysAvailable.Contains(day))
+            {
+                GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
+                parentObject.SetActive(true);
+            }
+            else
+            {
+                GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
+                parentObject.SetActive(false);
+            }
+        }
     }
 
     // Activity tracking system
@@ -78,6 +94,7 @@ public class StateController : MonoBehaviour
             progressedActivities.Add(
                 new ProgressEntry { activity = activityToStart, currentStage = 0 }
             );
+            index = progressedActivities.Count - 1;
         }
 
         // completion check
