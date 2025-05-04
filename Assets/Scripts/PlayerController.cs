@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (storyManager.DialogueActive || isInBattle)
+        if (storyManager.DialogueActive || isInBattle || stateController.blockMovement)
         {
-            // Disable movement when dialogue or battle is active.
+            // Disable movement when dialogue, battle or confirmation box is active.
             return;
         }
         // Get input for movement.
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             }
             if (readyToSleep == true)
             {
-                stateController.AdvanceDay();
+                stateController.OpenConfirmationWindow(stateController.AdvanceDay);
                 readyToSleep = false;
             }
         }

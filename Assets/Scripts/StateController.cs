@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class StateController : MonoBehaviour
 {
@@ -34,9 +36,13 @@ public class StateController : MonoBehaviour
         "Sunday"
     };
     public List<GameObject> activityStarters;
+    public Canvas confirmationCanvas;
+    public bool blockMovement = false;
+    public FadeManager fadeManager;
 
     public void AdvanceDay()
     {
+        StartCoroutine(fadeManager.FadeScreen());
         day++;
         totalDaysPassed++;
 
@@ -65,6 +71,28 @@ public class StateController : MonoBehaviour
             {
                 GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
                 parentObject.SetActive(true);
+
+                // check if the activity has been completed or not
+                int index = progressedActivities.FindIndex(e => e.activity == AS_script.activity);
+                if (index >= 0)
+                {
+                    var entry = progressedActivities[index];
+                    if (entry.currentStage >= entry.activity.stages.Count)
+                    {
+                        Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                        exclamationMark.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                        exclamationMark.gameObject.SetActive(true);
+                    }
+                }
+                else
+                {
+                    Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                    exclamationMark.gameObject.SetActive(true);
+                }
             }
             else
             {
@@ -112,5 +140,23 @@ public class StateController : MonoBehaviour
         // advance the stage in our list
         entry.currentStage++;
         progressedActivities[index] = entry; // write back
+    }
+
+    public void OpenConfirmationWindow(UnityAction confirmationCallback)
+    {
+        blockMovement = true;
+        confirmationCanvas.gameObject.SetActive(true);
+        Transform yesComp = confirmationCanvas.transform.Find("YesButton");
+        Button yesBtn = yesComp.GetComponent<Button>();
+        yesBtn.onClick.RemoveAllListeners();
+        yesBtn.onClick.AddListener(confirmationCallback);
+        yesBtn.onClick.AddListener(() => confirmationCanvas.gameObject.SetActive(false));
+        yesBtn.onClick.AddListener(() => blockMovement = false);
+    }
+
+    public void CloseConfirmationWindow()
+    {
+        confirmationCanvas.gameObject.SetActive(false);
+        blockMovement = false;
     }
 }

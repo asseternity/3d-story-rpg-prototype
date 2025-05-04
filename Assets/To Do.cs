@@ -25,6 +25,9 @@
 // [v] - adjust PlayerController to also alternatively accept an Activity instead of a Queue
 // [v] - populate the world with with NPC holding Activities
 // [v] - adjust the main story state controller to disable some NPCs on certain days!
+// [v] - some visual indicator if there's a dialogue available
+// [v] - separate fade to black script and object for battles and day / night
+// [v] - are you sure you want to end the day window
 // [_] - dialogue UI prettying - layers, shadows, make models appear
 // [_] - quests SO
 // [_] - saving / loading
@@ -32,7 +35,6 @@
 // [_] - pause menu
 // [_] - settings menu
 // [_] - game over
-// [_] - some visual indicator if there's a dialogue available
 
 // persona fighting mechanics:
 // [v] build the story manager script with 2 functions: startDialogue (articyObject, nextThing) and startBattle (battleID, nextThing)
