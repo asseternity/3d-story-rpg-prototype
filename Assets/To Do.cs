@@ -16,17 +16,17 @@
 // [v] articy naming - and using vars in dialogues, like for pronouns
 // [v] some kind of story manager that determines which things are available and which indicators to show
 // [v] some kind of quests system that envelops everything, including the articy things
-// [_] (1) big game loop - cutscenes following fights following cutscenes:
+// [v] big game loop - cutscenes following fights following cutscenes:
 // [v] - queues SO
 // [v] - tie a queue to NPC conversations instead of direct Articy Dialogue
 // [v] - activities SO
 // [v] - main story state controller
-// [_] - calendar system UI and a bed to progress the day
-// [_] - adjust PlayerController to also alternatively accept an Activity instead of a Queue
-// [_] - populate the world with with NPC holding Activities
-// [_] - adjust the main story state controller to disable some NPCs on certain days!
+// [v] - calendar system UI and a bed to progress the day
+// [v] - adjust PlayerController to also alternatively accept an Activity instead of a Queue
+// [v] - populate the world with with NPC holding Activities
+// [v] - adjust the main story state controller to disable some NPCs on certain days!
+// [_] - dialogue UI prettying - layers, shadows, make models appear
 // [_] - quests SO
-// [_] (4) dialogue UI prettying - layers, shadows, make models appear
 // [_] - saving / loading
 // [_] - main menu
 // [_] - pause menu
@@ -46,8 +46,8 @@
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
 // [v] add submenus, spells and abilities
 // [v] using stats and abilities for all participants and where to store them
-// [_] (2) fix that battle SOs change after testing
-// [_] (3) pretty the fighting system:
+// [_] (1) fix that battle SOs change after testing
+// [_] (2) pretty the fighting system:
 // [v] - fluidity
 // [v] - animations
 // [v] - enemies go one after another not all at once
