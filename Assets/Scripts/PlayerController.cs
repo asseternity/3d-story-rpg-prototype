@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             }
             if (readyToSleep == true)
             {
-                stateController.OpenConfirmationWindow(stateController.AdvanceDay);
+                stateController.OpenConfirmationWindow(stateController.FadeToAdvanceDay);
                 readyToSleep = false;
             }
         }

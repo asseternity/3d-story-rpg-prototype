@@ -33,11 +33,13 @@ public class BattleManager : MonoBehaviour
     private int enemiesAttacked = 0; // counter for the number of enemies attacked
     public FadeManager fadeManager;
 
+    public void FadeToFindBattleByID(BattleData battleData, List<Queue.QueueEntry> queue)
+    {
+        StartCoroutine(fadeManager.FadeScreen(() => FindBattleByID(battleData, queue)));
+    }
+
     public void FindBattleByID(BattleData battleData, List<Queue.QueueEntry> queue)
     {
-        // fadeout start
-        StartCoroutine(fadeManager.FadeScreen());
-
         // clear data
         allParticipants = new List<BattleParticipant>();
         enemies = new List<BattleParticipant>();

@@ -28,7 +28,8 @@
 // [v] - some visual indicator if there's a dialogue available
 // [v] - separate fade to black script and object for battles and day / night
 // [v] - are you sure you want to end the day window
-// [_] - dialogue UI prettying - layers, shadows, make models appear
+// [v] - have the fadeout call the next thing so that it doesn't move before the fadeout!
+// [_] - dialogue UI prettying - layers, shadows, images
 // [_] - quests SO
 // [_] - saving / loading
 // [_] - main menu

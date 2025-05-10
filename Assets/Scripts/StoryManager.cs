@@ -107,7 +107,7 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         pendingQueue.RemoveAt(0);
         DialogueActive = false;
         dialogueWidget.SetActive(DialogueActive);
-        battleManager.FindBattleByID(battleData, pendingQueue);
+        battleManager.FadeToFindBattleByID(battleData, pendingQueue);
     }
 
     /// <summary>

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class FadeManager : MonoBehaviour
@@ -8,7 +9,7 @@ public class FadeManager : MonoBehaviour
     public float fadeDuration = 1f;
     public float waitDuration = 2f;
 
-    public IEnumerator FadeScreen()
+    public IEnumerator FadeScreen(UnityAction callback)
     {
         // activate panel
         blackScreen.gameObject.SetActive(true);
@@ -18,6 +19,9 @@ public class FadeManager : MonoBehaviour
 
         // Wait
         yield return new WaitForSeconds(waitDuration);
+
+        // activate callback
+        callback();
 
         // Fade back in
         yield return StartCoroutine(Fade(1f, 0f));

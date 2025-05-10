@@ -40,9 +40,13 @@ public class StateController : MonoBehaviour
     public bool blockMovement = false;
     public FadeManager fadeManager;
 
+    public void FadeToAdvanceDay()
+    {
+        StartCoroutine(fadeManager.FadeScreen(() => AdvanceDay()));
+    }
+
     public void AdvanceDay()
     {
-        StartCoroutine(fadeManager.FadeScreen());
         day++;
         totalDaysPassed++;
 

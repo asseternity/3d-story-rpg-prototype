@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Blue Friendship
   m_EditorClassIdentifier: 
   stages:
-  - {fileID: 11400000, guid: b181200c99bcaca448625ddd7fd26766, type: 2}
+  - {fileID: 11400000, guid: 83e0fc8060c5ae84fa034e341c5b28da, type: 2}
   - {fileID: 11400000, guid: 824e572f11018ba40afde45190ad6f55, type: 2}
