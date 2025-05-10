@@ -29,7 +29,7 @@
 // [v] - separate fade to black script and object for battles and day / night
 // [v] - are you sure you want to end the day window
 // [v] - have the fadeout call the next thing so that it doesn't move before the fadeout!
-// [_] - dialogue UI prettying - layers, shadows, images
+// [v] - dialogue UI prettying - layers, shadows, images
 // [_] - quests SO
 // [_] - saving / loading
 // [_] - main menu
