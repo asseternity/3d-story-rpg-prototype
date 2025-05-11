@@ -16,4 +16,7 @@ MonoBehaviour:
   participants:
   - {fileID: 11400000, guid: 98b3653d093bba244a9829385ab5333c, type: 2}
   - {fileID: 11400000, guid: a0e54c24d1a26944a932d1f26f9dfada, type: 2}
+  - {fileID: 11400000, guid: c81d7f4cbeaeee84181af98f93d3e328, type: 2}
+  - {fileID: 11400000, guid: b57830261c0d9aa48b8c748fbd012cf5, type: 2}
+  - {fileID: 11400000, guid: 74cc565955940ab4089a2c3f05aca5ef, type: 2}
   battleEnvironmentPrefab: {fileID: 7988844262067716313, guid: 71ee19a003310c742a59cbc67e538c0d, type: 3}

@@ -55,15 +55,31 @@ public class BattleManager : MonoBehaviour
         currentBattleData.battleID = battleData.battleID;
         currentBattleData.battleEnvironmentPrefab = battleData.battleEnvironmentPrefab;
         currentBattleData.participants = new List<BattleParticipant>(battleData.participants);
-        StartBattle(battleData); // Start the battle with the provided data
+        StartBattle(currentBattleData); // Start the battle with the provided data
     }
 
     public void StartBattle(BattleData battleData)
     {
-        allParticipants = battleData.participants;
-        enemies = battleData.participants.FindAll(p => !p.isPlayer && !p.isFriendly);
-        player = battleData.participants.Find(p => p.isPlayer);
-        friendlies = battleData.participants.FindAll(p => !p.isPlayer && p.isFriendly);
+        // clone participants
+        foreach (var original in battleData.participants)
+        {
+            var unit = Instantiate(original);
+            unit.HP = unit.maxHP;
+            unit.MP = unit.maxMP;
+            allParticipants.Add(unit);
+            if (unit.isPlayer)
+            {
+                player = unit;
+            }
+            else if (unit.isFriendly)
+            {
+                friendlies.Add(unit);
+            }
+            else
+            {
+                enemies.Add(unit);
+            }
+        }
 
         // take away movement control
         // HOW TO DO: reference main player object here and take away movement control in the script
@@ -337,6 +353,21 @@ public class BattleManager : MonoBehaviour
                 button.GetComponentInChildren<Text>().text = ""; // Set the text to "Empty" for empty buttons
             }
         }
+    }
+
+    public void OnSpellHoverEnter(BattleMove spell)
+    {
+        GameObject spellHoverPanel = battleUI.transform.Find("SpellEffectHoverPanel")?.gameObject;
+        Text spellHoverText = spellHoverPanel.GetComponentInChildren<Text>();
+        spellHoverText.text =
+            $"{spell.name}. This spell targets {spell.numberOfTargets.ToString()} creature(s), dealing {spell.DMG.ToString()} damage, and costing {spell.MPcost.ToString()} MP.";
+        spellHoverPanel.SetActive(true);
+    }
+
+    public void OnSpellHoverLeave()
+    {
+        GameObject spellHoverPanel = battleUI.transform.Find("SpellEffectHoverPanel")?.gameObject;
+        spellHoverPanel.SetActive(false);
     }
 
     public void OnActionButtonClicked(string actionType)

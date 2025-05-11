@@ -49,13 +49,14 @@
 // [v] make the buttons feel good and reactive, making it visible which one is clicked
 // [v] add submenus, spells and abilities
 // [v] using stats and abilities for all participants and where to store them
-// [_] (1) fix that battle SOs change after testing
-// [_] (2) pretty the fighting system:
+// [v] fix that battle SOs change after testing
+// [_] pretty the fighting system:
 // [v] - fluidity
 // [v] - animations
 // [v] - enemies go one after another not all at once
 // [v] - one animation for moves with multiple targets
-// [_] - damage numbers and MP costs
+// [_] - MP costs on hover
+// [_] - damage numbers
 // [_] - camera angles
 // [_] - particle effects
 // [_] - ui and turn order

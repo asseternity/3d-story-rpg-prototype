@@ -13,13 +13,6 @@ MonoBehaviour:
   m_Name: TestQueue1
   m_EditorClassIdentifier: 
   entries:
-  - entryType: 0
-    dialogue:
-      instanceId: 0
-      referencingMode: 0
-      lowId: 307
-      highId: 16777216
-    battle: {fileID: 0}
   - entryType: 1
     dialogue:
       instanceId: 0

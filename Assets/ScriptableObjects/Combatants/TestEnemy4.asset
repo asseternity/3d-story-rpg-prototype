@@ -15,8 +15,8 @@ MonoBehaviour:
   participantName: TestEnemy4
   isPlayer: 0
   isFriendly: 0
-  maxHP: 50
-  HP: 50
+  maxHP: 5
+  HP: 5
   maxMP: 5
   MP: 5
   DMG: 1

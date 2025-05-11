@@ -15,10 +15,10 @@ MonoBehaviour:
   participantName: TestEnemy5
   isPlayer: 0
   isFriendly: 0
-  maxHP: 1
-  HP: 1
-  maxMP: 1
-  MP: 1
+  maxHP: 5
+  HP: 5
+  maxMP: 5
+  MP: 5
   DMG: 1
   prefabModel: {fileID: 8343872959262338839, guid: 85e49783fd3e828409ce2eff8d4ed280, type: 3}
   moves: []
