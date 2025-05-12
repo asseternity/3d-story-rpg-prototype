@@ -31,7 +31,7 @@
 // [v] - have the fadeout call the next thing so that it doesn't move before the fadeout!
 // [v] - dialogue UI prettying - layers, shadows, images
 // [_] - quests SO
-// [_] - saving / loading
+// [_] - saving / loading (for loading use ArticyGlobalVariables.Default.SetVariableByString(name, value))
 // [_] - main menu
 // [_] - pause menu
 // [_] - settings menu
@@ -55,7 +55,7 @@
 // [v] - animations
 // [v] - enemies go one after another not all at once
 // [v] - one animation for moves with multiple targets
-// [_] - MP costs on hover
+// [v] - MP costs on hover
 // [_] - damage numbers
 // [_] - camera angles
 // [_] - particle effects

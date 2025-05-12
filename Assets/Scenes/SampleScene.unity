@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 345549236}
   - component: {fileID: 345549235}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: SpellEffectText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,6 +1881,7 @@ GameObject:
   - component: {fileID: 443525094}
   - component: {fileID: 443525093}
   - component: {fileID: 443525092}
+  - component: {fileID: 443525095}
   m_Layer: 5
   m_Name: SpellButton5
   m_TagString: Untagged
@@ -1903,10 +1904,10 @@ RectTransform:
   - {fileID: 813456500}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135.1949, y: -100.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443525092
 MonoBehaviour:
@@ -1990,6 +1991,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443525090}
   m_CullTransparentMesh: 1
+--- !u!114 &443525095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443525090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c119ade71019041bbdbd7b22075c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &454652747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2250,6 +2263,7 @@ GameObject:
   - component: {fileID: 470466794}
   - component: {fileID: 470466793}
   - component: {fileID: 470466792}
+  - component: {fileID: 470466795}
   m_Layer: 5
   m_Name: SpellButton1
   m_TagString: Untagged
@@ -2272,10 +2286,10 @@ RectTransform:
   - {fileID: 566987303}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 55.1949, y: -40.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470466792
 MonoBehaviour:
@@ -2359,6 +2373,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470466790}
   m_CullTransparentMesh: 1
+--- !u!114 &470466795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470466790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c119ade71019041bbdbd7b22075c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &494630066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3775,10 +3801,10 @@ RectTransform:
   - {fileID: 1107340727}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 215.1949, y: -100.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &750113866
 MonoBehaviour:
@@ -5855,6 +5881,7 @@ GameObject:
   - component: {fileID: 1154616041}
   - component: {fileID: 1154616040}
   - component: {fileID: 1154616039}
+  - component: {fileID: 1154616042}
   m_Layer: 5
   m_Name: SpellButton2
   m_TagString: Untagged
@@ -5877,10 +5904,10 @@ RectTransform:
   - {fileID: 423388783}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135.1949, y: -40.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154616039
 MonoBehaviour:
@@ -5964,6 +5991,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154616037}
   m_CullTransparentMesh: 1
+--- !u!114 &1154616042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154616037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c119ade71019041bbdbd7b22075c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156974447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6581,7 +6620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1271515494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6763,7 +6802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1278305389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8248,6 +8287,7 @@ GameObject:
   - component: {fileID: 1599102068}
   - component: {fileID: 1599102067}
   - component: {fileID: 1599102066}
+  - component: {fileID: 1599102069}
   m_Layer: 5
   m_Name: SpellButton4
   m_TagString: Untagged
@@ -8270,10 +8310,10 @@ RectTransform:
   - {fileID: 1564853253}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 55.1949, y: -100.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599102066
 MonoBehaviour:
@@ -8357,6 +8397,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599102064}
   m_CullTransparentMesh: 1
+--- !u!114 &1599102069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599102064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c119ade71019041bbdbd7b22075c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641876248
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,7 +8716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1728043552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9214,6 +9266,7 @@ GameObject:
   - component: {fileID: 1789590239}
   - component: {fileID: 1789590238}
   - component: {fileID: 1789590237}
+  - component: {fileID: 1789590240}
   m_Layer: 5
   m_Name: SpellButton3
   m_TagString: Untagged
@@ -9236,10 +9289,10 @@ RectTransform:
   - {fileID: 220011566}
   m_Father: {fileID: 1728043552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 215.1949, y: -40.29915}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789590237
 MonoBehaviour:
@@ -9323,6 +9376,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789590235}
   m_CullTransparentMesh: 1
+--- !u!114 &1789590240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789590235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c119ade71019041bbdbd7b22075c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1806005469
 GameObject:
   m_ObjectHideFlags: 0
@@ -9659,7 +9724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1909147585
 MonoBehaviour:
   m_ObjectHideFlags: 0

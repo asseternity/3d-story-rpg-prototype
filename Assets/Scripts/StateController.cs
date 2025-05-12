@@ -24,7 +24,7 @@ public class StateController : MonoBehaviour
     public int daysPerWeek = 7;
     public int daysPerMonth = 30;
     public int monthsPerYear = 12;
-    private int totalDaysPassed = 0;
+    public int totalDaysPassed = 0;
     private string[] daysOfWeek = new string[]
     {
         "Monday",
@@ -108,13 +108,13 @@ public class StateController : MonoBehaviour
 
     // Activity tracking system
     [Serializable]
-    private struct ProgressEntry
+    public struct ProgressEntry
     {
         public Activity activity;
         public int currentStage;
     }
 
-    private List<ProgressEntry> progressedActivities = new List<ProgressEntry>();
+    public List<ProgressEntry> progressedActivities = new List<ProgressEntry>();
     public StoryManager storyManager;
 
     public void StartActivity(Activity activityToStart)

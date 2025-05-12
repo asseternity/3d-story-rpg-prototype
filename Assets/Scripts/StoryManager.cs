@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Articy.Articy_Tutorial;
+using Articy.Articy_Tutorial.GlobalVariables;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
 using UnityEngine;
@@ -195,5 +196,52 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     {
         foreach (Transform c in branchLayoutPanel)
             Destroy(c.gameObject);
+    }
+
+    public List<ArticyVariable> GatherGlobalVariables()
+    {
+        var variables = ArticyGlobalVariables.Default.Variables;
+        List<ArticyVariable> articyVars = new List<ArticyVariable>();
+        foreach (var pair in variables)
+        {
+            string varName = pair.Key;
+            object value = pair.Value;
+            ArticyVariable av = new ArticyVariable();
+            av.name = varName;
+            if (value is int)
+            {
+                av.type = ArticyVariableType.Int;
+                av.intValue = (int)value;
+            }
+            else if (value is float)
+            {
+                av.type = ArticyVariableType.Float;
+                av.floatValue = (float)value;
+            }
+            else if (value is bool)
+            {
+                av.type = ArticyVariableType.Bool;
+                av.boolValue = (bool)value;
+            }
+            else if (value is string)
+            {
+                av.type = ArticyVariableType.String;
+                av.stringValue = (string)value;
+            }
+            articyVars.Add(av);
+        }
+        return articyVars;
+    }
+
+    public string GetCurrentBlockId()
+    {
+        var currentRef = flowPlayer.CurrentObject;
+        if (currentRef != null && currentRef.HasReference)
+        {
+            // GetObject<ArticyObject>() returns the base type of all Articy assets.
+            var articyObj = currentRef.GetObject<ArticyObject>();
+            return articyObj.TechnicalName;
+        }
+        return null;
     }
 }

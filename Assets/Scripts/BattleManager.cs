@@ -341,6 +341,9 @@ public class BattleManager : MonoBehaviour
             button.interactable = true;
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() => SpellSelected(move)); // uses local `move`
+            ButtonHoverHandler bhh = button.GetComponent<ButtonHoverHandler>();
+            bhh.enterCallback = () => OnSpellHoverEnter(move);
+            bhh.exitCallback = () => OnSpellHoverLeave();
             button.GetComponentInChildren<Text>().text = move.moveName;
         }
         if (player.moves.Count < spellButtons.Length)
