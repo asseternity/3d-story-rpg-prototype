@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
@@ -9,6 +10,8 @@ public class SaveSystem : MonoBehaviour
     public BattleManager bm;
     public StoryManager sm;
     public StateController cs;
+    public DatabaseActivity db_activity;
+    public DatabaseMoves db_moves;
 
     public void SaveGame(int slot)
     {
@@ -43,13 +46,13 @@ public class SaveSystem : MonoBehaviour
         b.maxMP = bm.player.maxMP;
         b.MP = bm.player.MP;
         b.DMG = bm.player.DMG;
-        List<string> moveIDs = new List<string>();
+        List<string> moveNames = new List<string>();
         foreach (var move in bm.player.moves)
         {
             string moveName = move.moveName;
-            moveIDs.Add(moveName);
+            moveNames.Add(moveName);
         }
-        b.moveIDs = moveIDs;
+        b.moveNames = moveNames;
         saveData.playerBattleStats = b;
 
         List<ArticyVariable> av = sm.GatherGlobalVariables();
@@ -63,5 +66,64 @@ public class SaveSystem : MonoBehaviour
         File.WriteAllText(path, jsonString);
     }
 
-    public void LoadGame() { }
+    public void LoadGame(int slot)
+    {
+        string path = Path.Combine(Application.persistentDataPath, $"savefile{slot}.json");
+
+        if (!File.Exists(path))
+        {
+            Debug.LogError($"No save file found at {path}");
+            return;
+        }
+
+        string jsonString = File.ReadAllText(path);
+        SaveData data = JsonUtility.FromJson<SaveData>(jsonString);
+
+        // 1) Player position
+        player3D.transform.position = data.playerPosition;
+
+        // 2) Calendar
+        cs.day = data.calendar.day;
+        cs.month = data.calendar.month;
+        cs.year = data.calendar.year;
+        cs.totalDaysPassed = data.calendar.totalDaysPassed;
+
+        // 3) Progressed Activities
+        cs.progressedActivities.Clear();
+        foreach (var entry in data.progressedActivities)
+        {
+            // A way to map activityID -> real Activity object
+            var foundActivity = db_activity.GetByID(entry.activityID);
+            cs.progressedActivities.Add(
+                new StateController.ProgressEntry
+                {
+                    activity = foundActivity,
+                    currentStage = entry.currentStage,
+                }
+            );
+        }
+
+        // 4) Battle Stats
+        var pb = data.playerBattleStats;
+        bm.player.participantName = pb.participantName;
+        bm.player.maxHP = pb.maxHP;
+        bm.player.HP = pb.HP;
+        bm.player.maxMP = pb.maxMP;
+        bm.player.MP = pb.MP;
+        bm.player.DMG = pb.DMG;
+
+        bm.player.moves.Clear();
+        foreach (var moveName in pb.moveNames)
+        {
+            // A way to map moveID -> real Move object
+            var foundMove = db_moves.GetByName(moveName);
+            if (foundMove != null)
+            {
+                bm.player.moves.Add(foundMove);
+            }
+        }
+
+        // 5) Articy variables and current block
+        // [_] I need to create methods GetGlobalVariables and LoadBlock for StoryManager
+    }
 }

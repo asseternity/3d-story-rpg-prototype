@@ -10,6 +10,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Activity", menuName = "ScriptableObjects/Activity", order = 4)]
 public class Activity : ScriptableObject
 {
+    public string id;
+
     [Tooltip("Define an ordered sequence of Queues for this Activity.")]
     public List<Queue> stages = new List<Queue>();
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17687025fbc62214db41191c7636cf79, type: 3}
   m_Name: Red Friendship
   m_EditorClassIdentifier: 
+  id: 1
   stages:
   - {fileID: 11400000, guid: 032344a00b35a5d4e9cb2561716b9885, type: 2}
   - {fileID: 11400000, guid: 736f9f6f6c643fc438dd1b560ce66b42, type: 2}

@@ -244,4 +244,41 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         }
         return null;
     }
+
+    public void SetGlobalVariables(List<ArticyVariable> importedVars)
+    {
+        var globalVars = ArticyDatabase.DefaultGlobalVariables;
+        foreach (var av in importedVars)
+        {
+            switch (av.type)
+            {
+                case ArticyVariableType.Bool:
+                    globalVars.SetVariableByString(av.name, av.boolValue);
+                    break;
+                case ArticyVariableType.String:
+                    globalVars.SetVariableByString(av.name, av.stringValue);
+                    break;
+                case ArticyVariableType.Int:
+                    globalVars.SetVariableByString(av.name, av.intValue);
+                    break;
+                case ArticyVariableType.Float:
+                    globalVars.SetVariableByString(av.name, av.floatValue);
+                    break;
+            }
+        }
+    }
+
+    public void SetActiveBlock(string reqBlockID)
+    {
+        var obj = ArticyDatabase.GetObject(reqBlockID);
+        if (obj is IArticyObject flowObject)
+        {
+            // Tell the StoryManager (or whatever you use) to start here
+            CommenceDialogue(flowObject);
+        }
+        else
+        {
+            Debug.LogError($"Failed to load Articy flow object with ID: {reqBlockID}");
+        }
+    }
 }

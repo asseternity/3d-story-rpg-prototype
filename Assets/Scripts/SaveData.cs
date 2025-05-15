@@ -24,7 +24,7 @@ public class PlayerBattleStatsSave
     public int maxMP;
     public int MP;
     public int DMG;
-    public List<string> moveIDs;
+    public List<string> moveNames;
 }
 
 [System.Serializable]
