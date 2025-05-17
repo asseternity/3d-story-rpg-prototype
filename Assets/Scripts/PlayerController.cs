@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject pauseUI;
+
     [Header("Movement Settings")]
     public float speed = 5f;
     public Transform cameraTransform; // Assign your camera in the Inspector.
@@ -51,11 +53,17 @@ public class PlayerController : MonoBehaviour
     {
         // Articy
         DialogueInteraction();
+
+        // pause
+        if (Input.GetButtonDown("Cancel"))
+        {
+            TogglePause();
+        }
     }
 
     void FixedUpdate()
     {
-        if (storyManager.DialogueActive || isInBattle || stateController.blockMovement)
+        if (storyManager.DialogueActive || isInBattle || stateController.blockMovement || paused)
         {
             // Disable movement when dialogue, battle or confirmation box is active.
             return;
@@ -149,6 +157,22 @@ public class PlayerController : MonoBehaviour
         {
             availableActivity = null;
             readyToSleep = false;
+        }
+    }
+
+    private bool paused = false;
+
+    public void TogglePause()
+    {
+        if (paused)
+        {
+            pauseUI.SetActive(false);
+            paused = false;
+        }
+        else
+        {
+            pauseUI.SetActive(true);
+            paused = true;
         }
     }
 }

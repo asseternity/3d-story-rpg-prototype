@@ -124,6 +124,7 @@ public class SaveSystem : MonoBehaviour
         }
 
         // 5) Articy variables and current block
-        // [_] I need to create methods GetGlobalVariables and LoadBlock for StoryManager
+        sm.SetGlobalVariables(data.articyVariables);
+        sm.SetActiveBlock(data.currentBlockId);
     }
 }

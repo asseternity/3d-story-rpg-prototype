@@ -270,15 +270,18 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void SetActiveBlock(string reqBlockID)
     {
-        var obj = ArticyDatabase.GetObject(reqBlockID);
-        if (obj is IArticyObject flowObject)
+        if (reqBlockID != null)
         {
-            // Tell the StoryManager (or whatever you use) to start here
-            CommenceDialogue(flowObject);
-        }
-        else
-        {
-            Debug.LogError($"Failed to load Articy flow object with ID: {reqBlockID}");
+            var obj = ArticyDatabase.GetObject(reqBlockID);
+            if (obj is IArticyObject flowObject)
+            {
+                // Tell the StoryManager (or whatever you use) to start here
+                CommenceDialogue(flowObject);
+            }
+            else
+            {
+                Debug.LogError($"Failed to load Articy flow object with ID: {reqBlockID}");
+            }
         }
     }
 }
