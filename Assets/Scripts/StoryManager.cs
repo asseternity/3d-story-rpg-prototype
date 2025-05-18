@@ -270,7 +270,7 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void SetActiveBlock(string reqBlockID)
     {
-        if (reqBlockID != null)
+        if (reqBlockID != "")
         {
             var obj = ArticyDatabase.GetObject(reqBlockID);
             if (obj is IArticyObject flowObject)

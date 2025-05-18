@@ -59,7 +59,14 @@ public class SaveSystem : MonoBehaviour
         saveData.articyVariables = av;
 
         string blockID = sm.GetCurrentBlockId();
-        saveData.currentBlockId = blockID;
+        if (blockID != null)
+        {
+            saveData.currentBlockId = blockID;
+        }
+        else
+        {
+            saveData.currentBlockId = "";
+        }
 
         string jsonString = JsonUtility.ToJson(saveData, true);
         string path = Path.Combine(Application.persistentDataPath, $"savefile{slot}.json");
@@ -126,5 +133,14 @@ public class SaveSystem : MonoBehaviour
         // 5) Articy variables and current block
         sm.SetGlobalVariables(data.articyVariables);
         sm.SetActiveBlock(data.currentBlockId);
+
+        // 6) Unpause player
+        PlayerController pc = player3D.GetComponent<PlayerController>();
+        pc.paused = false;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

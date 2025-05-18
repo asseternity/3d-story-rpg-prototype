@@ -31,8 +31,11 @@
 // [v] - have the fadeout call the next thing so that it doesn't move before the fadeout!
 // [v] - dialogue UI prettying - layers, shadows, images
 // [v] - saving / loading backend (for loading use ArticyGlobalVariables.Default.SetVariableByString(name, value))
-// [_] - pause menu
-// [_] - saving frontend
+// [v] - pause menu
+// [v] - saving frontend
+// [v] - saving testing
+// [v] - saving slots
+// [_] - cannot save in battle!
 // [_] - main menu
 // [_] - quests SO
 // [_] - settings menu

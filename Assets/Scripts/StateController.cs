@@ -146,7 +146,7 @@ public class StateController : MonoBehaviour
         progressedActivities[index] = entry; // write back
     }
 
-    public void OpenConfirmationWindow(UnityAction confirmationCallback)
+    public void OpenConfirmationWindow(UnityAction confirmationCallback, string confirmationText)
     {
         blockMovement = true;
         confirmationCanvas.gameObject.SetActive(true);
@@ -156,6 +156,11 @@ public class StateController : MonoBehaviour
         yesBtn.onClick.AddListener(confirmationCallback);
         yesBtn.onClick.AddListener(() => confirmationCanvas.gameObject.SetActive(false));
         yesBtn.onClick.AddListener(() => blockMovement = false);
+
+        // populate text
+        Transform panel = confirmationCanvas.transform.Find("Panel");
+        Text textComp = panel.GetComponentInChildren<Text>();
+        textComp.text = confirmationText;
     }
 
     public void CloseConfirmationWindow()

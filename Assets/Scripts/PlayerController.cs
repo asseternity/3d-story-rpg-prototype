@@ -117,7 +117,10 @@ public class PlayerController : MonoBehaviour
             }
             if (readyToSleep == true)
             {
-                stateController.OpenConfirmationWindow(stateController.FadeToAdvanceDay);
+                stateController.OpenConfirmationWindow(
+                    stateController.FadeToAdvanceDay,
+                    "Are you sure you want to sleep?"
+                );
                 readyToSleep = false;
             }
         }
@@ -160,10 +163,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool paused = false;
+    public bool paused = false;
 
     public void TogglePause()
     {
+        Transform pausePanel = pauseUI.transform.Find("PausePanel");
+        Transform savePanel = pauseUI.transform.Find("SavePanel");
+        pausePanel.gameObject.SetActive(true);
+        savePanel.gameObject.SetActive(false);
+
         if (paused)
         {
             pauseUI.SetActive(false);
