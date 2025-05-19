@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ff58426c663fa46bb7669754e6884b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseUI: {fileID: 1806585377}
   pausePanel: {fileID: 1727478457}
   savePanel: {fileID: 1459519035}
   save1button: {fileID: 1521026676}
@@ -550,6 +551,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1727478458}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Save
@@ -561,6 +574,18 @@ PrefabInstance:
     - target: {fileID: 4276954640103726348, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Name
       value: SaveButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512376344100590685, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.3433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512376344100590685, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.3433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512376344100590685, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.3433962
       objectReference: {fileID: 0}
     - target: {fileID: 4512376344100590685, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -904,6 +929,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1459519036}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Empty
@@ -3450,6 +3487,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1727478458}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Load
@@ -4047,7 +4096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &664512312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5138,6 +5187,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1727478458}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Quit Game
@@ -6611,6 +6672,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1459519036}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Empty
@@ -6843,6 +6916,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1727478458}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Resume
@@ -8507,6 +8592,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338591182}
   m_CullTransparentMesh: 1
+--- !u!114 &1341367433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4512376344100590685, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+  m_PrefabInstance: {fileID: 66437840}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1349707983
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,6 +9504,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1459519036}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Back
@@ -9772,6 +9880,7 @@ MonoBehaviour:
   groundOffset: 0.1
   maxSlopeAngle: 45
   isInBattle: 0
+  paused: 0
 --- !u!1001 &1586767882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9780,6 +9889,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1459519036}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529552815439696034, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Text
       value: Empty
@@ -10422,6 +10543,7 @@ GameObject:
   - component: {fileID: 1727478461}
   - component: {fileID: 1727478460}
   - component: {fileID: 1727478459}
+  - component: {fileID: 1727478462}
   m_Layer: 5
   m_Name: PausePanel
   m_TagString: Untagged
@@ -10517,6 +10639,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727478457}
   m_CullTransparentMesh: 1
+--- !u!114 &1727478462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727478457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0e177f119a4234792b8d8731b87c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 1564888397}
+  saveButton: {fileID: 1341367433}
 --- !u!1 &1728043551
 GameObject:
   m_ObjectHideFlags: 0
@@ -12536,6 +12672,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 10108598}
     m_Modifications:
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603823402335237661, guid: e67c62119358a954f9f36d0860a19383, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4276954640103726348, guid: e67c62119358a954f9f36d0860a19383, type: 3}
       propertyPath: m_Name
       value: DialogueBranchClose
@@ -12782,6 +12930,18 @@ PrefabInstance:
     - target: {fileID: 2120404750908023031, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
       propertyPath: m_Name
       value: DialogueBranch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742411752489877794, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742411752489877794, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742411752489877794, guid: c7eecc359f888cb44ab1aae3944d817f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

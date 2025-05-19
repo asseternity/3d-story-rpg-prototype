@@ -35,7 +35,7 @@
 // [v] - saving frontend
 // [v] - saving testing
 // [v] - saving slots
-// [_] - cannot save in battle!
+// [v] - cannot save in battle
 // [_] - main menu
 // [_] - quests SO
 // [_] - settings menu
