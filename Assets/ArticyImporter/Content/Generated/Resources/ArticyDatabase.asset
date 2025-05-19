@@ -62,7 +62,7 @@ MonoBehaviour:
     parent: 72057594037927937
     technicalName: Flow
     articyType: Flow
-    childCount: 6
+    childCount: 7
   - id: 72057594037928243
     parent: 216172783251375095
     technicalName: Dlg_1CE13EAA
@@ -291,6 +291,46 @@ MonoBehaviour:
   - id: 72057594037929714
     parent: 72057594037929462
     technicalName: DFr_12F58913
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929807
+    parent: 216172783251375095
+    technicalName: Dlg_C8F2F1D1
+    articyType: Dialogue
+    childCount: 7
+  - id: 72057594037929813
+    parent: 72057594037929807
+    technicalName: DFr_FCC2B963
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929819
+    parent: 72057594037929807
+    technicalName: DFr_07DC4628
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929826
+    parent: 72057594037929807
+    technicalName: DFr_8CEDDAFA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929833
+    parent: 72057594037929807
+    technicalName: DFr_607E8E8C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929842
+    parent: 72057594037929807
+    technicalName: DFr_70E453C2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929849
+    parent: 72057594037929807
+    technicalName: DFr_7D9E444A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929856
+    parent: 72057594037929807
+    technicalName: DFr_C2CF19F6
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928533
@@ -552,7 +592,12 @@ MonoBehaviour:
     parent: 216172782815217020
     technicalName: Features
     articyType: Features
-    childCount: 2
+    childCount: 3
+  - id: 72057594037929783
+    parent: 216172785641213376
+    technicalName: Background
+    articyType: Feature
+    childCount: 0
   - id: 72057594037928793
     parent: 216172785641213376
     technicalName: NPC_Feature
@@ -617,6 +662,11 @@ MonoBehaviour:
     parent: 216172784713633229
     technicalName: 
     articyType: TemplateTypeFolder
+    childCount: 1
+  - id: 72057594037929779
+    parent: 216172782164859599
+    technicalName: DialogueBG
+    articyType: Template
     childCount: 0
   - id: 216172784493379826
     parent: 216172784713633229
@@ -737,7 +787,12 @@ MonoBehaviour:
     parent: 216172783392894804
     technicalName: Ufo_029286C8
     articyType: AssetsUserFolder
-    childCount: 3
+    childCount: 4
+  - id: 72057594037929886
+    parent: 72057594037928211
+    technicalName: Ast_4236CD55
+    articyType: Asset
+    childCount: 0
   - id: 72057594037929436
     parent: 72057594037928211
     technicalName: Ast_16525292
@@ -788,7 +843,8 @@ MonoBehaviour:
   - Assets/Images/Blue.png
   - Assets/Images/Red.png
   - Assets/Images/Green.png
-  mDefaultGlobalVariables: {fileID: 5118296012714835924}
+  - Assets/Images/black.bmp
+  mDefaultGlobalVariables: {fileID: 6624425742466862086}
   mPackages:
   - PackageId: 72057594037928208
     PackageName: All objects
@@ -815,7 +871,7 @@ MonoBehaviour:
     mIsVoiceOver: 0
   mThrowOnMissingText: 0
   mClearOnLanguageSwitch: 1
---- !u!114 &5118296012714835924
+--- !u!114 &6624425742466862086
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -856,6 +912,6 @@ MonoBehaviour:
   mLiveStringVariableCache: []
   mIsInitialized: 1
   mGameState:
-    _VariableStorage: {fileID: 5118296012714835924}
+    _VariableStorage: {fileID: 6624425742466862086}
   mPlayerInfo:
-    _VariableStorage: {fileID: 5118296012714835924}
+    _VariableStorage: {fileID: 6624425742466862086}

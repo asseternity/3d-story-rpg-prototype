@@ -147,6 +147,33 @@ namespace Articy.Articy_Tutorial
     
     
     [Serializable()]
+    public class ArticyValueDialogueBGTemplate : ArticyValue<Articy.Articy_Tutorial.Templates.DialogueBGTemplate>
+    {
+    }
+}
+namespace Articy.Articy_Tutorial
+{
+    
+    
+    [Serializable()]
+    public class ArticyValueBackgroundFeature : ArticyValue<Articy.Articy_Tutorial.Features.BackgroundFeature>
+    {
+    }
+}
+namespace Articy.Articy_Tutorial
+{
+    
+    
+    [Serializable()]
+    public class ArticyValueDialogueBG : ArticyValue<DialogueBG>
+    {
+    }
+}
+namespace Articy.Articy_Tutorial
+{
+    
+    
+    [Serializable()]
     public class ArticyValueHub : ArticyValue<Hub>
     {
     }

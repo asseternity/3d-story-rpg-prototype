@@ -18,9 +18,10 @@ MonoBehaviour:
   - Dlg_E5C50D1B.DisplayName
   - Dlg_E5C50D1B.Text
   - Dlg_EC2CB06F.DisplayName
-  - Dlg_D588A4F2.DisplayName
   - Dlg_45230FB4.DisplayName
+  - Dlg_D588A4F2.DisplayName
   - Dlg_2D3783B1.DisplayName
+  - Dlg_C8F2F1D1.DisplayName
   - DFr_18140904.Text
   - DFr_9B0350C3.Text
   - DFr_5D63D0FA.Text
@@ -73,6 +74,10 @@ MonoBehaviour:
   - DFr_65A1A4C0.Text
   - DFr_6FFEFBE9.Text
   - DFr_F4B87021.Text
+  - DFr_61EA8711.Text
+  - DFr_E8B09D89.Text
+  - DFr_F8171D09.Text
+  - DFr_12F58913.Text
   - DFr_DB69B9DD.Text
   - DFr_33A8B04A.Text
   - DFr_E57350AF.Text
@@ -84,17 +89,20 @@ MonoBehaviour:
   - DFr_0474029E.Text
   - DFr_DEC84280.Text
   - DFr_25E551E8.Text
-  - DFr_6DC43D98.Text
-  - DFr_61EA8711.Text
-  - DFr_E8B09D89.Text
-  - DFr_F8171D09.Text
-  - DFr_12F58913.Text
-  - DFr_25992F8D.Text
-  - DFr_DB40A062.Text
-  - DFr_BE699418.Text
-  - DFr_0FDD7D3C.Text
   - DFr_1ACCD1D7.Text
+  - DFr_0FDD7D3C.Text
+  - DFr_BE699418.Text
+  - DFr_DB40A062.Text
+  - DFr_25992F8D.Text
   - DFr_72E9D450.Text
+  - DFr_6DC43D98.Text
+  - DFr_FCC2B963.Text
+  - DFr_07DC4628.Text
+  - DFr_8CEDDAFA.Text
+  - DFr_607E8E8C.Text
+  - DFr_70E453C2.Text
+  - DFr_7D9E444A.Text
+  - DFr_C2CF19F6.Text
   - Ntt_D0611D58.DisplayName
   - Ntt_45084A9E.DisplayName
   - Ntt_6C607307.DisplayName
@@ -104,9 +112,10 @@ MonoBehaviour:
   - Red - Branching Conversation 1
   - Conversation with Red with no choices
   - Red - Activity 1
-  - Red - Activity 2
   - Blue - Activity 1
+  - Red - Activity 2
   - Blue - Activity 2
+  - Introduction
   - Hi. Where are we?
   - Hi... I'm not too sure.
   - This is odd, isn't it?
@@ -159,6 +168,10 @@ MonoBehaviour:
   - You're not so bad.
   - Finally.
   - Don't push it. See ya.
+  - "Clock\u2019s broken."
+  - "So\u2019s the roof."
+  - You sure about this?
+  - Not really.
   - You're back.
   - Didn't think you'd show.
   - It's not like I wanted to.
@@ -170,17 +183,20 @@ MonoBehaviour:
   - Hang in there, Red.
   - When are you ever 'in the mood'?
   - '*sigh*'
-  - "You\u2019re late."
-  - "Clock\u2019s broken."
-  - "So\u2019s the roof."
-  - You sure about this?
-  - Not really.
-  - Any trouble?
-  - Never left my side.
-  - You still have it?
-  - "I almost didn\u2019t."
   - "Didn\u2019t think you\u2019d come."
+  - "I almost didn\u2019t."
+  - You still have it?
+  - Never left my side.
+  - Any trouble?
   - You're here.
+  - "You\u2019re late."
+  - Quiet.
+  - All you hear is quiet.
+  - Then you open your eyes.
+  - Blue is next to you.
+  - You okay?
+  - Yeah
+  - And so you start moving.
   - Circle
   - Blue
   - Red

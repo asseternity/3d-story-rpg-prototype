@@ -17,110 +17,119 @@ MonoBehaviour:
   mPackagePath: Assets/ArticyImporter/Content/Generated/Resources/package_0x100000000000110.asset
   mResourceKey: package_0x100000000000110
   mObjects:
-  - rid: 4469901895305003008
-  - rid: 4469901895305003009
-  - rid: 4469901895305003010
-  - rid: 4469901895305003011
-  - rid: 4469901895305003012
-  - rid: 4469901895305003013
-  - rid: 4469901895305003014
-  - rid: 4469901895305003015
-  - rid: 4469901895305003016
-  - rid: 4469901895305003017
-  - rid: 4469901895305003018
-  - rid: 4469901895305003019
-  - rid: 4469901895305003020
-  - rid: 4469901895305003021
-  - rid: 4469901895305003022
-  - rid: 4469901895305003023
-  - rid: 4469901895305003024
-  - rid: 4469901895305003025
-  - rid: 4469901895305003026
-  - rid: 4469901895305003027
-  - rid: 4469901895305003028
-  - rid: 4469901895305003029
-  - rid: 4469901895305003030
-  - rid: 4469901895305003031
-  - rid: 4469901895305003032
-  - rid: 4469901895305003033
-  - rid: 4469901895305003034
-  - rid: 4469901895305003035
-  - rid: 4469901895305003036
-  - rid: 4469901895305003037
-  - rid: 4469901895305003038
-  - rid: 4469901895305003039
-  - rid: 4469901895305003040
-  - rid: 4469901895305003041
-  - rid: 4469901895305003042
-  - rid: 4469901895305003043
-  - rid: 4469901895305003044
-  - rid: 4469901895305003045
-  - rid: 4469901895305003046
-  - rid: 4469901895305003047
-  - rid: 4469901895305003048
-  - rid: 4469901895305003049
-  - rid: 4469901895305003050
-  - rid: 4469901895305003051
-  - rid: 4469901895305003052
-  - rid: 4469901895305003053
-  - rid: 4469901895305003054
-  - rid: 4469901895305003055
-  - rid: 4469901895305003056
-  - rid: 4469901895305003057
-  - rid: 4469901895305003058
-  - rid: 4469901895305003059
-  - rid: 4469901895305003060
-  - rid: 4469901895305003061
-  - rid: 4469901895305003062
-  - rid: 4469901895305003063
-  - rid: 4469901895305003064
-  - rid: 4469901895305003065
-  - rid: 4469901895305003066
-  - rid: 4469901895305003067
-  - rid: 4469901895305003068
-  - rid: 4469901895305003069
-  - rid: 4469901895305003070
-  - rid: 4469901895305003071
-  - rid: 4469901895305003072
-  - rid: 4469901895305003073
-  - rid: 4469901895305003074
-  - rid: 4469901895305003075
-  - rid: 4469901895305003076
-  - rid: 4469901895305003077
-  - rid: 4469901895305003078
-  - rid: 4469901895305003079
-  - rid: 4469901895305003080
-  - rid: 4469901895305003081
-  - rid: 4469901895305003082
-  - rid: 4469901895305003083
-  - rid: 4469901895305003084
-  - rid: 4469901895305003085
-  - rid: 4469901895305003086
-  - rid: 4469901895305003087
-  - rid: 4469901895305003088
-  - rid: 4469901895305003089
-  - rid: 4469901895305003090
-  - rid: 4469901895305003091
-  - rid: 4469901895305003092
-  - rid: 4469901895305003093
-  - rid: 4469901895305003094
-  - rid: 4469901895305003095
-  - rid: 4469901895305003096
-  - rid: 4469901895305003097
-  - rid: 4469901895305003098
-  - rid: 4469901895305003099
-  - rid: 4469901895305003100
-  - rid: 4469901895305003101
-  - rid: 4469901895305003102
-  - rid: 4469901895305003103
-  - rid: 4469901895305003104
-  - rid: 4469901895305003105
-  - rid: 4469901895305003106
-  - rid: 4469901895305003107
+  - rid: 4469902236777447533
+  - rid: 4469902236777447534
+  - rid: 4469902236777447535
+  - rid: 4469902236777447536
+  - rid: 4469902236777447537
+  - rid: 4469902236777447538
+  - rid: 4469902236777447539
+  - rid: 4469902236777447540
+  - rid: 4469902236777447541
+  - rid: 4469902236777447542
+  - rid: 4469902236777447543
+  - rid: 4469902236777447544
+  - rid: 4469902236777447545
+  - rid: 4469902236777447546
+  - rid: 4469902236777447547
+  - rid: 4469902236777447548
+  - rid: 4469902236777447549
+  - rid: 4469902236777447550
+  - rid: 4469902236777447551
+  - rid: 4469902236777447552
+  - rid: 4469902236777447553
+  - rid: 4469902236777447554
+  - rid: 4469902236777447555
+  - rid: 4469902236777447556
+  - rid: 4469902236777447557
+  - rid: 4469902236777447558
+  - rid: 4469902236777447559
+  - rid: 4469902236777447560
+  - rid: 4469902236777447561
+  - rid: 4469902236777447562
+  - rid: 4469902236777447563
+  - rid: 4469902236777447564
+  - rid: 4469902236777447565
+  - rid: 4469902236777447566
+  - rid: 4469902236777447567
+  - rid: 4469902236777447568
+  - rid: 4469902236777447569
+  - rid: 4469902236777447570
+  - rid: 4469902236777447571
+  - rid: 4469902236777447572
+  - rid: 4469902236777447573
+  - rid: 4469902236777447574
+  - rid: 4469902236777447575
+  - rid: 4469902236777447576
+  - rid: 4469902236777447577
+  - rid: 4469902236777447578
+  - rid: 4469902236777447579
+  - rid: 4469902236777447580
+  - rid: 4469902236777447581
+  - rid: 4469902236777447582
+  - rid: 4469902236777447583
+  - rid: 4469902236777447584
+  - rid: 4469902236777447585
+  - rid: 4469902236777447586
+  - rid: 4469902236777447587
+  - rid: 4469902236777447588
+  - rid: 4469902236777447589
+  - rid: 4469902236777447590
+  - rid: 4469902236777447591
+  - rid: 4469902236777447592
+  - rid: 4469902236777447593
+  - rid: 4469902236777447594
+  - rid: 4469902236777447595
+  - rid: 4469902236777447596
+  - rid: 4469902236777447597
+  - rid: 4469902236777447598
+  - rid: 4469902236777447599
+  - rid: 4469902236777447600
+  - rid: 4469902236777447601
+  - rid: 4469902236777447602
+  - rid: 4469902236777447603
+  - rid: 4469902236777447604
+  - rid: 4469902236777447605
+  - rid: 4469902236777447606
+  - rid: 4469902236777447607
+  - rid: 4469902236777447608
+  - rid: 4469902236777447609
+  - rid: 4469902236777447610
+  - rid: 4469902236777447611
+  - rid: 4469902236777447612
+  - rid: 4469902236777447613
+  - rid: 4469902236777447614
+  - rid: 4469902236777447615
+  - rid: 4469902236777447616
+  - rid: 4469902236777447617
+  - rid: 4469902236777447618
+  - rid: 4469902236777447619
+  - rid: 4469902236777447620
+  - rid: 4469902236777447621
+  - rid: 4469902236777447622
+  - rid: 4469902236777447623
+  - rid: 4469902236777447624
+  - rid: 4469902236777447625
+  - rid: 4469902236777447626
+  - rid: 4469902236777447627
+  - rid: 4469902236777447628
+  - rid: 4469902236777447629
+  - rid: 4469902236777447630
+  - rid: 4469902236777447631
+  - rid: 4469902236777447632
+  - rid: 4469902236777447633
+  - rid: 4469902236777447634
+  - rid: 4469902236777447635
+  - rid: 4469902236777447636
+  - rid: 4469902236777447637
+  - rid: 4469902236777447638
+  - rid: 4469902236777447639
+  - rid: 4469902236777447640
+  - rid: 4469902236777447641
   references:
     version: 2
     RefIds:
-    - rid: 4469901895305003008
+    - rid: 4469902236777447533
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928243
@@ -204,7 +213,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003009
+    - rid: 4469902236777447534
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928533
@@ -288,7 +297,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003010
+    - rid: 4469902236777447535
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929449
@@ -358,7 +367,77 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003011
+    - rid: 4469902236777447536
+      type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929462
+        technicalName: Dlg_45230FB4
+        parentId: 216172783251375095
+        childrenIds: e006000000000001e606000000000001ec06000000000001f206000000000001db06000000000001
+        mAttachments:
+          listIds: 1d010000000000012101000000000001
+        mDisplayName:
+          value:
+            mValue: Dlg_45230FB4.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1526
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1526
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 392, y: 775}
+        mZIndex: 4
+        mSize: {x: 291, y: 200}
+        mShortId: 1159925684
+        mInputPins:
+          value:
+          - id: 72057594037929465
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929462
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929466
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929462
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 4469902236777447537
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929468
@@ -428,83 +507,13 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003012
-      type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929462
-        technicalName: Dlg_45230FB4
-        parentId: 216172783251375095
-        childrenIds: db06000000000001e006000000000001e606000000000001ec06000000000001f206000000000001
-        mAttachments:
-          listIds: 1d010000000000012101000000000001
-        mDisplayName:
-          value:
-            mValue: Dlg_45230FB4.DisplayName
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1526
-              highId: 16777216
-            mPropertyPath: DisplayName
-        mPreviewImage:
-          mViewBoxX: 0
-          mViewBoxY: 0
-          mViewBoxWidth: 0
-          mViewBoxHeight: 0
-          mMode: 0
-          mAsset:
-            id: 0
-            instanceId: 0
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1526
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 392, y: 775}
-        mZIndex: 4
-        mSize: {x: 291, y: 200}
-        mShortId: 1159925684
-        mInputPins:
-          value:
-          - id: 72057594037929465
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929462
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929466
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929462
-              instanceId: 0
-            mConnections:
-              value: []
-    - rid: 4469901895305003013
+    - rid: 4469902236777447538
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929474
         technicalName: Dlg_2D3783B1
         parentId: 216172783251375095
-        childrenIds: 15070000000000010f0700000000000109070000000000010307000000000001fd060000000000011f07000000000001
+        childrenIds: fd06000000000001030700000000000109070000000000010f0700000000000115070000000000011f07000000000001
         mAttachments:
           listIds: 1d010000000000012101000000000001
         mDisplayName:
@@ -568,7 +577,77 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003014
+    - rid: 4469902236777447539
+      type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929807
+        technicalName: Dlg_C8F2F1D1
+        parentId: 216172783251375095
+        childrenIds: 55070000000000015b0700000000000162070000000000016907000000000001720700000000000179070000000000018007000000000001
+        mAttachments:
+          listIds: 21010000000000011d01000000000001
+        mDisplayName:
+          value:
+            mValue: Dlg_C8F2F1D1.DisplayName
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1871
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1871
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 392, y: 1025}
+        mZIndex: 6
+        mSize: {x: 291, y: 200}
+        mShortId: 3371364817
+        mInputPins:
+          value:
+          - id: 72057594037929810
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929807
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929811
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929807
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 4469902236777447540
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928258
@@ -654,7 +733,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928264
                   instanceId: 0
-    - rid: 4469901895305003015
+    - rid: 4469902236777447541
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928264
@@ -740,7 +819,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928271
                   instanceId: 0
-    - rid: 4469901895305003016
+    - rid: 4469902236777447542
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928271
@@ -826,7 +905,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928278
                   instanceId: 0
-    - rid: 4469901895305003017
+    - rid: 4469902236777447543
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928278
@@ -912,7 +991,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928285
                   instanceId: 0
-    - rid: 4469901895305003018
+    - rid: 4469902236777447544
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928285
@@ -998,7 +1077,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928292
                   instanceId: 0
-    - rid: 4469901895305003019
+    - rid: 4469902236777447545
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928292
@@ -1084,7 +1163,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929216
                   instanceId: 0
-    - rid: 4469901895305003020
+    - rid: 4469902236777447546
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928560
@@ -1156,7 +1235,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003021
+    - rid: 4469902236777447547
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929239
@@ -1242,7 +1321,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929246
                   instanceId: 0
-    - rid: 4469901895305003022
+    - rid: 4469902236777447548
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929246
@@ -1328,7 +1407,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929253
                   instanceId: 0
-    - rid: 4469901895305003023
+    - rid: 4469902236777447549
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929253
@@ -1414,7 +1493,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929260
                   instanceId: 0
-    - rid: 4469901895305003024
+    - rid: 4469902236777447550
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929260
@@ -1500,7 +1579,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929273
                   instanceId: 0
-    - rid: 4469901895305003025
+    - rid: 4469902236777447551
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929273
@@ -1600,7 +1679,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929286
                   instanceId: 0
-    - rid: 4469901895305003026
+    - rid: 4469902236777447552
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929280
@@ -1686,7 +1765,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929310
                   instanceId: 0
-    - rid: 4469901895305003027
+    - rid: 4469902236777447553
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929286
@@ -1772,7 +1851,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929296
                   instanceId: 0
-    - rid: 4469901895305003028
+    - rid: 4469902236777447554
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929296
@@ -1858,7 +1937,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929303
                   instanceId: 0
-    - rid: 4469901895305003029
+    - rid: 4469902236777447555
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929303
@@ -1930,7 +2009,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003030
+    - rid: 4469902236777447556
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929310
@@ -2016,7 +2095,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929317
                   instanceId: 0
-    - rid: 4469901895305003031
+    - rid: 4469902236777447557
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929317
@@ -2088,7 +2167,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003032
+    - rid: 4469902236777447558
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928579
@@ -2188,7 +2267,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928598
                   instanceId: 0
-    - rid: 4469901895305003033
+    - rid: 4469902236777447559
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928592
@@ -2274,7 +2353,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928608
                   instanceId: 0
-    - rid: 4469901895305003034
+    - rid: 4469902236777447560
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928598
@@ -2360,7 +2439,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928608
                   instanceId: 0
-    - rid: 4469901895305003035
+    - rid: 4469902236777447561
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928608
@@ -2446,7 +2525,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928616
                   instanceId: 0
-    - rid: 4469901895305003036
+    - rid: 4469902236777447562
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928616
@@ -2560,7 +2639,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928635
                   instanceId: 0
-    - rid: 4469901895305003037
+    - rid: 4469902236777447563
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928623
@@ -2646,7 +2725,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469901895305003038
+    - rid: 4469902236777447564
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928629
@@ -2732,7 +2811,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469901895305003039
+    - rid: 4469902236777447565
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928635
@@ -2818,7 +2897,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469901895305003040
+    - rid: 4469902236777447566
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928644
@@ -2904,7 +2983,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929114
                   instanceId: 0
-    - rid: 4469901895305003041
+    - rid: 4469902236777447567
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929107
@@ -3032,7 +3111,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929181
                   instanceId: 0
-    - rid: 4469901895305003042
+    - rid: 4469902236777447568
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929129
@@ -3118,7 +3197,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469901895305003043
+    - rid: 4469902236777447569
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929135
@@ -3204,7 +3283,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469901895305003044
+    - rid: 4469902236777447570
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929141
@@ -3290,7 +3369,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929153
                   instanceId: 0
-    - rid: 4469901895305003045
+    - rid: 4469902236777447571
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929153
@@ -3376,7 +3455,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929160
                   instanceId: 0
-    - rid: 4469901895305003046
+    - rid: 4469902236777447572
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929160
@@ -3462,7 +3541,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469901895305003047
+    - rid: 4469902236777447573
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929167
@@ -3548,7 +3627,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929176
                   instanceId: 0
-    - rid: 4469901895305003048
+    - rid: 4469902236777447574
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929181
@@ -3634,7 +3713,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929200
                   instanceId: 0
-    - rid: 4469901895305003049
+    - rid: 4469902236777447575
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929189
@@ -3706,7 +3785,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003050
+    - rid: 4469902236777447576
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929498
@@ -3792,7 +3871,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929504
                   instanceId: 0
-    - rid: 4469901895305003051
+    - rid: 4469902236777447577
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929504
@@ -3878,7 +3957,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929511
                   instanceId: 0
-    - rid: 4469901895305003052
+    - rid: 4469902236777447578
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929511
@@ -3964,7 +4043,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929518
                   instanceId: 0
-    - rid: 4469901895305003053
+    - rid: 4469902236777447579
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929518
@@ -4050,7 +4129,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929525
                   instanceId: 0
-    - rid: 4469901895305003054
+    - rid: 4469902236777447580
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929525
@@ -4150,7 +4229,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929538
                   instanceId: 0
-    - rid: 4469901895305003055
+    - rid: 4469902236777447581
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929532
@@ -4236,7 +4315,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929555
                   instanceId: 0
-    - rid: 4469901895305003056
+    - rid: 4469902236777447582
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929538
@@ -4322,7 +4401,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929548
                   instanceId: 0
-    - rid: 4469901895305003057
+    - rid: 4469902236777447583
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929548
@@ -4408,7 +4487,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929583
                   instanceId: 0
-    - rid: 4469901895305003058
+    - rid: 4469902236777447584
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929555
@@ -4494,7 +4573,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929562
                   instanceId: 0
-    - rid: 4469901895305003059
+    - rid: 4469902236777447585
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929562
@@ -4580,7 +4659,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929569
                   instanceId: 0
-    - rid: 4469901895305003060
+    - rid: 4469902236777447586
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929569
@@ -4666,7 +4745,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929576
                   instanceId: 0
-    - rid: 4469901895305003061
+    - rid: 4469902236777447587
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929576
@@ -4752,7 +4831,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929583
                   instanceId: 0
-    - rid: 4469901895305003062
+    - rid: 4469902236777447588
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929583
@@ -4838,7 +4917,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929591
                   instanceId: 0
-    - rid: 4469901895305003063
+    - rid: 4469902236777447589
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929591
@@ -4924,7 +5003,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929598
                   instanceId: 0
-    - rid: 4469901895305003064
+    - rid: 4469902236777447590
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929598
@@ -5010,7 +5089,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929605
                   instanceId: 0
-    - rid: 4469901895305003065
+    - rid: 4469902236777447591
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929605
@@ -5082,7 +5161,337 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003066
+    - rid: 4469902236777447592
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929696
+        technicalName: DFr_61EA8711
+        parentId: 72057594037929462
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1760
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1760
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_61EA8711.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1760
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 486.8, y: 300}
+        mZIndex: 1
+        mSize: {x: 225, y: 200}
+        mShortId: 1642759953
+        mInputPins:
+          value:
+          - id: 72057594037929699
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929696
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929700
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929696
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1760
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929705
+                mTarget:
+                  id: 72057594037929702
+                  instanceId: 0
+    - rid: 4469902236777447593
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929702
+        technicalName: DFr_E8B09D89
+        parentId: 72057594037929462
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1766
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1766
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_E8B09D89.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1766
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 773.6, y: 300}
+        mZIndex: 2
+        mSize: {x: 225, y: 200}
+        mShortId: 3903888777
+        mInputPins:
+          value:
+          - id: 72057594037929705
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929702
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929706
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929702
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1766
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929711
+                mTarget:
+                  id: 72057594037929708
+                  instanceId: 0
+    - rid: 4469902236777447594
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929708
+        technicalName: DFr_F8171D09
+        parentId: 72057594037929462
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1772
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1772
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_F8171D09.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1772
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1060.4, y: 300}
+        mZIndex: 3
+        mSize: {x: 225, y: 200}
+        mShortId: 4162264329
+        mInputPins:
+          value:
+          - id: 72057594037929711
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929708
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929712
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929708
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1772
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929717
+                mTarget:
+                  id: 72057594037929714
+                  instanceId: 0
+    - rid: 4469902236777447595
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929714
+        technicalName: DFr_12F58913
+        parentId: 72057594037929462
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1778
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1778
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_12F58913.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1778
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1347.2, y: 300}
+        mZIndex: 4
+        mSize: {x: 225, y: 200}
+        mShortId: 318081299
+        mInputPins:
+          value:
+          - id: 72057594037929717
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929714
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929718
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929714
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 4469902236777447596
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929612
@@ -5168,7 +5577,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929617
                   instanceId: 0
-    - rid: 4469901895305003067
+    - rid: 4469902236777447597
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929617
@@ -5254,7 +5663,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929625
                   instanceId: 0
-    - rid: 4469901895305003068
+    - rid: 4469902236777447598
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929625
@@ -5340,7 +5749,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929632
                   instanceId: 0
-    - rid: 4469901895305003069
+    - rid: 4469902236777447599
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929632
@@ -5426,7 +5835,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929639
                   instanceId: 0
-    - rid: 4469901895305003070
+    - rid: 4469902236777447600
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929639
@@ -5512,7 +5921,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929646
                   instanceId: 0
-    - rid: 4469901895305003071
+    - rid: 4469902236777447601
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929646
@@ -5598,7 +6007,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929653
                   instanceId: 0
-    - rid: 4469901895305003072
+    - rid: 4469902236777447602
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929653
@@ -5684,7 +6093,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929660
                   instanceId: 0
-    - rid: 4469901895305003073
+    - rid: 4469902236777447603
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929660
@@ -5784,7 +6193,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929673
                   instanceId: 0
-    - rid: 4469901895305003074
+    - rid: 4469902236777447604
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929667
@@ -5870,7 +6279,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929683
                   instanceId: 0
-    - rid: 4469901895305003075
+    - rid: 4469902236777447605
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929673
@@ -5956,7 +6365,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929683
                   instanceId: 0
-    - rid: 4469901895305003076
+    - rid: 4469902236777447606
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929683
@@ -6028,753 +6437,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469901895305003077
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929691
-        technicalName: DFr_6DC43D98
-        parentId: 72057594037929462
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1755
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1755
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928225
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_6DC43D98.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1755
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 200, y: 300}
-        mZIndex: 0
-        mSize: {x: 225, y: 200}
-        mShortId: 1841577368
-        mInputPins:
-          value:
-          - id: 72057594037929694
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929691
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929695
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929691
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1755
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929699
-                mTarget:
-                  id: 72057594037929696
-                  instanceId: 0
-    - rid: 4469901895305003078
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929696
-        technicalName: DFr_61EA8711
-        parentId: 72057594037929462
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1760
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1760
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928221
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_61EA8711.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1760
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 486.8, y: 300}
-        mZIndex: 1
-        mSize: {x: 225, y: 200}
-        mShortId: 1642759953
-        mInputPins:
-          value:
-          - id: 72057594037929699
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929696
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929700
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929696
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1760
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929705
-                mTarget:
-                  id: 72057594037929702
-                  instanceId: 0
-    - rid: 4469901895305003079
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929702
-        technicalName: DFr_E8B09D89
-        parentId: 72057594037929462
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1766
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1766
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928225
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_E8B09D89.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1766
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 773.6, y: 300}
-        mZIndex: 3
-        mSize: {x: 225, y: 200}
-        mShortId: 3903888777
-        mInputPins:
-          value:
-          - id: 72057594037929705
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929702
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929706
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929702
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1766
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929711
-                mTarget:
-                  id: 72057594037929708
-                  instanceId: 0
-    - rid: 4469901895305003080
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929708
-        technicalName: DFr_F8171D09
-        parentId: 72057594037929462
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1772
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1772
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928221
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_F8171D09.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1772
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 1060.4, y: 300}
-        mZIndex: 5
-        mSize: {x: 225, y: 200}
-        mShortId: 4162264329
-        mInputPins:
-          value:
-          - id: 72057594037929711
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929708
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929712
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929708
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1772
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929717
-                mTarget:
-                  id: 72057594037929714
-                  instanceId: 0
-    - rid: 4469901895305003081
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929714
-        technicalName: DFr_12F58913
-        parentId: 72057594037929462
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1778
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1778
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928225
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_12F58913.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1778
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 1347.2, y: 300}
-        mZIndex: 7
-        mSize: {x: 225, y: 200}
-        mShortId: 318081299
-        mInputPins:
-          value:
-          - id: 72057594037929717
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929714
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929718
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929714
-              instanceId: 0
-            mConnections:
-              value: []
-    - rid: 4469901895305003082
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929749
-        technicalName: DFr_25992F8D
-        parentId: 72057594037929474
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1813
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1813
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928225
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_25992F8D.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1813
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 1665.6, y: 277.6}
-        mZIndex: 7
-        mSize: {x: 225, y: 200}
-        mShortId: 630796173
-        mInputPins:
-          value:
-          - id: 72057594037929750
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929749
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929751
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929749
-              instanceId: 0
-            mConnections:
-              value: []
-    - rid: 4469901895305003083
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929743
-        technicalName: DFr_DB40A062
-        parentId: 72057594037929474
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1807
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1807
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928221
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_DB40A062.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1807
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 1378.8, y: 277.6}
-        mZIndex: 5
-        mSize: {x: 225, y: 200}
-        mShortId: 3678445666
-        mInputPins:
-          value:
-          - id: 72057594037929744
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929743
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929745
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929743
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1807
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929750
-                mTarget:
-                  id: 72057594037929749
-                  instanceId: 0
-    - rid: 4469901895305003084
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929737
-        technicalName: DFr_BE699418
-        parentId: 72057594037929474
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1801
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1801
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928225
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_BE699418.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1801
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 1092, y: 277.6}
-        mZIndex: 3
-        mSize: {x: 225, y: 200}
-        mShortId: 3194590232
-        mInputPins:
-          value:
-          - id: 72057594037929738
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929737
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929739
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929737
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1801
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929744
-                mTarget:
-                  id: 72057594037929743
-                  instanceId: 0
-    - rid: 4469901895305003085
-      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
-      data:
-        id: 72057594037929731
-        technicalName: DFr_0FDD7D3C
-        parentId: 72057594037929474
-        childrenIds: 
-        mMenuText:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1795
-              highId: 16777216
-            mPropertyPath: MenuText
-        mStageDirections:
-          value:
-            mValue: 
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1795
-              highId: 16777216
-            mPropertyPath: StageDirections
-        mSpeaker:
-          id: 72057594037928221
-          instanceId: 0
-        mSplitHeight: 64
-        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-        mText:
-          value:
-            mValue: DFr_0FDD7D3C.Text
-            mOwner:
-              instanceId: 0
-              referencingMode: 0
-              lowId: 1795
-              highId: 16777216
-            mPropertyPath: Text
-        mExternalId: 
-        mPosition: {x: 805.2, y: 277.6}
-        mZIndex: 1
-        mSize: {x: 225, y: 200}
-        mShortId: 266173756
-        mInputPins:
-          value:
-          - id: 72057594037929732
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929731
-              instanceId: 0
-            mConnections:
-              value: []
-        mOutputPins:
-          value:
-          - id: 72057594037929733
-            mText:
-              value:
-                handlerId: 0
-                ownerId: 0
-                ownerInstanceId: 0
-                mRawScript: 
-            mOwner:
-              id: 72057594037929731
-              instanceId: 0
-            mConnections:
-              value:
-              - mLabel:
-                  value:
-                    mValue: 
-                    mOwner:
-                      instanceId: 0
-                      referencingMode: 0
-                      lowId: 1795
-                      highId: 16777216
-                    mPropertyPath: Label
-                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
-                mTargetPin: 72057594037929738
-                mTarget:
-                  id: 72057594037929737
-                  instanceId: 0
-    - rid: 4469901895305003086
+    - rid: 4469902236777447607
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929725
@@ -6860,7 +6523,337 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929731
                   instanceId: 0
-    - rid: 4469901895305003087
+    - rid: 4469902236777447608
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929731
+        technicalName: DFr_0FDD7D3C
+        parentId: 72057594037929474
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1795
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1795
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_0FDD7D3C.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1795
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 805.2, y: 277.6}
+        mZIndex: 1
+        mSize: {x: 225, y: 200}
+        mShortId: 266173756
+        mInputPins:
+          value:
+          - id: 72057594037929732
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929731
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929733
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929731
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1795
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929738
+                mTarget:
+                  id: 72057594037929737
+                  instanceId: 0
+    - rid: 4469902236777447609
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929737
+        technicalName: DFr_BE699418
+        parentId: 72057594037929474
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1801
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1801
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_BE699418.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1801
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1092, y: 277.6}
+        mZIndex: 3
+        mSize: {x: 225, y: 200}
+        mShortId: 3194590232
+        mInputPins:
+          value:
+          - id: 72057594037929738
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929737
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929739
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929737
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1801
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929744
+                mTarget:
+                  id: 72057594037929743
+                  instanceId: 0
+    - rid: 4469902236777447610
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929743
+        technicalName: DFr_DB40A062
+        parentId: 72057594037929474
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1807
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1807
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_DB40A062.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1807
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1378.8, y: 277.6}
+        mZIndex: 5
+        mSize: {x: 225, y: 200}
+        mShortId: 3678445666
+        mInputPins:
+          value:
+          - id: 72057594037929744
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929743
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929745
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929743
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1807
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929750
+                mTarget:
+                  id: 72057594037929749
+                  instanceId: 0
+    - rid: 4469902236777447611
+      type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929749
+        technicalName: DFr_25992F8D
+        parentId: 72057594037929474
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1813
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1813
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_25992F8D.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1813
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1665.6, y: 277.6}
+        mZIndex: 7
+        mSize: {x: 225, y: 200}
+        mShortId: 630796173
+        mInputPins:
+          value:
+          - id: 72057594037929750
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929749
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929751
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929749
+              instanceId: 0
+            mConnections:
+              value: []
+    - rid: 4469902236777447612
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929759
@@ -6946,7 +6939,769 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929725
                   instanceId: 0
-    - rid: 4469901895305003088
+    - rid: 4469902236777447613
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929691
+        technicalName: DFr_6DC43D98
+        parentId: 72057594037929462
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1755
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1755
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_6DC43D98.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1755
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 200, y: 300}
+        mZIndex: 0
+        mSize: {x: 225, y: 200}
+        mShortId: 1841577368
+        mInputPins:
+          value:
+          - id: 72057594037929694
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929691
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929695
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929691
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1755
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929699
+                mTarget:
+                  id: 72057594037929696
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929691
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929691
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447614
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929813
+        technicalName: DFr_FCC2B963
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1877
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1877
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 0
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_FCC2B963.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1877
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 225, y: 300}
+        mZIndex: 0
+        mSize: {x: 225, y: 200}
+        mShortId: 4240619875
+        mInputPins:
+          value:
+          - id: 72057594037929816
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929813
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929817
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929813
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1877
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929822
+                mTarget:
+                  id: 72057594037929819
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 72057594037929886
+                  instanceId: 0
+                mOwnerId: 72057594037929813
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929813
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447615
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929819
+        technicalName: DFr_07DC4628
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1883
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1883
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 0
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_07DC4628.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1883
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 500, y: 300}
+        mZIndex: 1
+        mSize: {x: 225, y: 200}
+        mShortId: 131876392
+        mInputPins:
+          value:
+          - id: 72057594037929822
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929819
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929823
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929819
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1883
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929829
+                mTarget:
+                  id: 72057594037929826
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 72057594037929886
+                  instanceId: 0
+                mOwnerId: 72057594037929819
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929819
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447616
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929826
+        technicalName: DFr_8CEDDAFA
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1890
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1890
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 0
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_8CEDDAFA.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1890
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 775, y: 300}
+        mZIndex: 3
+        mSize: {x: 225, y: 200}
+        mShortId: 2364398330
+        mInputPins:
+          value:
+          - id: 72057594037929829
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929826
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929830
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929826
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1890
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929836
+                mTarget:
+                  id: 72057594037929833
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929826
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929826
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447617
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929833
+        technicalName: DFr_607E8E8C
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1897
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1897
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 0
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_607E8E8C.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1897
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1050, y: 300}
+        mZIndex: 5
+        mSize: {x: 225, y: 200}
+        mShortId: 1618906764
+        mInputPins:
+          value:
+          - id: 72057594037929836
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929833
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929837
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929833
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1897
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929845
+                mTarget:
+                  id: 72057594037929842
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929833
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929833
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447618
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929842
+        technicalName: DFr_70E453C2
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1906
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1906
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928225
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_70E453C2.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1906
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1325, y: 300}
+        mZIndex: 7
+        mSize: {x: 225, y: 200}
+        mShortId: 1894011842
+        mInputPins:
+          value:
+          - id: 72057594037929845
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929842
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929846
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929842
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1906
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929852
+                mTarget:
+                  id: 72057594037929849
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929842
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929842
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447619
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929849
+        technicalName: DFr_7D9E444A
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1913
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1913
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 72057594037928221
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_7D9E444A.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1913
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1600, y: 300}
+        mZIndex: 9
+        mSize: {x: 225, y: 200}
+        mShortId: 2107524170
+        mInputPins:
+          value:
+          - id: 72057594037929852
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929849
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929853
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929849
+              instanceId: 0
+            mConnections:
+              value:
+              - mLabel:
+                  value:
+                    mValue: 
+                    mOwner:
+                      instanceId: 0
+                      referencingMode: 0
+                      lowId: 1913
+                      highId: 16777216
+                    mPropertyPath: Label
+                mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+                mTargetPin: 72057594037929859
+                mTarget:
+                  id: 72057594037929856
+                  instanceId: 0
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929849
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929849
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447620
+      type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929856
+        technicalName: DFr_C2CF19F6
+        parentId: 72057594037929807
+        childrenIds: 
+        mMenuText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1920
+              highId: 16777216
+            mPropertyPath: MenuText
+        mStageDirections:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1920
+              highId: 16777216
+            mPropertyPath: StageDirections
+        mSpeaker:
+          id: 0
+          instanceId: 0
+        mSplitHeight: 64
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: DFr_C2CF19F6.Text
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1920
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 1875, y: 300}
+        mZIndex: 11
+        mSize: {x: 225, y: 200}
+        mShortId: 3268352502
+        mInputPins:
+          value:
+          - id: 72057594037929859
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929856
+              instanceId: 0
+            mConnections:
+              value: []
+        mOutputPins:
+          value:
+          - id: 72057594037929860
+            mText:
+              value:
+                handlerId: 0
+                ownerId: 0
+                ownerInstanceId: 0
+                mRawScript: 
+            mOwner:
+              id: 72057594037929856
+              instanceId: 0
+            mConnections:
+              value: []
+        mTemplate:
+          value:
+            mBackground:
+              value:
+                mBackgroundImage:
+                  id: 0
+                  instanceId: 0
+                mOwnerId: 72057594037929856
+                mOwnerInstanceId: 0
+            mOwnerId: 72057594037929856
+            mOwnerInstanceId: 0
+    - rid: 4469902236777447621
       type: {class: Hub, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929114
@@ -7019,7 +7774,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929107
                   instanceId: 0
-    - rid: 4469901895305003089
+    - rid: 4469902236777447622
       type: {class: Jump, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929176
@@ -7061,7 +7816,7 @@ MonoBehaviour:
               value: []
         mOutputPins:
           value: []
-    - rid: 4469901895305003090
+    - rid: 4469902236777447623
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929221
@@ -7166,7 +7921,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928560
                   instanceId: 0
-    - rid: 4469901895305003091
+    - rid: 4469902236777447624
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929232
@@ -7271,7 +8026,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928258
                   instanceId: 0
-    - rid: 4469901895305003092
+    - rid: 4469902236777447625
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929205
@@ -7376,7 +8131,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929189
                   instanceId: 0
-    - rid: 4469901895305003093
+    - rid: 4469902236777447626
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929216
@@ -7455,7 +8210,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929221
                   instanceId: 0
-    - rid: 4469901895305003094
+    - rid: 4469902236777447627
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929227
@@ -7534,7 +8289,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928560
                   instanceId: 0
-    - rid: 4469901895305003095
+    - rid: 4469902236777447628
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929200
@@ -7613,7 +8368,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929205
                   instanceId: 0
-    - rid: 4469901895305003096
+    - rid: 4469902236777447629
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929211
@@ -7692,7 +8447,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929189
                   instanceId: 0
-    - rid: 4469901895305003097
+    - rid: 4469902236777447630
       type: {class: Player_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928221
@@ -7757,7 +8512,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928221
             mOwnerInstanceId: 0
-    - rid: 4469901895305003098
+    - rid: 4469902236777447631
       type: {class: NPC_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928225
@@ -7825,7 +8580,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928225
             mOwnerInstanceId: 0
-    - rid: 4469901895305003099
+    - rid: 4469902236777447632
       type: {class: NPC_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928529
@@ -7893,7 +8648,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928529
             mOwnerInstanceId: 0
-    - rid: 4469901895305003100
+    - rid: 4469902236777447633
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929436
@@ -7954,7 +8709,7 @@ MonoBehaviour:
         mShortId: 374493842
         mAssetRefPath: Assets/Images/Blue.png
         mCategory: 1
-    - rid: 4469901895305003101
+    - rid: 4469902236777447634
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929439
@@ -8015,7 +8770,7 @@ MonoBehaviour:
         mShortId: 3673353797
         mAssetRefPath: Assets/Images/Red.png
         mCategory: 1
-    - rid: 4469901895305003102
+    - rid: 4469902236777447635
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929442
@@ -8076,13 +8831,73 @@ MonoBehaviour:
         mShortId: 209848402
         mAssetRefPath: Assets/Images/Green.png
         mCategory: 1
-    - rid: 4469901895305003103
+    - rid: 4469902236777447636
+      type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
+      data:
+        id: 72057594037929886
+        technicalName: Ast_4236CD55
+        parentId: 72057594037928211
+        childrenIds: 
+        mDisplayName:
+          value:
+            mValue: black
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1950
+              highId: 16777216
+            mPropertyPath: DisplayName
+        mFilename:
+          value:
+            mValue: black(069E).bmp
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1950
+              highId: 16777216
+            mPropertyPath: Filename
+        mOriginalSource:
+          value:
+            mValue: file:///C:/Users/USER/Downloads/black.bmp
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1950
+              highId: 16777216
+            mPropertyPath: OriginalSource
+        mPreviewImage:
+          mViewBoxX: 0
+          mViewBoxY: 0
+          mViewBoxWidth: 0
+          mViewBoxHeight: 0
+          mMode: 0
+          mAsset:
+            id: 0
+            instanceId: 0
+        mColor: {r: 0.78431374, g: 0.8862745, b: 0.90588236, a: 1}
+        mText:
+          value:
+            mValue: 
+            mOwner:
+              instanceId: 0
+              referencingMode: 0
+              lowId: 1950
+              highId: 16777216
+            mPropertyPath: Text
+        mExternalId: 
+        mPosition: {x: 80, y: 80}
+        mZIndex: 4
+        mSize: {x: 256, y: 196}
+        mShortId: 1110887765
+        mAssetRefPath: Assets/Images/black.bmp
+        mCategory: 1
+    - rid: 4469902236777447637
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928211
         technicalName: Ufo_029286C8
         parentId: 216172783392894804
-        childrenIds: dc05000000000001df05000000000001e205000000000001
+        childrenIds: dc05000000000001df05000000000001e2050000000000019e07000000000001
         mDisplayName:
           value:
             mValue: Images
@@ -8095,7 +8910,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 43157192
         mZIndex: 0
-    - rid: 4469901895305003104
+    - rid: 4469902236777447638
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928213
@@ -8114,7 +8929,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2635167690
         mZIndex: 0
-    - rid: 4469901895305003105
+    - rid: 4469902236777447639
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928215
@@ -8133,7 +8948,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2310604386
         mZIndex: 0
-    - rid: 4469901895305003106
+    - rid: 4469902236777447640
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928217
@@ -8152,7 +8967,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2297670103
         mZIndex: 0
-    - rid: 4469901895305003107
+    - rid: 4469902236777447641
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928219

@@ -6,6 +6,7 @@ using Articy.Articy_Tutorial;
 using Articy.Articy_Tutorial.GlobalVariables;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,6 +42,10 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // Refernce to sprite
     [SerializeField]
     Image dialogueSprite;
+
+    // Refernce to background
+    [SerializeField]
+    Image dialogueBackground;
 
     [SerializeField]
     RectTransform branchLayoutPanel;
@@ -116,7 +121,31 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     /// </summary>
     public void OnFlowPlayerPaused(IFlowObject aObject)
     {
-        //Clear data
+        // Handle background images
+        if (aObject is DialogueBG bgFrag)
+        {
+            var imageRef = bgFrag.Template.Background.BackgroundImage;
+            var asset = imageRef as IAsset;
+
+            if (asset != null)
+            {
+                var sprite = asset.LoadAssetAsSprite();
+                dialogueBackground.sprite = sprite;
+                dialogueBackground.gameObject.SetActive(true);
+            }
+            else
+            {
+                // No image set → hide the panel
+                dialogueBackground.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            // Not a DialogueBG fragment → hide the panel
+            dialogueBackground.gameObject.SetActive(false);
+        }
+
+        // Clear data
         dialogueText.text = string.Empty;
         dialogueSpeaker.text = string.Empty;
 

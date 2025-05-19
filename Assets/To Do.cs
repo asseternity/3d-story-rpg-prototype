@@ -36,7 +36,11 @@
 // [v] - saving testing
 // [v] - saving slots
 // [v] - cannot save in battle
+// [_] - BIG ONE! make the story manager be able to show and change some background images if there are any for dialogues!
 // [_] - main menu
+// [_] - (b) make a faux, secret save file at the start of the game, including starting at the right dialogue point!
+// [_] - (c) use that when starting a new game
+// [_] - (d) make a mainMenuManager c# script to hold methods to add as listeners to the main menu buttons
 // [_] - quests SO
 // [_] - settings menu
 // [_] - game over
