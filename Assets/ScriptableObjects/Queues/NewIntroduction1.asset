@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17687025fbc62214db41191c7636cf79, type: 3}
-  m_Name: Red Friendship
+  m_Script: {fileID: 11500000, guid: b450c5142a7a2994b82ac75556822617, type: 3}
+  m_Name: NewIntroduction1
   m_EditorClassIdentifier: 
-  id: 1
-  stages:
-  - {fileID: 11400000, guid: ea5256607a54f3b4f8519caf40940733, type: 2}
-  - {fileID: 11400000, guid: 736f9f6f6c643fc438dd1b560ce66b42, type: 2}
+  entries:
+  - entryType: 0
+    dialogue:
+      instanceId: 0
+      referencingMode: 0
+      lowId: 1871
+      highId: 16777216
+    battle: {fileID: 0}

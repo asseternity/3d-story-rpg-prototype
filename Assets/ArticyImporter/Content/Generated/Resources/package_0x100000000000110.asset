@@ -17,119 +17,119 @@ MonoBehaviour:
   mPackagePath: Assets/ArticyImporter/Content/Generated/Resources/package_0x100000000000110.asset
   mResourceKey: package_0x100000000000110
   mObjects:
-  - rid: 4469902236777447533
-  - rid: 4469902236777447534
-  - rid: 4469902236777447535
-  - rid: 4469902236777447536
-  - rid: 4469902236777447537
-  - rid: 4469902236777447538
-  - rid: 4469902236777447539
-  - rid: 4469902236777447540
-  - rid: 4469902236777447541
-  - rid: 4469902236777447542
-  - rid: 4469902236777447543
-  - rid: 4469902236777447544
-  - rid: 4469902236777447545
-  - rid: 4469902236777447546
-  - rid: 4469902236777447547
-  - rid: 4469902236777447548
-  - rid: 4469902236777447549
-  - rid: 4469902236777447550
-  - rid: 4469902236777447551
-  - rid: 4469902236777447552
-  - rid: 4469902236777447553
-  - rid: 4469902236777447554
-  - rid: 4469902236777447555
-  - rid: 4469902236777447556
-  - rid: 4469902236777447557
-  - rid: 4469902236777447558
-  - rid: 4469902236777447559
-  - rid: 4469902236777447560
-  - rid: 4469902236777447561
-  - rid: 4469902236777447562
-  - rid: 4469902236777447563
-  - rid: 4469902236777447564
-  - rid: 4469902236777447565
-  - rid: 4469902236777447566
-  - rid: 4469902236777447567
-  - rid: 4469902236777447568
-  - rid: 4469902236777447569
-  - rid: 4469902236777447570
-  - rid: 4469902236777447571
-  - rid: 4469902236777447572
-  - rid: 4469902236777447573
-  - rid: 4469902236777447574
-  - rid: 4469902236777447575
-  - rid: 4469902236777447576
-  - rid: 4469902236777447577
-  - rid: 4469902236777447578
-  - rid: 4469902236777447579
-  - rid: 4469902236777447580
-  - rid: 4469902236777447581
-  - rid: 4469902236777447582
-  - rid: 4469902236777447583
-  - rid: 4469902236777447584
-  - rid: 4469902236777447585
-  - rid: 4469902236777447586
-  - rid: 4469902236777447587
-  - rid: 4469902236777447588
-  - rid: 4469902236777447589
-  - rid: 4469902236777447590
-  - rid: 4469902236777447591
-  - rid: 4469902236777447592
-  - rid: 4469902236777447593
-  - rid: 4469902236777447594
-  - rid: 4469902236777447595
-  - rid: 4469902236777447596
-  - rid: 4469902236777447597
-  - rid: 4469902236777447598
-  - rid: 4469902236777447599
-  - rid: 4469902236777447600
-  - rid: 4469902236777447601
-  - rid: 4469902236777447602
-  - rid: 4469902236777447603
-  - rid: 4469902236777447604
-  - rid: 4469902236777447605
-  - rid: 4469902236777447606
-  - rid: 4469902236777447607
-  - rid: 4469902236777447608
-  - rid: 4469902236777447609
-  - rid: 4469902236777447610
-  - rid: 4469902236777447611
-  - rid: 4469902236777447612
-  - rid: 4469902236777447613
-  - rid: 4469902236777447614
-  - rid: 4469902236777447615
-  - rid: 4469902236777447616
-  - rid: 4469902236777447617
-  - rid: 4469902236777447618
-  - rid: 4469902236777447619
-  - rid: 4469902236777447620
-  - rid: 4469902236777447621
-  - rid: 4469902236777447622
-  - rid: 4469902236777447623
-  - rid: 4469902236777447624
-  - rid: 4469902236777447625
-  - rid: 4469902236777447626
-  - rid: 4469902236777447627
-  - rid: 4469902236777447628
-  - rid: 4469902236777447629
-  - rid: 4469902236777447630
-  - rid: 4469902236777447631
-  - rid: 4469902236777447632
-  - rid: 4469902236777447633
-  - rid: 4469902236777447634
-  - rid: 4469902236777447635
-  - rid: 4469902236777447636
-  - rid: 4469902236777447637
-  - rid: 4469902236777447638
-  - rid: 4469902236777447639
-  - rid: 4469902236777447640
-  - rid: 4469902236777447641
+  - rid: 4469902288089514192
+  - rid: 4469902288089514193
+  - rid: 4469902288089514194
+  - rid: 4469902288089514195
+  - rid: 4469902288089514196
+  - rid: 4469902288089514197
+  - rid: 4469902288089514198
+  - rid: 4469902288089514199
+  - rid: 4469902288089514200
+  - rid: 4469902288089514201
+  - rid: 4469902288089514202
+  - rid: 4469902288089514203
+  - rid: 4469902288089514204
+  - rid: 4469902288089514205
+  - rid: 4469902288089514206
+  - rid: 4469902288089514207
+  - rid: 4469902288089514208
+  - rid: 4469902288089514209
+  - rid: 4469902288089514210
+  - rid: 4469902288089514211
+  - rid: 4469902288089514212
+  - rid: 4469902288089514213
+  - rid: 4469902288089514214
+  - rid: 4469902288089514215
+  - rid: 4469902288089514216
+  - rid: 4469902288089514217
+  - rid: 4469902288089514218
+  - rid: 4469902288089514219
+  - rid: 4469902288089514220
+  - rid: 4469902288089514221
+  - rid: 4469902288089514222
+  - rid: 4469902288089514223
+  - rid: 4469902288089514224
+  - rid: 4469902288089514225
+  - rid: 4469902288089514226
+  - rid: 4469902288089514227
+  - rid: 4469902288089514228
+  - rid: 4469902288089514229
+  - rid: 4469902288089514230
+  - rid: 4469902288089514231
+  - rid: 4469902288089514232
+  - rid: 4469902288089514233
+  - rid: 4469902288089514234
+  - rid: 4469902288089514235
+  - rid: 4469902288089514236
+  - rid: 4469902288089514237
+  - rid: 4469902288089514238
+  - rid: 4469902288089514239
+  - rid: 4469902288089514240
+  - rid: 4469902288089514241
+  - rid: 4469902288089514242
+  - rid: 4469902288089514243
+  - rid: 4469902288089514244
+  - rid: 4469902288089514245
+  - rid: 4469902288089514246
+  - rid: 4469902288089514247
+  - rid: 4469902288089514248
+  - rid: 4469902288089514249
+  - rid: 4469902288089514250
+  - rid: 4469902288089514251
+  - rid: 4469902288089514252
+  - rid: 4469902288089514253
+  - rid: 4469902288089514254
+  - rid: 4469902288089514255
+  - rid: 4469902288089514256
+  - rid: 4469902288089514257
+  - rid: 4469902288089514258
+  - rid: 4469902288089514259
+  - rid: 4469902288089514260
+  - rid: 4469902288089514261
+  - rid: 4469902288089514262
+  - rid: 4469902288089514263
+  - rid: 4469902288089514264
+  - rid: 4469902288089514265
+  - rid: 4469902288089514266
+  - rid: 4469902288089514267
+  - rid: 4469902288089514268
+  - rid: 4469902288089514269
+  - rid: 4469902288089514270
+  - rid: 4469902288089514271
+  - rid: 4469902288089514272
+  - rid: 4469902288089514273
+  - rid: 4469902288089514274
+  - rid: 4469902288089514275
+  - rid: 4469902288089514276
+  - rid: 4469902288089514277
+  - rid: 4469902288089514278
+  - rid: 4469902288089514279
+  - rid: 4469902288089514280
+  - rid: 4469902288089514281
+  - rid: 4469902288089514282
+  - rid: 4469902288089514283
+  - rid: 4469902288089514284
+  - rid: 4469902288089514285
+  - rid: 4469902288089514286
+  - rid: 4469902288089514287
+  - rid: 4469902288089514288
+  - rid: 4469902288089514289
+  - rid: 4469902288089514290
+  - rid: 4469902288089514291
+  - rid: 4469902288089514292
+  - rid: 4469902288089514293
+  - rid: 4469902288089514294
+  - rid: 4469902288089514295
+  - rid: 4469902288089514296
+  - rid: 4469902288089514297
+  - rid: 4469902288089514298
+  - rid: 4469902288089514299
+  - rid: 4469902288089514300
   references:
     version: 2
     RefIds:
-    - rid: 4469902236777447533
+    - rid: 4469902288089514192
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928243
@@ -168,7 +168,7 @@ MonoBehaviour:
             mPropertyPath: Text
         mExternalId: 
         mPosition: {x: 392, y: 275}
-        mZIndex: 1
+        mZIndex: 0
         mSize: {x: 291, y: 200}
         mShortId: 484523690
         mInputPins:
@@ -213,7 +213,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447534
+    - rid: 4469902288089514193
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928533
@@ -297,7 +297,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447535
+    - rid: 4469902288089514194
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929449
@@ -367,7 +367,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447536
+    - rid: 4469902288089514195
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929462
@@ -406,7 +406,7 @@ MonoBehaviour:
             mPropertyPath: Text
         mExternalId: 
         mPosition: {x: 392, y: 775}
-        mZIndex: 4
+        mZIndex: 3
         mSize: {x: 291, y: 200}
         mShortId: 1159925684
         mInputPins:
@@ -437,7 +437,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447537
+    - rid: 4469902288089514196
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929468
@@ -507,7 +507,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447538
+    - rid: 4469902288089514197
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929474
@@ -577,7 +577,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447539
+    - rid: 4469902288089514198
       type: {class: Dialogue, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929807
@@ -647,7 +647,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447540
+    - rid: 4469902288089514199
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928258
@@ -733,7 +733,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928264
                   instanceId: 0
-    - rid: 4469902236777447541
+    - rid: 4469902288089514200
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928264
@@ -819,7 +819,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928271
                   instanceId: 0
-    - rid: 4469902236777447542
+    - rid: 4469902288089514201
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928271
@@ -905,7 +905,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928278
                   instanceId: 0
-    - rid: 4469902236777447543
+    - rid: 4469902288089514202
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928278
@@ -991,7 +991,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928285
                   instanceId: 0
-    - rid: 4469902236777447544
+    - rid: 4469902288089514203
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928285
@@ -1077,7 +1077,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928292
                   instanceId: 0
-    - rid: 4469902236777447545
+    - rid: 4469902288089514204
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928292
@@ -1163,7 +1163,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929216
                   instanceId: 0
-    - rid: 4469902236777447546
+    - rid: 4469902288089514205
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928560
@@ -1235,7 +1235,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447547
+    - rid: 4469902288089514206
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929239
@@ -1321,7 +1321,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929246
                   instanceId: 0
-    - rid: 4469902236777447548
+    - rid: 4469902288089514207
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929246
@@ -1407,7 +1407,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929253
                   instanceId: 0
-    - rid: 4469902236777447549
+    - rid: 4469902288089514208
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929253
@@ -1493,7 +1493,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929260
                   instanceId: 0
-    - rid: 4469902236777447550
+    - rid: 4469902288089514209
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929260
@@ -1579,7 +1579,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929273
                   instanceId: 0
-    - rid: 4469902236777447551
+    - rid: 4469902288089514210
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929273
@@ -1679,7 +1679,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929286
                   instanceId: 0
-    - rid: 4469902236777447552
+    - rid: 4469902288089514211
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929280
@@ -1765,7 +1765,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929310
                   instanceId: 0
-    - rid: 4469902236777447553
+    - rid: 4469902288089514212
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929286
@@ -1851,7 +1851,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929296
                   instanceId: 0
-    - rid: 4469902236777447554
+    - rid: 4469902288089514213
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929296
@@ -1937,7 +1937,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929303
                   instanceId: 0
-    - rid: 4469902236777447555
+    - rid: 4469902288089514214
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929303
@@ -2009,7 +2009,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447556
+    - rid: 4469902288089514215
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929310
@@ -2095,7 +2095,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929317
                   instanceId: 0
-    - rid: 4469902236777447557
+    - rid: 4469902288089514216
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929317
@@ -2167,7 +2167,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447558
+    - rid: 4469902288089514217
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928579
@@ -2267,7 +2267,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928598
                   instanceId: 0
-    - rid: 4469902236777447559
+    - rid: 4469902288089514218
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928592
@@ -2353,7 +2353,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928608
                   instanceId: 0
-    - rid: 4469902236777447560
+    - rid: 4469902288089514219
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928598
@@ -2439,7 +2439,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928608
                   instanceId: 0
-    - rid: 4469902236777447561
+    - rid: 4469902288089514220
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928608
@@ -2525,7 +2525,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928616
                   instanceId: 0
-    - rid: 4469902236777447562
+    - rid: 4469902288089514221
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928616
@@ -2639,7 +2639,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928635
                   instanceId: 0
-    - rid: 4469902236777447563
+    - rid: 4469902288089514222
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928623
@@ -2725,7 +2725,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469902236777447564
+    - rid: 4469902288089514223
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928629
@@ -2811,7 +2811,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469902236777447565
+    - rid: 4469902288089514224
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928635
@@ -2897,7 +2897,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928644
                   instanceId: 0
-    - rid: 4469902236777447566
+    - rid: 4469902288089514225
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928644
@@ -2983,7 +2983,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929114
                   instanceId: 0
-    - rid: 4469902236777447567
+    - rid: 4469902288089514226
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929107
@@ -3111,7 +3111,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929181
                   instanceId: 0
-    - rid: 4469902236777447568
+    - rid: 4469902288089514227
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929129
@@ -3197,7 +3197,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469902236777447569
+    - rid: 4469902288089514228
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929135
@@ -3283,7 +3283,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469902236777447570
+    - rid: 4469902288089514229
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929141
@@ -3369,7 +3369,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929153
                   instanceId: 0
-    - rid: 4469902236777447571
+    - rid: 4469902288089514230
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929153
@@ -3455,7 +3455,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929160
                   instanceId: 0
-    - rid: 4469902236777447572
+    - rid: 4469902288089514231
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929160
@@ -3541,7 +3541,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929167
                   instanceId: 0
-    - rid: 4469902236777447573
+    - rid: 4469902288089514232
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929167
@@ -3627,7 +3627,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929176
                   instanceId: 0
-    - rid: 4469902236777447574
+    - rid: 4469902288089514233
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929181
@@ -3713,7 +3713,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929200
                   instanceId: 0
-    - rid: 4469902236777447575
+    - rid: 4469902288089514234
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929189
@@ -3785,7 +3785,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447576
+    - rid: 4469902288089514235
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929498
@@ -3871,7 +3871,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929504
                   instanceId: 0
-    - rid: 4469902236777447577
+    - rid: 4469902288089514236
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929504
@@ -3957,7 +3957,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929511
                   instanceId: 0
-    - rid: 4469902236777447578
+    - rid: 4469902288089514237
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929511
@@ -4043,7 +4043,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929518
                   instanceId: 0
-    - rid: 4469902236777447579
+    - rid: 4469902288089514238
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929518
@@ -4129,7 +4129,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929525
                   instanceId: 0
-    - rid: 4469902236777447580
+    - rid: 4469902288089514239
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929525
@@ -4229,7 +4229,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929538
                   instanceId: 0
-    - rid: 4469902236777447581
+    - rid: 4469902288089514240
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929532
@@ -4315,7 +4315,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929555
                   instanceId: 0
-    - rid: 4469902236777447582
+    - rid: 4469902288089514241
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929538
@@ -4401,7 +4401,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929548
                   instanceId: 0
-    - rid: 4469902236777447583
+    - rid: 4469902288089514242
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929548
@@ -4487,7 +4487,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929583
                   instanceId: 0
-    - rid: 4469902236777447584
+    - rid: 4469902288089514243
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929555
@@ -4573,7 +4573,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929562
                   instanceId: 0
-    - rid: 4469902236777447585
+    - rid: 4469902288089514244
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929562
@@ -4659,7 +4659,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929569
                   instanceId: 0
-    - rid: 4469902236777447586
+    - rid: 4469902288089514245
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929569
@@ -4745,7 +4745,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929576
                   instanceId: 0
-    - rid: 4469902236777447587
+    - rid: 4469902288089514246
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929576
@@ -4831,7 +4831,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929583
                   instanceId: 0
-    - rid: 4469902236777447588
+    - rid: 4469902288089514247
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929583
@@ -4917,7 +4917,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929591
                   instanceId: 0
-    - rid: 4469902236777447589
+    - rid: 4469902288089514248
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929591
@@ -5003,7 +5003,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929598
                   instanceId: 0
-    - rid: 4469902236777447590
+    - rid: 4469902288089514249
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929598
@@ -5089,7 +5089,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929605
                   instanceId: 0
-    - rid: 4469902236777447591
+    - rid: 4469902288089514250
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929605
@@ -5161,7 +5161,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447592
+    - rid: 4469902288089514251
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929696
@@ -5247,7 +5247,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929702
                   instanceId: 0
-    - rid: 4469902236777447593
+    - rid: 4469902288089514252
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929702
@@ -5333,7 +5333,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929708
                   instanceId: 0
-    - rid: 4469902236777447594
+    - rid: 4469902288089514253
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929708
@@ -5419,7 +5419,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929714
                   instanceId: 0
-    - rid: 4469902236777447595
+    - rid: 4469902288089514254
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929714
@@ -5491,7 +5491,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447596
+    - rid: 4469902288089514255
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929612
@@ -5577,7 +5577,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929617
                   instanceId: 0
-    - rid: 4469902236777447597
+    - rid: 4469902288089514256
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929617
@@ -5663,7 +5663,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929625
                   instanceId: 0
-    - rid: 4469902236777447598
+    - rid: 4469902288089514257
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929625
@@ -5749,7 +5749,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929632
                   instanceId: 0
-    - rid: 4469902236777447599
+    - rid: 4469902288089514258
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929632
@@ -5835,7 +5835,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929639
                   instanceId: 0
-    - rid: 4469902236777447600
+    - rid: 4469902288089514259
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929639
@@ -5921,7 +5921,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929646
                   instanceId: 0
-    - rid: 4469902236777447601
+    - rid: 4469902288089514260
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929646
@@ -6007,7 +6007,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929653
                   instanceId: 0
-    - rid: 4469902236777447602
+    - rid: 4469902288089514261
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929653
@@ -6093,7 +6093,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929660
                   instanceId: 0
-    - rid: 4469902236777447603
+    - rid: 4469902288089514262
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929660
@@ -6193,7 +6193,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929673
                   instanceId: 0
-    - rid: 4469902236777447604
+    - rid: 4469902288089514263
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929667
@@ -6279,7 +6279,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929683
                   instanceId: 0
-    - rid: 4469902236777447605
+    - rid: 4469902288089514264
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929673
@@ -6365,7 +6365,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929683
                   instanceId: 0
-    - rid: 4469902236777447606
+    - rid: 4469902288089514265
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929683
@@ -6437,7 +6437,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447607
+    - rid: 4469902288089514266
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929725
@@ -6523,7 +6523,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929731
                   instanceId: 0
-    - rid: 4469902236777447608
+    - rid: 4469902288089514267
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929731
@@ -6609,7 +6609,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929737
                   instanceId: 0
-    - rid: 4469902236777447609
+    - rid: 4469902288089514268
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929737
@@ -6695,7 +6695,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929743
                   instanceId: 0
-    - rid: 4469902236777447610
+    - rid: 4469902288089514269
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929743
@@ -6781,7 +6781,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929749
                   instanceId: 0
-    - rid: 4469902236777447611
+    - rid: 4469902288089514270
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929749
@@ -6853,7 +6853,7 @@ MonoBehaviour:
               instanceId: 0
             mConnections:
               value: []
-    - rid: 4469902236777447612
+    - rid: 4469902288089514271
       type: {class: DialogueFragment, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929759
@@ -6939,7 +6939,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929725
                   instanceId: 0
-    - rid: 4469902236777447613
+    - rid: 4469902288089514272
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929691
@@ -7036,7 +7036,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929691
             mOwnerInstanceId: 0
-    - rid: 4469902236777447614
+    - rid: 4469902288089514273
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929813
@@ -7133,7 +7133,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929813
             mOwnerInstanceId: 0
-    - rid: 4469902236777447615
+    - rid: 4469902288089514274
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929819
@@ -7230,7 +7230,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929819
             mOwnerInstanceId: 0
-    - rid: 4469902236777447616
+    - rid: 4469902288089514275
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929826
@@ -7327,7 +7327,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929826
             mOwnerInstanceId: 0
-    - rid: 4469902236777447617
+    - rid: 4469902288089514276
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929833
@@ -7424,7 +7424,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929833
             mOwnerInstanceId: 0
-    - rid: 4469902236777447618
+    - rid: 4469902288089514277
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929842
@@ -7521,7 +7521,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929842
             mOwnerInstanceId: 0
-    - rid: 4469902236777447619
+    - rid: 4469902288089514278
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929849
@@ -7618,7 +7618,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929849
             mOwnerInstanceId: 0
-    - rid: 4469902236777447620
+    - rid: 4469902288089514279
       type: {class: DialogueBG, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929856
@@ -7701,7 +7701,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037929856
             mOwnerInstanceId: 0
-    - rid: 4469902236777447621
+    - rid: 4469902288089514280
       type: {class: Hub, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929114
@@ -7774,7 +7774,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929107
                   instanceId: 0
-    - rid: 4469902236777447622
+    - rid: 4469902288089514281
       type: {class: Jump, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929176
@@ -7816,7 +7816,7 @@ MonoBehaviour:
               value: []
         mOutputPins:
           value: []
-    - rid: 4469902236777447623
+    - rid: 4469902288089514282
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929221
@@ -7921,7 +7921,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928560
                   instanceId: 0
-    - rid: 4469902236777447624
+    - rid: 4469902288089514283
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929232
@@ -8026,7 +8026,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928258
                   instanceId: 0
-    - rid: 4469902236777447625
+    - rid: 4469902288089514284
       type: {class: Condition, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929205
@@ -8131,7 +8131,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929189
                   instanceId: 0
-    - rid: 4469902236777447626
+    - rid: 4469902288089514285
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929216
@@ -8210,7 +8210,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929221
                   instanceId: 0
-    - rid: 4469902236777447627
+    - rid: 4469902288089514286
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929227
@@ -8289,7 +8289,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037928560
                   instanceId: 0
-    - rid: 4469902236777447628
+    - rid: 4469902288089514287
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929200
@@ -8368,7 +8368,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929205
                   instanceId: 0
-    - rid: 4469902236777447629
+    - rid: 4469902288089514288
       type: {class: Instruction, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929211
@@ -8447,7 +8447,7 @@ MonoBehaviour:
                 mTarget:
                   id: 72057594037929189
                   instanceId: 0
-    - rid: 4469902236777447630
+    - rid: 4469902288089514289
       type: {class: Player_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928221
@@ -8512,7 +8512,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928221
             mOwnerInstanceId: 0
-    - rid: 4469902236777447631
+    - rid: 4469902288089514290
       type: {class: NPC_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928225
@@ -8580,7 +8580,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928225
             mOwnerInstanceId: 0
-    - rid: 4469902236777447632
+    - rid: 4469902288089514291
       type: {class: NPC_Template, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928529
@@ -8648,7 +8648,7 @@ MonoBehaviour:
                 mOwnerInstanceId: 0
             mOwnerId: 72057594037928529
             mOwnerInstanceId: 0
-    - rid: 4469902236777447633
+    - rid: 4469902288089514292
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929436
@@ -8709,7 +8709,7 @@ MonoBehaviour:
         mShortId: 374493842
         mAssetRefPath: Assets/Images/Blue.png
         mCategory: 1
-    - rid: 4469902236777447634
+    - rid: 4469902288089514293
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929439
@@ -8770,7 +8770,7 @@ MonoBehaviour:
         mShortId: 3673353797
         mAssetRefPath: Assets/Images/Red.png
         mCategory: 1
-    - rid: 4469902236777447635
+    - rid: 4469902288089514294
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929442
@@ -8831,7 +8831,7 @@ MonoBehaviour:
         mShortId: 209848402
         mAssetRefPath: Assets/Images/Green.png
         mCategory: 1
-    - rid: 4469902236777447636
+    - rid: 4469902288089514295
       type: {class: Asset, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037929886
@@ -8891,7 +8891,7 @@ MonoBehaviour:
         mShortId: 1110887765
         mAssetRefPath: Assets/Images/black.bmp
         mCategory: 1
-    - rid: 4469902236777447637
+    - rid: 4469902288089514296
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928211
@@ -8910,7 +8910,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 43157192
         mZIndex: 0
-    - rid: 4469902236777447638
+    - rid: 4469902288089514297
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928213
@@ -8929,7 +8929,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2635167690
         mZIndex: 0
-    - rid: 4469902236777447639
+    - rid: 4469902288089514298
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928215
@@ -8948,7 +8948,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2310604386
         mZIndex: 0
-    - rid: 4469902236777447640
+    - rid: 4469902288089514299
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928217
@@ -8967,7 +8967,7 @@ MonoBehaviour:
         mExternalId: 
         mShortId: 2297670103
         mZIndex: 0
-    - rid: 4469902236777447641
+    - rid: 4469902288089514300
       type: {class: UserFolder, ns: Articy.Articy_Tutorial, asm: Assembly-CSharp}
       data:
         id: 72057594037928219

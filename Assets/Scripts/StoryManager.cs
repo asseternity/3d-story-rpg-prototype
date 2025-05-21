@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Articy.Articy_Tutorial;
+using Articy.Articy_Tutorial.Features;
 using Articy.Articy_Tutorial.GlobalVariables;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
@@ -121,29 +122,21 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     /// </summary>
     public void OnFlowPlayerPaused(IFlowObject aObject)
     {
-        // Handle background images
-        if (aObject is DialogueBG bgFrag)
-        {
-            var imageRef = bgFrag.Template.Background.BackgroundImage;
-            var asset = imageRef as IAsset;
-
-            if (asset != null)
-            {
-                var sprite = asset.LoadAssetAsSprite();
-                dialogueBackground.sprite = sprite;
-                dialogueBackground.gameObject.SetActive(true);
-            }
-            else
-            {
-                // No image set → hide the panel
-                dialogueBackground.gameObject.SetActive(false);
-            }
-        }
-        else
-        {
-            // Not a DialogueBG fragment → hide the panel
-            dialogueBackground.gameObject.SetActive(false);
-        }
+        // // handle background
+        // // 1) Try to get the feature-holder
+        // var bgHolder = aObject as IObjectWithFeatureBackground;
+        // // 2) If it exists, fetch the feature instance
+        // var bgFeature = bgHolder?.GetFeatureBackground();
+        // // 3) Only if bgFeature is non-null AND has a BackgroundImage do we show it
+        // if (bgFeature != null && bgFeature.BackgroundImage is Articy.Unity.Interfaces.IAsset asset)
+        // {
+        //     dialogueBackground.sprite = asset.LoadAssetAsSprite();
+        //     dialogueBackground.gameObject.SetActive(true);
+        // }
+        // else
+        // {
+        //     dialogueBackground.gameObject.SetActive(false);
+        // }
 
         // Clear data
         dialogueText.text = string.Empty;

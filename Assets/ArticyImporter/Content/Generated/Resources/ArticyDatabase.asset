@@ -1,6 +1,103 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8575185406111752601
+--- !u!114 &-8531544906606290623
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe842abafda3c840889bc9586b69561, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  mBoolVariableCache:
+  - mFullQualifiedName: GameState.talkedToRed
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talkedToBlue
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.talkedToBoth
+    mVar:
+      values: 00
+  mIntVariableCache: []
+  mStringVariableCache:
+  - mFullQualifiedName: PlayerInfo.PlayerName
+    mVar:
+      values:
+      - Circle
+  - mFullQualifiedName: PlayerInfo.Him
+    mVar:
+      values:
+      - him
+  - mFullQualifiedName: PlayerInfo.His
+    mVar:
+      values:
+      - his
+  mLiveBoolVariableCache: []
+  mLiveIntVariableCache: []
+  mLiveStringVariableCache: []
+  mIsInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: -8531544906606290623}
+  mPlayerInfo:
+    _VariableStorage: {fileID: -8531544906606290623}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: 6064746530595155539}
+  mLocalization: {fileID: 2576419754198640834}
+  mRuleSetId: 269
+  mArticyAssetsUseResourcesFolder: 1
+  mInternalProject:
+    mName: Articy Tutorial
+    mDetailName: 
+    mId: 63491cdc-d783-4632-970b-51953370fc9d
+    mTechnicalName: Articy_Tutorial
+  mImportedAssets:
+  - Assets/Images/Blue.png
+  - Assets/Images/Red.png
+  - Assets/Images/Green.png
+  - Assets/Images/black.bmp
+  mDefaultGlobalVariables: {fileID: -8531544906606290623}
+  mPackages:
+  - PackageId: 72057594037928208
+    PackageName: All objects
+    PackagePath: package_0x100000000000110
+    mIsDefaultPackage: 1
+--- !u!114 &2576419754198640834
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: 
+  mLocalizeObjectDefinitions: 0
+  mLanguageId: 127
+  mLanguages:
+  - mArticyLanguageId: 127
+    mCultureName: 
+    mLanguageName: Invariant Language (Invariant Country)
+    mIsVoiceOver: 0
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1
+--- !u!114 &6064746530595155539
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -818,100 +915,3 @@ MonoBehaviour:
     technicalName: Ufo_9D1177CA
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: -8575185406111752601}
-  mLocalization: {fileID: 2281914317301178881}
-  mRuleSetId: 269
-  mArticyAssetsUseResourcesFolder: 1
-  mInternalProject:
-    mName: Articy Tutorial
-    mDetailName: 
-    mId: 63491cdc-d783-4632-970b-51953370fc9d
-    mTechnicalName: Articy_Tutorial
-  mImportedAssets:
-  - Assets/Images/Blue.png
-  - Assets/Images/Red.png
-  - Assets/Images/Green.png
-  - Assets/Images/black.bmp
-  mDefaultGlobalVariables: {fileID: 6624425742466862086}
-  mPackages:
-  - PackageId: 72057594037928208
-    PackageName: All objects
-    PackagePath: package_0x100000000000110
-    mIsDefaultPackage: 1
---- !u!114 &2281914317301178881
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: LocalizationManager
-  m_EditorClassIdentifier: 
-  mLocalizeObjectDefinitions: 0
-  mLanguageId: 127
-  mLanguages:
-  - mArticyLanguageId: 127
-    mCultureName: 
-    mLanguageName: Invariant Language (Invariant Country)
-    mIsVoiceOver: 0
-  mThrowOnMissingText: 0
-  mClearOnLanguageSwitch: 1
---- !u!114 &6624425742466862086
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe842abafda3c840889bc9586b69561, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  mBoolVariableCache:
-  - mFullQualifiedName: GameState.talkedToRed
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talkedToBlue
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.talkedToBoth
-    mVar:
-      values: 00
-  mIntVariableCache: []
-  mStringVariableCache:
-  - mFullQualifiedName: PlayerInfo.PlayerName
-    mVar:
-      values:
-      - Circle
-  - mFullQualifiedName: PlayerInfo.Him
-    mVar:
-      values:
-      - him
-  - mFullQualifiedName: PlayerInfo.His
-    mVar:
-      values:
-      - his
-  mLiveBoolVariableCache: []
-  mLiveIntVariableCache: []
-  mLiveStringVariableCache: []
-  mIsInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: 6624425742466862086}
-  mPlayerInfo:
-    _VariableStorage: {fileID: 6624425742466862086}
