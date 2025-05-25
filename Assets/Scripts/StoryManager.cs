@@ -183,6 +183,10 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                     dialogueSprite.gameObject.SetActive(false); // Hide the image if no sprite is available
                 }
             }
+            else
+            {
+                dialogueSprite.gameObject.SetActive(false); // Hide the image if no sprite is available
+            }
         }
         else
         {
