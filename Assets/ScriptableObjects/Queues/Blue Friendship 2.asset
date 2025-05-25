@@ -17,6 +17,6 @@ MonoBehaviour:
     dialogue:
       instanceId: 0
       referencingMode: 0
-      lowId: 1538
+      lowId: 1871
       highId: 16777216
     battle: {fileID: 0}

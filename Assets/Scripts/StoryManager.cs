@@ -103,10 +103,12 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     private void CommenceDialogue(IArticyObject aObject)
     {
+        Debug.Log($"About to start fragment `{pendingQueue[0].dialogue}` → {aObject}");
         pendingQueue.RemoveAt(0);
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
+        flowPlayer.Play();
     }
 
     private void CommenceBattle(BattleData battleData)
@@ -122,21 +124,28 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     /// </summary>
     public void OnFlowPlayerPaused(IFlowObject aObject)
     {
-        // // handle background
-        // // 1) Try to get the feature-holder
-        // var bgHolder = aObject as IObjectWithFeatureBackground;
-        // // 2) If it exists, fetch the feature instance
-        // var bgFeature = bgHolder?.GetFeatureBackground();
-        // // 3) Only if bgFeature is non-null AND has a BackgroundImage do we show it
-        // if (bgFeature != null && bgFeature.BackgroundImage is Articy.Unity.Interfaces.IAsset asset)
-        // {
-        //     dialogueBackground.sprite = asset.LoadAssetAsSprite();
-        //     dialogueBackground.gameObject.SetActive(true);
-        // }
-        // else
-        // {
-        //     dialogueBackground.gameObject.SetActive(false);
-        // }
+        if (aObject == null)
+        {
+            Debug.LogWarning("OnFlowPlayerPaused called with null aObject — skipping.");
+            return;
+        }
+
+        // handle background
+        // 1) Try to get the feature-holder
+        var bgHolder = aObject as IObjectWithFeatureBackground;
+        // 2) If it exists, fetch the feature instance
+        var bgFeature = bgHolder?.GetFeatureBackground();
+        // 3) Only if bgFeature is non-null AND has a BackgroundImage do we show it
+        if (bgFeature != null && bgFeature.BackgroundImage is Articy.Unity.Interfaces.IAsset asset)
+        {
+            dialogueBackground.sprite = asset.LoadAssetAsSprite();
+            dialogueBackground.gameObject.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("DialogueFragment is not a DialogueBG or does not have an image assigned.");
+            dialogueBackground.gameObject.SetActive(false);
+        }
 
         // Clear data
         dialogueText.text = string.Empty;
@@ -147,6 +156,10 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         if (objectWithText != null)
         {
             dialogueText.text = objectWithText.Text;
+        }
+        else
+        {
+            Debug.Log("DialogueFragment is not a IObjectWithLocalizableText.");
         }
 
         // If we paused on an object with a speaker name
@@ -170,6 +183,10 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
                     dialogueSprite.gameObject.SetActive(false); // Hide the image if no sprite is available
                 }
             }
+        }
+        else
+        {
+            Debug.Log("DialogueFragment is not a IObjectWithSpeaker.");
         }
     }
 

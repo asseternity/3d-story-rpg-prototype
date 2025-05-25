@@ -8624,7 +8624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useDefaultGlobalVariables: 1
-  globalVariables: {fileID: 11400000, guid: 26ddb0a1e0f9a94459fa8892910a51a0, type: 2}
+  globalVariables: {fileID: 0}
   overwriteMethodProvider: 0
   overwrittenMethodProvider: {fileID: 0}
   startOn:
