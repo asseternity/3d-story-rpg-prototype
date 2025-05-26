@@ -71,38 +71,59 @@ public class StateController : MonoBehaviour
         foreach (GameObject AS in activityStarters)
         {
             ActivityStarter AS_script = AS.GetComponent<ActivityStarter>();
+            // if the activity is available today, enable the NPC
             if (AS_script.daysAvailable.Contains(day))
             {
                 GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
                 parentObject.SetActive(true);
-
-                // check if the activity has been completed or not
-                int index = progressedActivities.FindIndex(e => e.activity == AS_script.activity);
-                if (index >= 0)
-                {
-                    var entry = progressedActivities[index];
-                    if (entry.currentStage >= entry.activity.stages.Count)
-                    {
-                        Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-                        exclamationMark.gameObject.SetActive(true);
-                    }
-                    else
-                    {
-                        Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-                        exclamationMark.gameObject.SetActive(true);
-                    }
-                }
-                else
-                {
-                    Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-                    exclamationMark.gameObject.SetActive(true);
-                }
+                UpdateExclamationMark(AS);
             }
             else
             {
                 GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
                 parentObject.SetActive(false);
             }
+        }
+    }
+
+    public void UpdateExclamationMark(GameObject AS)
+    {
+        ActivityStarter AS_script = AS.GetComponent<ActivityStarter>();
+        GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
+        // check if the activity has been completed or not
+        int index = progressedActivities.FindIndex(e => e.activity == AS_script.activity);
+        // is there an activity?
+        if (index >= 0)
+        {
+            var entry = progressedActivities[index];
+            // is the activity fully completed?
+            if (entry.currentStage >= entry.activity.stages.Count)
+            {
+                Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                exclamationMark.gameObject.SetActive(false);
+            }
+            else
+            {
+                Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                exclamationMark.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+            exclamationMark.gameObject.SetActive(false);
+        }
+
+        // have we seen the activity today?
+        if (AS_script.seenActivityToday)
+        {
+            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+            exclamationMark.gameObject.SetActive(false);
+        }
+        else
+        {
+            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+            exclamationMark.gameObject.SetActive(true);
         }
     }
 
