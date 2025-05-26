@@ -36,9 +36,9 @@
 // [v] - saving testing
 // [v] - saving slots
 // [v] - cannot save in battle
+// [v] - remove "!" when dialogue has been seen
 // [_] - BIG ONE! make the story manager be able to show and change some background images if there are any for dialogues!
 // [_] - main menu
-// [_] - remove "!" when dialogue has been seen
 // [_] - (b) make a faux, secret save file at the start of the game, including starting at the right dialogue point!
 // [_] - (c) use that when starting a new game
 // [_] - (d) make a mainMenuManager c# script to hold methods to add as listeners to the main menu buttons

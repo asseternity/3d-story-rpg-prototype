@@ -76,7 +76,6 @@ public class StateController : MonoBehaviour
             {
                 GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
                 parentObject.SetActive(true);
-                UpdateExclamationMark(AS);
             }
             else
             {
@@ -84,20 +83,42 @@ public class StateController : MonoBehaviour
                 parentObject.SetActive(false);
             }
         }
+
+        UpdateExclamationMarks();
     }
 
-    public void UpdateExclamationMark(GameObject AS)
+    public void UpdateExclamationMarks()
     {
-        ActivityStarter AS_script = AS.GetComponent<ActivityStarter>();
-        GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
-        // check if the activity has been completed or not
-        int index = progressedActivities.FindIndex(e => e.activity == AS_script.activity);
-        // is there an activity?
-        if (index >= 0)
+        foreach (GameObject AS in activityStarters)
         {
-            var entry = progressedActivities[index];
-            // is the activity fully completed?
-            if (entry.currentStage >= entry.activity.stages.Count)
+            ActivityStarter AS_script = AS.GetComponent<ActivityStarter>();
+            GameObject parentObject = AS.gameObject.transform.parent?.gameObject;
+            // check if the activity has been completed or not
+            int index = progressedActivities.FindIndex(e => e.activity == AS_script.activity);
+            // is there an activity?
+            if (index >= 0)
+            {
+                var entry = progressedActivities[index];
+                // is the activity fully completed?
+                if (entry.currentStage >= entry.activity.stages.Count)
+                {
+                    Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                    exclamationMark.gameObject.SetActive(false);
+                }
+                else
+                {
+                    Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                    exclamationMark.gameObject.SetActive(true);
+                }
+            }
+            else
+            {
+                Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
+                exclamationMark.gameObject.SetActive(false);
+            }
+
+            // have we seen the activity today?
+            if (AS_script.seenActivityToday)
             {
                 Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
                 exclamationMark.gameObject.SetActive(false);
@@ -107,23 +128,6 @@ public class StateController : MonoBehaviour
                 Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
                 exclamationMark.gameObject.SetActive(true);
             }
-        }
-        else
-        {
-            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-            exclamationMark.gameObject.SetActive(false);
-        }
-
-        // have we seen the activity today?
-        if (AS_script.seenActivityToday)
-        {
-            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-            exclamationMark.gameObject.SetActive(false);
-        }
-        else
-        {
-            Transform exclamationMark = parentObject.transform.Find("ExclamationMark");
-            exclamationMark.gameObject.SetActive(true);
         }
     }
 
@@ -165,6 +169,20 @@ public class StateController : MonoBehaviour
         // advance the stage in our list
         entry.currentStage++;
         progressedActivities[index] = entry; // write back
+
+        // mark the ActivityStarter as “seen” for today
+        foreach (var AS in activityStarters)
+        {
+            var starter = AS.GetComponent<ActivityStarter>();
+            if (starter.activity == activityToStart)
+            {
+                starter.seenActivityToday = true;
+                break;
+            }
+        }
+
+        // update exclamation marks
+        UpdateExclamationMarks();
     }
 
     public void OpenConfirmationWindow(UnityAction confirmationCallback, string confirmationText)
