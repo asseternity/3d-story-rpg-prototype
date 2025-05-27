@@ -103,8 +103,11 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     private void CommenceDialogue(IArticyObject aObject)
     {
-        Debug.Log($"About to start fragment `{pendingQueue[0].dialogue}` → {aObject}");
-        pendingQueue.RemoveAt(0);
+        // this is for the sake of new game
+        if (pendingQueue != null)
+        {
+            pendingQueue.RemoveAt(0);
+        }
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;

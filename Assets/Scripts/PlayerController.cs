@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
     private StoryManager storyManager;
     private StateController stateController;
 
+    // game state
+    public bool paused = false;
+    public bool gameStarted = false;
+
     // Battle vars
     public bool isInBattle = false; // Flag to check if in battle
 
@@ -51,13 +55,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Articy
-        DialogueInteraction();
-
-        // pause
-        if (Input.GetButtonDown("Cancel"))
+        if (gameStarted)
         {
-            TogglePause();
+            // Articy
+            DialogueInteraction();
+
+            // pause
+            if (Input.GetButtonDown("Cancel"))
+            {
+                TogglePause();
+            }
         }
     }
 
@@ -162,8 +169,6 @@ public class PlayerController : MonoBehaviour
             readyToSleep = false;
         }
     }
-
-    public bool paused = false;
 
     public void TogglePause()
     {
