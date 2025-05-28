@@ -1298,7 +1298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042cabef80d8ade4ba1ed6c8a160ac82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activity: {fileID: 11400000, guid: 697c749e826cbc04288337bea61dacbe, type: 2}
+  activity: {fileID: 11400000, guid: 07f845021ef243e4794466e2f9668e38, type: 2}
   daysAvailable: 0300000005000000
   seenActivityToday: 0
 --- !u!1 &184499137
@@ -6215,7 +6215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042cabef80d8ade4ba1ed6c8a160ac82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activity: {fileID: 11400000, guid: e003c3e642140714abe43c1399552bb5, type: 2}
+  activity: {fileID: 11400000, guid: 07f845021ef243e4794466e2f9668e38, type: 2}
   daysAvailable: 0200000004000000
   seenActivityToday: 0
 --- !u!1 &945126447
@@ -8681,6 +8681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 1728128538}
+  fadeManager: {fileID: 0}
   nextThingID: 
   nextThingType: 
   currentQueue: []
@@ -9255,6 +9256,7 @@ MonoBehaviour:
   blackScreen: {fileID: 193482988}
   fadeDuration: 1
   waitDuration: 2
+  bgImage: {fileID: 688963544}
 --- !u!1001 &1329783520
 PrefabInstance:
   m_ObjectHideFlags: 0

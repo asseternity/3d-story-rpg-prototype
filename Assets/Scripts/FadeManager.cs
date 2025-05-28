@@ -1,4 +1,5 @@
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -8,6 +9,8 @@ public class FadeManager : MonoBehaviour
     public Image blackScreen; // Assign in Inspector (full-screen black UI Image)
     public float fadeDuration = 1f;
     public float waitDuration = 2f;
+    public Image bgImage;
+    bool gameStarted = false;
 
     public IEnumerator FadeScreen(UnityAction callback)
     {
@@ -46,5 +49,24 @@ public class FadeManager : MonoBehaviour
 
         color.a = endAlpha;
         blackScreen.color = color;
+    }
+
+    public void FadeTo(Sprite nextSprite)
+    {
+        if (gameStarted)
+        {
+            bgImage
+                .DOFade(0f, fadeDuration)
+                .OnComplete(() =>
+                {
+                    bgImage.sprite = nextSprite;
+                    bgImage.DOFade(1f, fadeDuration);
+                });
+            gameStarted = true;
+        }
+        else
+        {
+            bgImage.sprite = nextSprite;
+        }
     }
 }

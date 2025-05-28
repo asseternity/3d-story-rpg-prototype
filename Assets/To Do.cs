@@ -43,10 +43,12 @@
 // [v] - (B) use that when starting a new game
 // [v] - (C) make a mainMenuManager c# script to hold methods to add as listeners to the main menu buttons
 // [v] - test that new game + intro works
-// [_] - fade BG image changes
+// [v] - fade BG image changes with DOTween
 // [_] - quests SO
 // [_] - settings menu
 // [_] - game over
+// [_] - vertical slice
+// [_] - blender
 
 // persona fighting mechanics:
 // [v] build the story manager script with 2 functions: startDialogue (articyObject, nextThing) and startBattle (battleID, nextThing)
@@ -67,10 +69,10 @@
 // [v] - enemies go one after another not all at once
 // [v] - one animation for moves with multiple targets
 // [v] - MP costs on hover
-// [_] - damage numbers
-// [_] - camera angles
-// [_] - particle effects
-// [_] - ui and turn order
+// [_] - damage numbers with DOTween
+// [_] - camera angles with Cinemachine
+// [_] - particle effects with Post-Processing Stack v2
+// [_] - ui and turn order with DOTween
 // [_] - add items and consumables
 
 // --- GAME STRUCTURE DOCUMENTATION ---
@@ -90,6 +92,6 @@
 // The story manager needs to:
 // (1) populate the 3D environment with available activities based on the date
 // (2) keep track of the available quests and their stages, progressing them as the player completes the tasks
-// [_] this means that I need a function that will take a quest and progress it to the next stage
+// [v] this means that I need a function that will take a quest and progress it to the next stage
 // (3) trigger the next whatever when the player completes an articy dialogue, a battle or anything else
 // [v] this will use the StartSectionFrom functions

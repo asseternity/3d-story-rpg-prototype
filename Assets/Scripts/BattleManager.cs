@@ -286,7 +286,7 @@ public class BattleManager : MonoBehaviour
         // 1) Remove any outline
         foreach (var enemyGo in enemyBattleModels)
         {
-            var outline = enemyGo.GetComponent<Outline>();
+            var outline = enemyGo.GetComponent<OutlineBattle>();
             if (outline != null)
             {
                 outline.OutlineWidth = 0;
@@ -442,7 +442,7 @@ public class BattleManager : MonoBehaviour
             GameObject targetModel = GameObject.Find(target.participantName);
             if (targetModel != null)
             {
-                Outline outline = targetModel.GetComponent<Outline>();
+                OutlineBattle outline = targetModel.GetComponent<OutlineBattle>();
                 if (outline != null)
                 {
                     outline.OutlineWidth = 0; // Remove the outline effect
@@ -463,7 +463,7 @@ public class BattleManager : MonoBehaviour
             GameObject targetModel = GameObject.Find(target.participantName);
             if (targetModel != null)
             {
-                Outline outline = targetModel.GetComponent<Outline>();
+                OutlineBattle outline = targetModel.GetComponent<OutlineBattle>();
                 if (outline != null)
                 {
                     outline.OutlineWidth = 5f; // Add the outline effect
@@ -492,7 +492,7 @@ public class BattleManager : MonoBehaviour
                         GameObject targetModel = GameObject.Find(target.participantName);
                         if (targetModel != null)
                         {
-                            Outline outline = targetModel.GetComponent<Outline>();
+                            OutlineBattle outline = targetModel.GetComponent<OutlineBattle>();
                             if (outline != null)
                             {
                                 outline.OutlineWidth = 0; // Remove the outline effect
@@ -514,7 +514,7 @@ public class BattleManager : MonoBehaviour
                         GameObject targetModel = GameObject.Find(target.participantName);
                         if (targetModel != null)
                         {
-                            Outline outline = targetModel.GetComponent<Outline>();
+                            OutlineBattle outline = targetModel.GetComponent<OutlineBattle>();
                             if (outline != null)
                             {
                                 outline.OutlineWidth = 0; // Remove the outline effect

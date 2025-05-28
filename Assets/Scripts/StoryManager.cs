@@ -7,14 +7,16 @@ using Articy.Articy_Tutorial.Features;
 using Articy.Articy_Tutorial.GlobalVariables;
 using Articy.Unity;
 using Articy.Unity.Interfaces;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
-    // Battle manager
+    // Infrastructure
     public BattleManager battleManager;
+    public FadeManager fadeManager;
 
     // Assigning very next dialogue or battles
     public string nextThingID;
@@ -141,13 +143,19 @@ public class StoryManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         // 3) Only if bgFeature is non-null AND has a BackgroundImage do we show it
         if (bgFeature != null && bgFeature.BackgroundImage is Articy.Unity.Interfaces.IAsset asset)
         {
-            dialogueBackground.sprite = asset.LoadAssetAsSprite();
             dialogueBackground.gameObject.SetActive(true);
+            var spr = asset.LoadAssetAsSprite();
+            fadeManager.FadeTo(spr);
         }
         else
         {
-            Debug.Log("DialogueFragment is not a DialogueBG or does not have an image assigned.");
-            dialogueBackground.gameObject.SetActive(false);
+            Image noSPR = dialogueBackground.GetComponent<Image>();
+            noSPR
+                .DOFade(0, 1f)
+                .OnComplete(() =>
+                {
+                    dialogueBackground.gameObject.SetActive(false);
+                });
         }
 
         // Clear data
