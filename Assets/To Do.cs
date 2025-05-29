@@ -44,10 +44,10 @@
 // [v] - (C) make a mainMenuManager c# script to hold methods to add as listeners to the main menu buttons
 // [v] - test that new game + intro works
 // [v] - fade BG image changes with DOTween
+// [_] - BIG ONE! vertical slice of an actual game, with battles, and actual queues and such --- then move to improving battles
 // [_] - quests SO
 // [_] - settings menu
 // [_] - game over
-// [_] - vertical slice
 // [_] - blender
 
 // persona fighting mechanics:
